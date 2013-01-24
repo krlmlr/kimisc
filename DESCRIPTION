@@ -1,11 +1,11 @@
 Package: kimisc
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: My first attempt to write an R package
+Version: 0.0.1
 Date: 2013-01-24
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What Licence is it under ?
+Author: Kirill Müller
+Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
+Description: Intended to be a collection of more or less useful functions not found in default R or anywhere else
+License: GPL-3
 Depends: Rcpp (>= 0.10.1)
 LinkingTo: Rcpp
