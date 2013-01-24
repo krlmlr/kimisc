@@ -20,9 +20,9 @@ License: \tab What license is it under?\cr
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Kirill Müller
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
 }
 \references{
 ~~ Literature or other references for background information ~~
