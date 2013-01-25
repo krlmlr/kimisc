@@ -5,7 +5,12 @@ Version: 0.0.1
 Date: 2013-01-24
 Author: Kirill Müller
 Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
-Description: Intended to be a collection of more or less useful functions not found in default R or anywhere else
+Description: Intended to be a collection of more or less useful functions not
+    found in default R or anywhere else
 License: GPL-3
-Depends: Rcpp (>= 0.10.1)
+Depends:
+    Rcpp (>= 0.10.1)
 LinkingTo: Rcpp
+Collate:
+    'RcppExports.R'
+    'rcpp_hello_world.R'
