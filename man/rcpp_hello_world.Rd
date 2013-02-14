@@ -1,4 +1,3 @@
-\docType{'package'}
 \name{rcpp_hello_world}
 \alias{rcpp_hello_world}
 \title{Simple function using Rcpp}
