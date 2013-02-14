@@ -15,5 +15,4 @@ LinkingTo: Rcpp
 Collate:
     'RcppExports.R'
     'rcpp_hello_world.R'
-    'fortytwo.R'
     'kimisc-package.R'
