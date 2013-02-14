@@ -1,2 +1,2 @@
-useDynLib(kimisc)
 exportPattern("^[[:alpha:]]+")
+useDynLib(kimisc)
