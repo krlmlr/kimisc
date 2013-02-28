@@ -1,3 +1,5 @@
+#' @exportPattern "^[a-zA-Z][[:alpha:]]+"
+
 #' @name kimisc-package
 #' @aliases kimisc
 #' @docType package

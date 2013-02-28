@@ -1,5 +1,3 @@
-#' @exportPattern "^[[:alpha:]]+"
-
 #' @title Checks if values are outside of an interval (open on the 
 #'   right)
 #' @description This function checks if the values in the \code{x}

@@ -1,5 +1,4 @@
 #' @useDynLib kimisc
-#' @exportPattern "^[[:alpha:]]+"
 
 #' @title Simple function using Rcpp
 #' @examples \dontrun{
