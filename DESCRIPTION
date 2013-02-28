@@ -10,10 +10,12 @@ Description: Intended to be a collection of more or less useful functions not
     found in default R or anywhere else
 License: GPL-3
 Depends:
-    Rcpp (>= 0.10.1)
+    Rcpp (>= 0.10.1),
+    logging (>= 0.4-13)
 LinkingTo: Rcpp
 Collate:
     'RcppExports.R'
     'rcpp_hello_world.R'
     'kimisc-package.R'
     'in_interval.R'
+    'sample_int_rej.R'
