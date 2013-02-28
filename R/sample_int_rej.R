@@ -3,7 +3,8 @@
 #' @description \code{sample.int.rej} takes a sample of the specified 
 #'   \code{size} from the elements of \code{1:n} without replacement. 
 #'   This function is faster than \code{sample.int} in many cases, 
-#'   especially when \code{n} and \code{size} are large.
+#'   especially when \code{n} and \code{size} are large, even if the
+#'   weights range over many orders of magnitudes.
 #' @inheritParams base::sample.int
 #' @return An integer vector of length \code{size} with elements from 
 #'   \code{1:n}.
@@ -14,9 +15,9 @@
 #'   However, \code{sample.int} implements an algorithm with quadratic 
 #'   runtime -- this is not suitable for large values of \code{n} and 
 #'   \code{size} (see also 
-#'   \url{http://stackoverflow.com/q/15113650/946850}). Note that the 
+#'   \url{http://stackoverflow.com/q/15113650/946850}).  (Note that the 
 #'   performance of \code{sample.int} is just fine in the "with 
-#'   replacement" case, and also for uniform probabilities.
+#'   replacement" case, and also for uniform probabilities.)
 #'   
 #'   This function simulates weighted sampling without replacement using
 #'   somewhat more draws \emph{with} replacement, and then discarding 
@@ -29,8 +30,9 @@
 #' @examples
 #' s <- sample.int.rej(200000, 100000, runif(200000))
 #' stopifnot(unique(s) == s)
-sample.int.rej <- function(n, size, prob)
+sample.int.rej <- function(n, size, prob) {
   .sample.int.rej(n, size, prob, 2, 1)
+}
 
 .harmonic.series <- NULL
 .harmonic.series.max <- 50
@@ -53,30 +55,51 @@ sample.int.rej <- function(n, size, prob)
   }
 }
 
+#' Workhorse
 .sample.int.rej <- function(
   n, size, prob, MAX_OVERSHOOT, BIAS) {
   
   require(logging)
   logdebug('.sample.int.rej: parameters: %s, %s, %s', n, size, length(prob))
   
-  if (size == 0)
-    return (integer(0))
+  #' How many draws *with replacement* are required on average, assuming
+  #' *uniform* weights? (With non-uniform weights, this number can only
+  #' increase.) The result is a general case of the coupon collector
+  #' problem, see http://math.stackexchange.com/q/247569/16420 for an
+  #' analysis. BIAS can be supplied to correct the estimate by a factor,
+  #' at most n * MAX_OVERSHOOT samples will be drawn.  Both are tuning 
+  #' parameters, ideal values are still to be found through simulation.
   wr.size <- ceiling(n * min(BIAS * (.harmonic(n) - .harmonic(n - size)),
                              MAX_OVERSHOOT))
   logdebug('.sample.int.rej: wr.size=%s', wr.size)
+  
+  #' Do the sampling with replacement...
   wr.sample <- sample.int(n, size=wr.size, replace=T, prob)
+  #' ...but keep only unique values.
   wr.sample <- unique(wr.sample)
   wr.sample.len <- length(wr.sample)
+  logdebug('.sample.int.rej: wr.sample.len=%s', wr.sample.len)
   
+  #' How much still left to do?
   rem.size <- size - wr.sample.len
+  #' Done? Great!
   if (rem.size <= 0)
     return (head(wr.sample, size))
   
+  #' Not yet: Find out which indexes haven't been sampled yet.  Recall 
+  #' that negative indexes in a vector subscription mean "all but
+  #' the selected".
   rem.indexes <- (1:n)[-wr.sample]
   rem.n <- length(rem.indexes)
   stopifnot(rem.n == n - wr.sample.len)
+  
+  #' Recursive call to sample without replacement from the remaining
+  #' weights
   rem.sample <- .sample.int.rej(rem.n, rem.size,
                                 prob[rem.indexes],
                                 MAX_OVERSHOOT, BIAS)
+  
+  #' Combine the results, substitute the indexes from 1:rem.n obtained
+  #' from the recursive call using the rem.indexes map
   c(wr.sample, rem.indexes[rem.sample])
 }
