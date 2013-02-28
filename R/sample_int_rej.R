@@ -32,15 +32,38 @@
 sample.int.rej <- function(n, size, prob)
   .sample.int.rej(n, size, prob, 2, 1)
 
+.harmonic.series <- NULL
+.harmonic.series.max <- 50
+
+# Euler-Mascheroni constant
+.EM = 0.57721566490153286060651209008240243104215933593992
+
+#' Computes the harmonic series. Exact for the first
+#' .harmonic.series.max values (through table lookup), otherwise using
+#' the approximation ln(a) + \gamma + 1 / (2a). Source: 
+#' http://en.wikipedia.org/wiki/Harmonic_number
+.harmonic <- function(a) {
+  stopifnot(a >= 0)
+  if (a <= .harmonic.series.max) {
+    if (length(.harmonic.series) != .harmonic.series.max + 1)
+      .harmonic.series <- c(0, cumsum(1 / (1:.harmonic.series.max)))
+    .harmonic.series[a + 1]
+  } else {
+    log(a) + .EM + .5 / a
+  }
+}
+
 .sample.int.rej <- function(
-  n, size, prob, MAX_OVERSHOOT=MAX_OVERSHOOT, BIAS) {
+  n, size, prob, MAX_OVERSHOOT, BIAS) {
   
   require(logging)
-  logdebug('.sample.int.rej: %s, %s, %s', n, size, length(prob))
+  logdebug('.sample.int.rej: parameters: %s, %s, %s', n, size, length(prob))
   
   if (size == 0)
     return (integer(0))
-  wr.size <- ceiling(n * max(BIAS * log(n / (n - size)), MAX_OVERSHOOT))
+  wr.size <- ceiling(n * min(BIAS * (.harmonic(n) - .harmonic(n - size)),
+                             MAX_OVERSHOOT))
+  logdebug('.sample.int.rej: wr.size=%s', wr.size)
   wr.sample <- sample.int(n, size=wr.size, replace=T, prob)
   wr.sample <- unique(wr.sample)
   wr.sample.len <- length(wr.sample)
