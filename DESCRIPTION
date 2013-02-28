@@ -16,3 +16,4 @@ Collate:
     'RcppExports.R'
     'rcpp_hello_world.R'
     'kimisc-package.R'
+    'in_interval.R'
