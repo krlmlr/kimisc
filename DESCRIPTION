@@ -1,4 +1,4 @@
-Encoding: utf8
+Encoding: UTF-8
 Package: kimisc
 Type: Package
 Title: My first attempt to write an R package
