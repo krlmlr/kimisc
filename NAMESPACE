@@ -1,3 +1,4 @@
+export(coalesce.na)
 export(in.interval.lo)
 export(in.interval.ro)
 export(nin.interval.lo)
