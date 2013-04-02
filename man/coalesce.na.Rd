@@ -17,14 +17,15 @@
 \description{
   This (vectorized) function returns the first
   non-\code{NA} argument, similar to the SQL function
-  \code{COALESCE}. If a vector is passed as first argument,
-  the remaining arguments are recycled to generate a vector
-  of the same length, and coalescing is done element by
-  element.
+  \code{COALESCE}. If a vector or matrix is passed as first
+  argument, the remaining arguments are recycled to
+  generate a vector/matrix of the same dimension, and
+  coalescing is done element by element.
 }
 \examples{
 coalesce.na(NA, replace=-1)
 coalesce.na(5, 3)
 coalesce.na(c(1,NA,NA), c(NA,2))
+coalesce.na(matrix(c(NA, 1:3), nrow=2))
 }
 
