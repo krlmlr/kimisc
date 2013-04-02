@@ -1,4 +1,4 @@
-#' @exportPattern "^[a-zA-Z][[:alpha:]]+"
+#' @useDynLib kimisc
 
 #' @name kimisc-package
 #' @aliases kimisc

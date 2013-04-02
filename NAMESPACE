@@ -1,2 +1,6 @@
-exportPattern("^[a-zA-Z][[:alpha:]]+")
+export(in.interval.lo)
+export(in.interval.ro)
+export(nin.interval.lo)
+export(nin.interval.ro)
+export(rcpp_hello_world)
 useDynLib(kimisc)
