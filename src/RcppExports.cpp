@@ -2,22 +2,15 @@
 // Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 #include <Rcpp.h>
-#include <string>
-#include <set>
 
 using namespace Rcpp;
 
+// rcpp_hello_world
 List rcpp_hello_world();
-
-static bool validateExported(const std::string& sig) {
-    static std::set<std::string> signatures;
-    if (signatures.empty()) {
-        signatures.insert("List(*rcpp_hello_world)()");
-    }
-    return signatures.find(sig) != signatures.end();
-}
-
-RCPP_MODULE(kimisc_RcppExports) {
-    Rcpp::function("rcpp_hello_world", &rcpp_hello_world, Rcpp::List::create());
-    Rcpp::function("RcppExports_validateExported", &validateExported);
+RcppExport SEXP kimisc_rcpp_hello_world() {
+BEGIN_RCPP
+    Rcpp::RNGScope __rngScope;
+    List __result = rcpp_hello_world();
+    return Rcpp::wrap(__result);
+END_RCPP
 }
