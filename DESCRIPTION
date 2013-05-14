@@ -19,3 +19,4 @@ Collate:
     'kimisc-package.R'
     'in_interval.R'
     'coalesce_na.R'
+    'sample_data_frame.R'
