@@ -2,7 +2,7 @@
 \alias{coalesce.na}
 \title{Replaces NA values}
 \usage{
-  coalesce.na(x, ..., replace = 0)
+  coalesce.na(x, ...)
 }
 \arguments{
   \item{x}{The first value to coalesce.}
@@ -23,9 +23,10 @@
   coalescing is done element by element.
 }
 \examples{
-coalesce.na(NA, replace=-1)
+coalesce.na(NA, -1)
 coalesce.na(5, 3)
 coalesce.na(c(1,NA,NA), c(NA,2))
 coalesce.na(matrix(c(NA, 1:3), nrow=2))
+coalesce.na(NA)
 }
 
