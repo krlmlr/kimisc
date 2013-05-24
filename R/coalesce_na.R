@@ -9,14 +9,15 @@
 #' @param replace Replacement to apply if still \code{NA}.
 #' @return A vector of the same length as \code{x}.
 #' @examples
-#' coalesce.na(NA, replace=-1)
+#' coalesce.na(NA, -1)
 #' coalesce.na(5, 3)
 #' coalesce.na(c(1,NA,NA), c(NA,2))
 #' coalesce.na(matrix(c(NA, 1:3), nrow=2))
+#' coalesce.na(NA)
 #' @export
-coalesce.na <- function(x, ..., replace=0) {
+coalesce.na <- function(x, ...) {
   x.len <- length(x)
-  ly <- c(list(...), replace)
+  ly <- list(...)
   for (y in ly) {
     y.len <- length(y)
     if (y.len == 1) {
