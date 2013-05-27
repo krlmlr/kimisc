@@ -11,7 +11,8 @@ Description: Intended to be a collection of more or less useful functions not
 License: GPL-3
 Depends:
     Rcpp (>= 0.10.1),
-    logging (>= 0.4-13)
+    logging (>= 0.4-13),
+    methods
 LinkingTo: Rcpp
 Collate:
     'RcppExports.R'
