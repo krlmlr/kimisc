@@ -8,8 +8,6 @@
   \item{x}{The first value to coalesce.}
 
   \item{...}{Other values to coalesce.}
-
-  \item{replace}{Replacement to apply if still \code{NA}.}
 }
 \value{
   A vector of the same length as \code{x}.
