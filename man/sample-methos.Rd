@@ -1,5 +1,8 @@
+\docType{methods}
 \name{sample.data.frame}
+\alias{sample}
 \alias{sample.data.frame}
+\alias{sample,data.frame,data.frame-method}
 \title{Random Samples and Permutations for Data Frames}
 \usage{
   sample.data.frame(x, size, replace = FALSE, prob = NULL)
