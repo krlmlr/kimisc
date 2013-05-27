@@ -6,7 +6,6 @@
 #'   the same dimension, and coalescing is done element by element.
 #' @param x The first value to coalesce.
 #' @param ... Other values to coalesce.
-#' @param replace Replacement to apply if still \code{NA}.
 #' @return A vector of the same length as \code{x}.
 #' @examples
 #' coalesce.na(NA, -1)
