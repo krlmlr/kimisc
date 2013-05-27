@@ -15,13 +15,16 @@
 #' set.seed(42)
 #' sample(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
 #' @export
+#' @rdname sample-methos
 sample.data.frame <- function(x, size, replace=FALSE, prob=NULL)
 {
   stopifnot(is.data.frame(x))
   x.indexes <- sample.int(nrow(x), size, replace, prob)
   x[x.indexes, ]
 }
-
+#' @docType methods
+#' @rdname sample-methos
+#' @aliases sample,data.frame,data.frame-method
 #' @export
 setMethod("sample", "data.frame",
           function(x, size, replace=FALSE, prob=NULL)
