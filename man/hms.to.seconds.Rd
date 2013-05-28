@@ -19,7 +19,7 @@
   consistency check is performed on the actual hour, minute
   and second values. Thus, strings like 25:15:00 and
   23:78:101 also will be converted. Incorrectly formatted
-  strings are silently converted to \code{NA}.
+  strings are converted to \code{NA} with a warning.
 }
 \examples{
 hms.to.seconds(c("00:00:01", "00:01:00", "01:00:00"))
