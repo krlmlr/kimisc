@@ -22,3 +22,4 @@ Collate:
     'coalesce_na.R'
     'sample_data_frame.R'
     'hms_to_seconds.R'
+    'seconds_to_hms.R'
