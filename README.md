@@ -16,3 +16,13 @@ The package will be pushed to GitHub automatically:
     ./rename $NEW_NAME
     git push -u origin master
 
+Currently, it is really only a package template. Additional features might
+include:
+
+- a `Makefile`
+- support for pushing to R-Forge's Subversion server
+- ...
+
+The idea is to keep the `stable-*` branches stable so that they can be pulled
+from even for existing R packages. Moving from one stable branch to another
+might require some effort.
