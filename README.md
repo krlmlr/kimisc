@@ -9,8 +9,10 @@ The package will be pushed to GitHub automatically:
     git init $NEW_NAME
     cd $NEW_NAME
     hub remote add krlmlr/R-pkg-template
+    git remote rename krlmlr R-pkg-template
     git pull --all
     hub create $NEW_NAME
-    git pull --no-ff krlmlr master
+    git pull --ff R-pkg-template master
+    ./rename $NEW_NAME
     git push -u origin master
 
