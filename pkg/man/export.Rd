@@ -26,6 +26,12 @@ local({
 newly.created.var
 rm(newly.created.var)
 }
+\author{
+  Roland
+}
+\references{
+  \url{http://stackoverflow.com/a/17484932/946850}
+}
 \seealso{
   \link{export.list}, \link{assign}
 }

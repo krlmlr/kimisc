@@ -15,6 +15,8 @@
 #' newly.created.var
 #' rm(newly.created.var)
 #' @export
+#' @author Roland
+#' @references \url{http://stackoverflow.com/a/17484932/946850}
 export.list <- function(arg.list, arg.names=names(arg.list), target.env=.GlobalEnv) {
   stopifnot(length(arg.list) == length(arg.names))
   for (i in seq_along(arg.names)) assign(arg.names[i], arg.list[[i]], target.env)
@@ -37,6 +39,8 @@ export.list <- function(arg.list, arg.names=names(arg.list), target.env=.GlobalE
 #' newly.created.var
 #' rm(newly.created.var)
 #' @export
+#' @author Roland
+#' @references \url{http://stackoverflow.com/a/17484932/946850}
 export <- function(..., target.env=.GlobalEnv) {
   arg.list <- list(...)
   arg.names <- sapply(match.call()[-1], deparse)
