@@ -24,3 +24,4 @@ Collate:
     'hms_to_seconds.R'
     'seconds_to_hms.R'
     't.R'
+    'export.R'
