@@ -1,0 +1,35 @@
+\name{setMissingNames}
+\alias{setMissingNames}
+\title{Set the Missing Names in an Object}
+\usage{
+  setMissingNames(object, nm)
+}
+\arguments{
+  \item{object}{an object for which a names attribute will
+  be meaningful}
+
+  \item{nm}{a character vector of names to assign to the
+  object}
+}
+\value{
+  An object of the same sort as \code{object} with the new
+  names assigned to the unnamed elements.
+}
+\description{
+  This function is an enhanced version of
+  \code{\link{setNames}} in the sense that the elements
+  that already have names are not renamed.
+}
+\examples{
+setMissingNames(c(a=1, b=2, 3), letters[2:4])
+}
+\author{
+  Hadley Wickham, Kirill Müller
+}
+\references{
+  \url{http://stackoverflow.com/a/5043280/946850}
+}
+\seealso{
+  \link{setNames}
+}
+
