@@ -13,12 +13,8 @@
 #' @author Hadley Wickham
 #' @references \url{http://stackoverflow.com/a/5043280/946850},
 #'   \url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
-nlist <- function(...) {
-  vals <- list(...)
-  
-  setMissingNames(vals,
-                  vapply(substitute(list(...))[-1], deparse, character(1)))
-}
+nlist <- function(...)
+  .nworker(list(...), substitute(list(...))[-1])
 
 #' @title Set the Missing Names in an Object
 #' @description This function is an enhanced version of \code{\link{setNames}}
@@ -43,3 +39,7 @@ setMissingNames <- function(object, nm) {
   names(object)[missing_names] <- nm[missing_names]
   object
 }
+
+# Simple helper to avoid code duplication
+.nworker <- function(object, expr)
+  setMissingNames(object, vapply(expr, deparse, character(1)))
