@@ -4,10 +4,10 @@
 #' description of the package ~~
 #' 
 #' \tabular{ll}{
-#'   Package: Template\cr
-#'   Type: Package\cr
-#'   Version: 1.0\cr
-#'   Date: 2013-07-09\cr
+#'   Package: \tab Template\cr
+#'   Type: \tab Package\cr
+#'   Version: \tab 1.0\cr
+#'   Date: \tab 2013-07-09\cr
 #'   License: \tab What license is it under?\cr
 #' } ~~
 #' An overview of how to use the package, including the most
