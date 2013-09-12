@@ -9,7 +9,7 @@
 #' @author Kirill Müller
 #' @keywords package
 #' @details
-#'   Version: 0.0.19
+#'   Version: 0.1.0
 #'
 #'   Date: 2013-09-12
 #' @examples
