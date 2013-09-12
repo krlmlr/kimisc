@@ -8,6 +8,11 @@
   less useful functions not found in default R or anywhere
   else.
 }
+\details{
+  Version: 0.0.19
+
+  Date: 2013-09-12
+}
 \examples{
 data(fortytwo)
 }
