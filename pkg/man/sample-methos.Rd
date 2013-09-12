@@ -1,11 +1,8 @@
-\docType{methods}
-\name{sample.data.frame}
-\alias{sample}
-\alias{sample,data.frame,data.frame-method}
-\alias{sample.data.frame}
+\name{sample.rows}
+\alias{sample.rows}
 \title{Random Samples and Permutations for Data Frames}
 \usage{
-  sample.data.frame(x, size, replace = FALSE, prob = NULL)
+  sample.rows(x, size, replace = FALSE, prob = NULL)
 }
 \arguments{
   \item{x}{A data frame.}
@@ -22,19 +19,15 @@
   A data frame of the same shape as \code{x}.
 }
 \description{
-  \code{sample.data.frame} takes a sample of the specified
-  size from the rows of \code{x} using either with or
-  without replacement.
+  This function takes a sample of the specified size from
+  the rows of \code{x} using either with or without
+  replacement.
 }
 \details{
   This function internally calls \code{\link{sample.int}}.
-  It should not be necessary to call this function
-  directly, since \code{\link{sample}} is now a generic
-  function that will call \code{sample.data.frame} when
-  passed a data frame.
 }
 \examples{
 set.seed(42)
-sample(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
+sample.rows(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
 }
 
