@@ -1,5 +1,8 @@
 #!/bin/sh
+
+# Terminate on error
 set -e
+set -o pipefail
 
 branch_name=r-forge
 master_name=master

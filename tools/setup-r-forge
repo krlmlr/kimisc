@@ -1,5 +1,8 @@
 #!/bin/sh
+
+# Terminate on error
 set -e
+set -o pipefail
 
 url=$1
 branch_name=r-forge
