@@ -15,7 +15,7 @@ install:
   - "[ ! -d ~/R ] && mkdir ~/R"
   - R --version
   - R -e '.libPaths(); sessionInfo()'
-  - git clone https://github.com/muxspace/crant.git ~/crant
+  - git clone https://github.com/krlmlr/crant.git ~/crant
 
 # run tests
 script:
