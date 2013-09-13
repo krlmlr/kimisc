@@ -19,4 +19,4 @@ install:
 
 # run tests
 script:
-  - ~/crant/rant
+  - ~/crant/rant -S
