@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: kimisc
 Type: Package
 Title: My first attempt to write an R package
-Version: 0.1.2
+Version: 0.1.3
 Date: 2013-09-13
 Author: Kirill Müller
 Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
