@@ -12,8 +12,8 @@ The package will be pushed to GitHub automatically:
     git remote rename krlmlr R-pkg-template
     git pull --all
     hub create $NEW_NAME
-    git pull --ff R-pkg-template stable-0.2
-    ./rename $NEW_NAME
+    git pull --ff R-pkg-template stable-0.4
+    tools/rename $NEW_NAME
     git push -u origin master
 
 Currently, it is really only a package template. Additional features might
