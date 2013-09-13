@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Terminate on error
+set -e
+set -o pipefail
+
+
+DESCRIPTION_FILE=DESCRIPTION
+CURR_NAME=$(egrep '^Package:' $DESCRIPTION_FILE | sed -r 's/^.*: +//')
+NEW_NAME=$1
+
+if [ "$NEW_NAME" = "" ]; then
+  echo "Usage: $0 new_package_name" >> /dev/stderr
+  exit 1
+fi
+
+if [ "$(git status --porcelain)" != "" ]; then
+  echo "Working directory must be clean. Commit or stash your changes first." >> /dev/stderr
+  exit 2
+fi
+
+find -name "*$CURR_NAME*" | sed -r "s/^(.*)$CURR_NAME(.*)$/git mv "'"'"\1$CURR_NAME\2"'"'" "'"'"\1$NEW_NAME\2"'"'"/" | /bin/sh
+find * -type f -exec grep -q "$CURR_NAME" \{\} \+ -print0 | xargs -0 sed -i "s/$CURR_NAME/$NEW_NAME/g"
+git add .
+git commit -m "Renamed package from $CURR_NAME to $NEW_NAME"

@@ -1,0 +1,38 @@
+\name{export}
+\alias{export}
+\title{Exports to an environment}
+\usage{
+  export(..., target.env = .GlobalEnv)
+}
+\arguments{
+  \item{...}{variables to be exported.}
+
+  \item{target.env}{The target environment.  Use the global
+  environment by default.}
+}
+\value{
+  Invisible \code{NULL}.
+}
+\description{
+  This function is a wrapper around
+  \code{\link{export.list}} that exports variables by their
+  name to another environment.
+}
+\examples{
+local({
+  newly.created.var <- 5
+  export(newly.created.var)
+})
+newly.created.var
+rm(newly.created.var)
+}
+\author{
+  Roland
+}
+\references{
+  \url{http://stackoverflow.com/a/17484932/946850}
+}
+\seealso{
+  \link{export.list}, \link{assign}
+}
+

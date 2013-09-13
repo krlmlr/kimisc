@@ -1,0 +1,28 @@
+Encoding: UTF-8
+Package: kimisc
+Type: Package
+Title: My first attempt to write an R package
+Version: 0.1.1
+Date: 2013-09-13
+Author: Kirill Müller
+Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
+Description: Intended to be a collection of more or less useful functions not
+    found in default R or anywhere else
+License: GPL-3
+Depends:
+    Rcpp (>= 0.10.1),
+    logging (>= 0.4-13),
+    methods
+LinkingTo: Rcpp
+Collate:
+    'RcppExports.R'
+    'rcpp_hello_world.R'
+    'kimisc-package.R'
+    'in_interval.R'
+    'coalesce_na.R'
+    'sample_data_frame.R'
+    'hms_to_seconds.R'
+    'seconds_to_hms.R'
+    't.R'
+    'export.R'
+    'nlist.R'
