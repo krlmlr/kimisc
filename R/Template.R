@@ -21,12 +21,11 @@
 #' Maintainer: Who to complain to <yourfault@@somewhere.net> ~~ The author
 #' and/or maintainer of the package ~~
 #' @seealso ~~ Optional links to other man pages, e.g. ~~ ~~
-#' \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+#' <pkg>:<pkg>-package ~~
 #' @references ~~ Literature or other references for background information ~~
 #' @keywords package
 #' @examples
-#' 
-#' ~~ simple examples of the most important functions ~~
+#' # ~~ simple examples of the most important functions ~~
 #' 
 NULL
 
