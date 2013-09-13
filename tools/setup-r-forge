@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# Terminate on error
+set -e
+set -o pipefail
+
+url=$1
+branch_name=r-forge
+master_name=master
+dummy=.dummy
+current_branch=$(git status -b --porcelain | head -n 1 | cut -d " " -f 2 | cut -d "." -f 1)
+
+
+fatal()
+{
+  [ -n "$2" ] && echo "$2" >> /dev/stderr
+  exit $1
+}
+
+
+check_clean_wc()
+{
+  scm_status=$(git status --porcelain)
+
+  if [ -n "$scm_status" ]
+  then
+    fatal 2 "Working copy is not clean. Exiting."
+  fi
+}
+
+
+if [ -z "$1" ]; then fatal 1 "Usage: $0 SVN-URL"; fi
+
+check_clean_wc
+
+git svn clone --prefix=$branch_name/ "$url" .
+git checkout -b $branch_name $branch_name/git-svn
+git branch -u $master_name
+git svn rebase
+head=$(git show HEAD | head -n 1)
+git merge --no-ff --log=9999999 --no-edit $master_name
+new_head=$(git show HEAD | head -n 1)
+
+if [ "$head" = "$new_head" ]; then
+  true
+elif [ ! -f $dummy ]; then
+  touch $dummy
+  git add $dummy
+  git commit --amend --no-edit
+  git rm $dummy
+  git commit -m "dummy"
+else
+  git rm $dummy
+  git commit --amend --no-edit
+fi
+git svn dcommit
+git checkout $current_branch
+
