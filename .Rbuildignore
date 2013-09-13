@@ -4,3 +4,4 @@
 ^\.gitignore$
 ^README.md$
 ^tools$
+^.travis.yml$
