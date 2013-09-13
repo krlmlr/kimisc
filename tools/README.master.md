@@ -16,13 +16,33 @@ The package will be pushed to GitHub automatically:
     tools/rename $NEW_NAME
     git push -u origin master
 
-Currently, it is really only a package template. Additional features might
-include:
+Additional features might include:
 
 - a `Makefile`
-- support for pushing to R-Forge's Subversion server
 - ...
 
 The idea is to keep the `stable-*` branches stable so that they can be pulled
 from even for existing R packages. Moving from one stable branch to another
 might require some effort.
+
+##Pushing to R-Forge's Subversion server
+
+The `tools` subdirectory contains two scripts that allows setting up a `git-svn`
+connection to R-Forge (or any other SVN server, for that matter). The setup
+closely follows the [blog post](http://cameron.bracken.bz/git-with-r-forge)
+by Cameron Bracken.
+
+To initialize the link, execute `tools/setup-r-forge <your-svn-URL>`. If you
+link with R-Forge, this should be the the path to the `pkg` subdirectory in the
+SVN repo, or to the `pkg/pkg-name` subdirectory if there are several packages.
+When executed the first time, all previous Git commits in the `master` branch
+are pushed as a single
+commit to SVN. The script should also work for a fresh Git checkout when
+the SVN repo contains (a part of) the commits in `master`. In this case,
+for technical reasons, sometimes a dummy commit will be pushed to SVN.
+After that, `tools/update-r-forge` will push the current state of `master` to
+SVN.
+
+Both scripts require a clean working copy. Should you ever need to merge changes
+from SVN back to Git, you can execute `git merge r-forge` for the
+`master` branch.
