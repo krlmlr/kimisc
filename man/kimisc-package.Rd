@@ -10,7 +10,7 @@
 }
 \details{
   \tabular{ll}{ Package: \tab kimisc\cr Type: \tab
-  Package\cr Version: \tab 0.1.2\cr Date: \tab
+  Package\cr Version: \tab 0.1.3\cr Date: \tab
   2013-09-13\cr License: \tab GPL v3\cr }
 }
 \examples{
