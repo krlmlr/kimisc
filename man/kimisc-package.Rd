@@ -11,7 +11,7 @@
 \details{
   \tabular{ll}{ Package: \tab kimisc\cr Type: \tab
   Package\cr Version: \tab 0.1.0\cr Date: \tab
-  2013-07-09\cr License: \tab GPL v3\cr }
+  2013-09-12\cr License: \tab GPL v3\cr }
 }
 \examples{
 data(fortytwo)
