@@ -6,6 +6,6 @@ Date: 2013-07-09
 Author: Who wrote it
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License: GPL-3
 Collate:
     'Template.R'

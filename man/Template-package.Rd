@@ -15,7 +15,7 @@
   important functions ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+# ~~ simple examples of the most important functions ~~
 }
 \author{
   Who wrote it
@@ -29,7 +29,7 @@
 }
 \seealso{
   ~~ Optional links to other man pages, e.g. ~~ ~~
-  \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+  <pkg>:<pkg>-package ~~
 }
 \keyword{package}
 
