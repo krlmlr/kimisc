@@ -37,6 +37,8 @@ The template already contains a generic `.travis.yml` following
 It is an adapted version of
 [the file](https://github.com/yihui/knitr/blob/master/.travis.yml)
 in the [knitr](http://yihui.name/knitr/) package.
+Packages will be checked using `R CMD check` with the help of
+[crant](https://github.com/krlmlr/crant).
 
 
 ##Pushing to R-Forge's Subversion server
