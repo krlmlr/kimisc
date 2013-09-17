@@ -7,7 +7,6 @@ env:
 
 # install dependencies
 install:
-  - dd --help
   - echo -e "deb http://cran.rstudio.com/bin/linux/ubuntu precise/\ndeb-src http://cran.rstudio.com/bin/linux/ubuntu precise/" |
       sudo dd status=none of=/etc/apt/sources.list.d/cran.list
   - sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/cran.list"
