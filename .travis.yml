@@ -21,4 +21,4 @@ install:
 
 # run tests
 script:
-  - ~/crant/rant -S
+  - ~/crant/rant -S -r
