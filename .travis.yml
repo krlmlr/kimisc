@@ -10,6 +10,8 @@ install:
   - sudo apt-add-repository -y 'deb http://cran.rstudio.com/bin/linux/ubuntu precise/'
   - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
   - sudo apt-add-repository -y ppa:marutter/c2d4u
+  - ls /etc/apt/sources.list.d
+  - false
   - sudo apt-get update
   - sudo apt-get install --no-install-recommends r-base-dev r-cran-xml r-cran-rcurl r-recommended
       qpdf texinfo texlive-latex-recommended texlive-latex-extra lmodern texlive-fonts-recommended texlive-fonts-extra
