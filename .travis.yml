@@ -3,10 +3,10 @@ language: python
 
 # install dependencies
 install:
-  - git clone https://github.com/krlmlr/R-travis.git ~/R-travis
-  - ~/R-travis/install
+  - sudo git clone https://github.com/krlmlr/R-travis.git ~root/R-travis
+  - sudo ~root/R-travis/install
 
 # run tests
 script:
-  - ~/R-travis/script stable
-  - ~/R-travis/script devel
+  - ~root/R-travis/script stable
+  - ~root/R-travis/script devel
