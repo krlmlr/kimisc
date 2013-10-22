@@ -3,9 +3,9 @@ language: python
 
 # install dependencies
 install:
-  - sudo git clone https://github.com/krlmlr/R-travis.git ~root/R-travis
-  - sudo ~root/R-travis/install
+  - sudo git clone https://github.com/krlmlr/R-travis.git ~/R-travis
+  - sudo ~/R-travis/install
 
 # run tests
 script:
-  - "for mode in stable devel; do ~root/R-travis/script $mode; done"
+  - "for mode in stable devel; do ~/R-travis/script $mode; done"
