@@ -1,32 +1,12 @@
 # it is not really python, but there is no R support on Travis CI yet
 language: python
 
-# environment variables
-env:
-  - R_LIBS_USER=~/R
-  - R_LIBS_USER=~/R-dev
-
 # install dependencies
-before_install:
-  - echo -e "deb http://cran.rstudio.com/bin/linux/ubuntu precise/\ndeb-src http://cran.rstudio.com/bin/linux/ubuntu precise/" |
-      sudo dd status=noxfer of=/etc/apt/sources.list.d/cran.list
-  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-  - sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/cran.list"
-      -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
-  - sudo apt-add-repository -y ppa:marutter/c2d4u
-  - sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/marutter-c2d4u-precise.list"
-      -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
-  - sudo apt-get install --no-install-recommends r-base-dev r-cran-xml r-cran-rcurl r-recommended
-      qpdf texinfo texlive-latex-recommended texlive-latex-extra lmodern texlive-fonts-recommended texlive-fonts-extra
-
 install:
-  - '[ $R_LIBS_USER = "~/R"] || ( sudo add-apt-repository -y ppa:marutter/rdev && sudo apt-get update -o Dir::Etc::sourcelist="sources.list.d/marutter-rdev-precise.list" -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0" && sudo apt-get dist-upgrade )'
-  - "[ ! -d $R_LIBS_USER ] && mkdir $R_LIBS_USER"
-  - R --version
-  - R -e '.libPaths(); sessionInfo()'
-  - Rscript -e 'options(repos = c("http://rforge.net", "http://cran.rstudio.org")); install.packages(c("devtools")); library(devtools); install()'
-  - git clone https://github.com/krlmlr/crant.git ~/crant
+  - git clone https://github.com/krlmlr/R-travis.git ~/R-travis
+  - ~/R-travis/install
 
 # run tests
 script:
-  - ~/crant/rant -S -r
+  - ~/R-travis/script stable
+  - ~/R-travis/script devel
