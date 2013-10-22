@@ -8,4 +8,5 @@ install:
 
 # run tests
 script:
-  - "for mode in stable devel; do ~/R-travis/script $mode; done"
+  - ~/R-travis/script stable
+  - ~/R-travis/script devel
