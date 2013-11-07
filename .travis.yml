@@ -1,14 +1,18 @@
-# it is not really python, but there is no R support on Travis CI yet
-language: python
+# Sample .travis.yml for R projects.
+#
+# See README.md for instructions, or for more configuration options,
+# see the wiki:
+#   https://github.com/craigcitro/r-travis/wiki
 
-env: RTRAVISPATH=~root/R-travis
-
-# install dependencies
+language: c
+script: ./travis-tool.sh run_tests
+before_install:
+  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
+  - chmod 755 ./travis-tool.sh
+  - ./travis-tool.sh bootstrap
 install:
-  - sudo git clone https://github.com/krlmlr/R-travis.git $RTRAVISPATH
-  - sudo $RTRAVISPATH/install
-
-# run tests
-script:
-  - $RTRAVISPATH/script stable
-  - $RTRAVISPATH/script devel
+  - ./travis-tool.sh install_deps
+notifications:
+  email:
+    on_success: change
+    on_failure: change
