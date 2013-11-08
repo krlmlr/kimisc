@@ -2,6 +2,6 @@
 ^\.Rproj\.user$
 ^rename$
 ^\.gitignore$
-^README.md$
+^README\.md$
 ^tools$
-^.travis.yml$
+^\.travis\.yml$
