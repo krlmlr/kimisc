@@ -26,3 +26,4 @@ Collate:
     't.R'
     'export.R'
     'nlist.R'
+    'gdiff.R'

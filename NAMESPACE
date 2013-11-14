@@ -1,6 +1,7 @@
 export(coalesce.na)
 export(export)
 export(export.list)
+export(gdiff)
 export(hms.to.seconds)
 export(in.interval.lo)
 export(in.interval.ro)
