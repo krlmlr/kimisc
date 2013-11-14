@@ -6,6 +6,13 @@ language: c
 # To build on OSX, switch the previous line to
 # language: objective-c
 script: ./travis-tool.sh run_tests
+
+before_script:
+  - ./travis-tool.sh dump_sysinfo
+after_success:
+  - ./travis-tool.sh dump_logs_by_extension out
+after_failure:
+  - ./travis-tool.sh dump_logs
 before_install:
   - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
   - chmod 755 ./travis-tool.sh
