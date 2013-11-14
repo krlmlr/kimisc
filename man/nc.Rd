@@ -2,7 +2,7 @@
 \alias{nc}
 \title{Smart named vector}
 \usage{
-  nc(...)
+nc(...)
 }
 \arguments{
   \item{...}{Vector elements, possibly named}

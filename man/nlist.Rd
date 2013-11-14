@@ -2,7 +2,7 @@
 \alias{nlist}
 \title{Smart named list}
 \usage{
-  nlist(...)
+nlist(...)
 }
 \arguments{
   \item{...}{List items, possibly named}

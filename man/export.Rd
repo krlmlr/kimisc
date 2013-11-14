@@ -2,7 +2,7 @@
 \alias{export}
 \title{Exports to an environment}
 \usage{
-  export(..., target.env = .GlobalEnv)
+export(..., target.env = .GlobalEnv)
 }
 \arguments{
   \item{...}{variables to be exported.}

@@ -2,7 +2,7 @@
 \alias{tc}
 \title{Constructs a vector, ignoring an empty last argument}
 \usage{
-  tc(...)
+tc(...)
 }
 \arguments{
   \item{...}{objects, possibly named.}

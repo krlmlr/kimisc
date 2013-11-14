@@ -8,7 +8,7 @@
   The Hitchhiker's Guide to the Galaxy
 }
 \usage{
-  fortytwo
+fortytwo
 }
 \description{
   This has been calculated by an enormous supercomputer

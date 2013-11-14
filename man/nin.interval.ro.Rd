@@ -3,7 +3,7 @@
 \title{Checks if values are outside of an interval (open on the
   right)}
 \usage{
-  nin.interval.ro(x, lo, hi)
+nin.interval.ro(x, lo, hi)
 }
 \arguments{
   \item{x}{A vector of values. (Lists will be coerced to a

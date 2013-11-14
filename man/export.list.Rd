@@ -2,8 +2,7 @@
 \alias{export.list}
 \title{Exports to an environment}
 \usage{
-  export.list(arg.list, arg.names = names(arg.list),
-    target.env = .GlobalEnv)
+export.list(arg.list, arg.names = names(arg.list), target.env = .GlobalEnv)
 }
 \arguments{
   \item{arg.list}{list of objects, possibly named.}

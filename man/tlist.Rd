@@ -2,7 +2,7 @@
 \alias{tlist}
 \title{Constructs a list, ignoring an empty last argument}
 \usage{
-  tlist(...)
+tlist(...)
 }
 \arguments{
   \item{...}{objects, possibly named.}

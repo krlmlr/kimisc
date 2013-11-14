@@ -2,7 +2,7 @@
 \alias{setMissingNames}
 \title{Set the Missing Names in an Object}
 \usage{
-  setMissingNames(object, nm)
+setMissingNames(object, nm)
 }
 \arguments{
   \item{object}{an object for which a names attribute will

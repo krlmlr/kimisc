@@ -3,7 +3,7 @@
 \title{Converts a time value given as number of seconds since midnight to the
   H:M:S format}
 \usage{
-  seconds.to.hms(x)
+seconds.to.hms(x)
 }
 \arguments{
   \item{x}{A (vector of) numbers.}

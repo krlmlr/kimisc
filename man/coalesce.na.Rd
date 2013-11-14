@@ -2,7 +2,7 @@
 \alias{coalesce.na}
 \title{Replaces NA values}
 \usage{
-  coalesce.na(x, ...)
+coalesce.na(x, ...)
 }
 \arguments{
   \item{x}{The first value to coalesce.}

@@ -3,7 +3,7 @@
 \title{Checks if values are contained in an interval (open on the
   right)}
 \usage{
-  in.interval.ro(x, lo, hi)
+in.interval.ro(x, lo, hi)
 }
 \arguments{
   \item{x}{A vector of values. (Lists will be coerced to a

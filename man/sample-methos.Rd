@@ -2,7 +2,7 @@
 \alias{sample.rows}
 \title{Random Samples and Permutations for Data Frames}
 \usage{
-  sample.rows(x, size, replace = FALSE, prob = NULL)
+sample.rows(x, size, replace = FALSE, prob = NULL)
 }
 \arguments{
   \item{x}{A data frame.}
