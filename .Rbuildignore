@@ -3,5 +3,6 @@
 ^rename$
 ^\.gitignore$
 ^README.md$
+^NEWS.md$
 ^tools$
 ^.travis.yml$
