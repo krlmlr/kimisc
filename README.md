@@ -32,13 +32,8 @@ With [Travis-CI](https://travis-ci.org/) you can have your package checked
 automatically each time you push to GitHub. All you need is to login and
 flip a switch on the Travis-CI website,
 the service is free of charge for open-source projects.
-The template already contains a generic `.travis.yml` following
-[Yihui Xie's recipe](http://yihui.name/en/2013/04/travis-ci-general-purpose/).
-It is an adapted version of
-[the file](https://github.com/yihui/knitr/blob/master/.travis.yml)
-in the [knitr](http://yihui.name/knitr/) package.
-Packages will be checked using `R CMD check` with the help of
-[crant](https://github.com/krlmlr/crant).
+The template already contains a generic `.travis.yml` that connects to
+[r-travis](https://github.com/craigcitro/r-travis).
 
 
 ##Pushing to R-Forge's Subversion server
