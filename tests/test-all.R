@@ -1,4 +1,4 @@
 library(testthat)
 library(Template)
 
-test_package("Template")
+test_check("Template")
