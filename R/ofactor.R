@@ -1,7 +1,7 @@
 #' @title Order-preserving factors
 #' @description The function \code{ofactor} is similar to \code{factor}, but
 #'   orders the levels as they appear in the data
-#' @inheritParams factor
+#' @inheritParams base::factor
 #' @return A factor. See \link[base]{factor} for details.
 #' @seealso \link[base]{factor}
 #' @examples
