@@ -1,5 +1,8 @@
 # NEWS
 
+- New function `ofactor`: Creates a factor that maintains the order of levels
+  in the data
+
 ## Version 0.1.5
 
 - Remove functions `tc` and `tlist`, they're now part of the sweetnR package

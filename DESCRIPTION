@@ -24,6 +24,7 @@ Collate:
     'in_interval.R'
     'kimisc-package.R'
     'nlist.R'
+    'ofactor.R'
     'rcpp_hello_world.R'
     'sample_data_frame.R'
     'seconds_to_hms.R'
