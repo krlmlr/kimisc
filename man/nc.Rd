@@ -8,12 +8,12 @@ nc(...)
   \item{...}{Vector elements, possibly named}
 }
 \value{
-  A named vector.
+A named vector.
 }
 \description{
-  This function is a wrapper around \code{\link{c}} that
-  assigns names to unnamed arguments based on the
-  unevaluated expression used in the call.
+This function is a wrapper around \code{\link{c}} that
+assigns names to unnamed arguments based on the unevaluated
+expression used in the call.
 }
 \examples{
 a <- 1; b <- 2; c <- 3
@@ -21,13 +21,13 @@ nc(a, b, d=c)
 nc(mean(c(a, b, c)))
 }
 \author{
-  Hadley Wickham
+Hadley Wickham
 }
 \references{
-  \url{http://stackoverflow.com/a/5043280/946850},
-  \url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
+\url{http://stackoverflow.com/a/5043280/946850},
+\url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
 }
 \seealso{
-  \link{c}, \link{nlist}
+\link{c}, \link{nlist}
 }
 

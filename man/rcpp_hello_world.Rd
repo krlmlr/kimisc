@@ -5,7 +5,7 @@
 rcpp_hello_world()
 }
 \description{
-  Simple function using Rcpp
+Simple function using Rcpp
 }
 \examples{
 \dontrun{

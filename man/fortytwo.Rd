@@ -5,18 +5,17 @@
   Everything}
 \format{A data frame with 1 row}
 \source{
-  The Hitchhiker's Guide to the Galaxy
+The Hitchhiker's Guide to the Galaxy
 }
 \usage{
 fortytwo
 }
 \description{
-  This has been calculated by an enormous supercomputer
-  over a period of 7.5 million years. Unfortunately no one
-  knows what the question is.
+This has been calculated by an enormous supercomputer over
+a period of 7.5 million years. Unfortunately no one knows
+what the question is.
 }
 \author{
-  Douglas Adams
+Douglas Adams
 }
-\keyword{datasets}
 

@@ -12,24 +12,24 @@ setMissingNames(object, nm)
   object}
 }
 \value{
-  An object of the same sort as \code{object} with the new
-  names assigned to the unnamed elements.
+An object of the same sort as \code{object} with the new
+names assigned to the unnamed elements.
 }
 \description{
-  This function is an enhanced version of
-  \code{\link{setNames}} in the sense that the elements
-  that already have names are not renamed.
+This function is an enhanced version of
+\code{\link{setNames}} in the sense that the elements that
+already have names are not renamed.
 }
 \examples{
 setMissingNames(c(a=1, b=2, 3), letters[2:4])
 }
 \author{
-  Hadley Wickham, Kirill Müller
+Hadley Wickham, Kirill Müller
 }
 \references{
-  \url{http://stackoverflow.com/a/5043280/946850}
+\url{http://stackoverflow.com/a/5043280/946850}
 }
 \seealso{
-  \link{setNames}
+\link{setNames}
 }
 

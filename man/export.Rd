@@ -11,12 +11,12 @@ export(..., target.env = .GlobalEnv)
   environment by default.}
 }
 \value{
-  Invisible \code{NULL}.
+Invisible \code{NULL}.
 }
 \description{
-  This function is a wrapper around
-  \code{\link{export.list}} that exports variables by their
-  name to another environment.
+This function is a wrapper around \code{\link{export.list}}
+that exports variables by their name to another
+environment.
 }
 \examples{
 local({
@@ -27,12 +27,12 @@ newly.created.var
 rm(newly.created.var)
 }
 \author{
-  Roland
+Roland
 }
 \references{
-  \url{http://stackoverflow.com/a/17484932/946850}
+\url{http://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
-  \link{export.list}, \link{assign}
+\link{export.list}, \link{assign}
 }
 
