@@ -12,5 +12,20 @@ License: GPL-3
 Depends:
     Rcpp (>= 0.10.1),
     logging (>= 0.4-13),
+    plyr,
     methods
 LinkingTo: Rcpp
+Collate:
+    'RcppExports.R'
+    'coalesce_na.R'
+    'export.R'
+    'gdiff.R'
+    'hms_to_seconds.R'
+    'in_interval.R'
+    'kimisc-package.R'
+    'nlist.R'
+    'rcpp_hello_world.R'
+    'sample_data_frame.R'
+    'seconds_to_hms.R'
+    't.R'
+    'tll.R'

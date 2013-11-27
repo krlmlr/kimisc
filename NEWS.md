@@ -1,6 +1,8 @@
 # NEWS
 
-## Version 0.1
+- New function `tll`: Transposes a list of lists
+
+## Version 0.1.4
 
 - Added functions:
     - `sample.rows`
