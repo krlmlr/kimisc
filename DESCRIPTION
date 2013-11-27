@@ -27,5 +27,4 @@ Collate:
     'rcpp_hello_world.R'
     'sample_data_frame.R'
     'seconds_to_hms.R'
-    't.R'
     'tll.R'
