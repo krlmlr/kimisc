@@ -9,7 +9,7 @@ useful functions not found in default R or anywhere else.
 }
 \details{
 \tabular{ll}{ Package: \tab kimisc\cr Type: \tab Package\cr
-Version: \tab 0.1.4\cr Date: \tab 2013-11-14\cr License:
+Version: \tab 0.1.5\cr Date: \tab 2013-11-27\cr License:
 \tab GPL v3\cr }
 }
 \examples{

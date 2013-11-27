@@ -1,5 +1,7 @@
 # NEWS
 
+## Version 0.1.5
+
 - Remove functions `tc` and `tlist`, they're now part of the sweetnR package
 
 - New function `tll`: Transposes a list of lists
