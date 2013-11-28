@@ -1,5 +1,3 @@
-#' @useDynLib kimisc
-
 #' @name kimisc-package
 #' @aliases kimisc
 #' @docType package

@@ -17,7 +17,6 @@ Depends:
 LinkingTo: Rcpp
 Roxygen: list(wrap = FALSE)
 Collate:
-    'RcppExports.R'
     'coalesce_na.R'
     'export.R'
     'gdiff.R'
@@ -26,7 +25,6 @@ Collate:
     'kimisc-package.R'
     'nlist.R'
     'ofactor.R'
-    'rcpp_hello_world.R'
     'sample_data_frame.R'
     'seconds_to_hms.R'
     'tll.R'

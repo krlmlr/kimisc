@@ -1,5 +1,7 @@
 # NEWS
 
+- Removed useless Rcpp "Hello World" code
+
 - New function `ofactor`: Creates a factor that maintains the order of levels
   in the data
 
