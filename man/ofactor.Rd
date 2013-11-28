@@ -23,8 +23,8 @@ ofactor(x = character(), exclude = NA, ordered = is.ordered(x),
 A factor. See \link[base]{factor} for details.
 }
 \description{
-The function \code{ofactor} is similar to \code{factor},
-but orders the levels as they appear in the data
+The function \code{ofactor} is similar to \code{factor}, but
+  orders the levels as they appear in the data
 }
 \examples{
 ofactor(3:1)

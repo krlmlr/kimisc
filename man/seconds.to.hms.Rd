@@ -9,15 +9,13 @@ seconds.to.hms(x)
   \item{x}{A (vector of) numbers.}
 }
 \value{
-A (vector of) character values of the same length as
-\code{x}.
+A (vector of) character values of the same length as \code{x}.
 }
 \description{
 This function is very similar to \code{strftime} with the
-\code{\%X} conversion specification. Hour values larger
-than 24 are permitted. Fractions will be rounded down to
-the next integer. Non-numeric values are coerced to
-\code{NA} with a warning.
+  \code{\%X} conversion specification. Hour values larger than 24 are
+  permitted. Fractions will be rounded down to the next integer. Non-numeric
+  values are coerced to \code{NA} with a warning.
 }
 \examples{
 seconds.to.hms(c(1, 60, 3600.5))

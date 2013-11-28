@@ -19,10 +19,9 @@ Invisible \code{NULL}.
 }
 \description{
 This function is a wrapper around \code{\link{assign}} that
-exports the contents of a named list to an environment.
-The variable names in the target environment are
-constructed from the names of the list items or taken from
-a separate argument.
+  exports the contents of a named list to an environment.  The variable names
+  in the target environment are constructed from the names of the list items
+  or taken from a separate argument.
 }
 \examples{
 export.list(list(newly.created.var=5))

@@ -11,9 +11,9 @@ The Hitchhiker's Guide to the Galaxy
 fortytwo
 }
 \description{
-This has been calculated by an enormous supercomputer over
-a period of 7.5 million years. Unfortunately no one knows
-what the question is.
+This has been calculated by an enormous supercomputer
+  over a period of 7.5 million years. Unfortunately no one knows what
+  the question is.
 }
 \author{
 Douglas Adams

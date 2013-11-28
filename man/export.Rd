@@ -14,9 +14,8 @@ export(..., target.env = .GlobalEnv)
 Invisible \code{NULL}.
 }
 \description{
-This function is a wrapper around \code{\link{export.list}}
-that exports variables by their name to another
-environment.
+This function is a wrapper around \code{\link{export.list}} that
+  exports variables by their name to another environment.
 }
 \examples{
 local({

@@ -19,8 +19,8 @@ sample.rows(x, size, replace = FALSE, prob = NULL)
 A data frame of the same shape as \code{x}.
 }
 \description{
-This function takes a sample of the specified size from the
-rows of \code{x} using either with or without replacement.
+This function takes a sample of the specified size
+  from the rows of \code{x} using either with or without replacement.
 }
 \details{
 This function internally calls \code{\link{sample.int}}.

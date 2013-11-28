@@ -18,9 +18,8 @@ A boolean vector of the same length as \code{x}.
 }
 \description{
 This function checks if the values in the \code{x}
-parameter are contained in the interval (\code{lo},
-\code{hi}].  \code{NA} values are treated as "not in the
-interval".
+  parameter are contained in the interval (\code{lo}, \code{hi}].
+  \code{NA} values are treated as "not in the interval".
 }
 \examples{
 in.interval.lo(c(-1, 0, 1, 2), 0, 1)
@@ -28,6 +27,6 @@ in.interval.lo(NA, 1, 3)
 }
 \seealso{
 \link{in.interval.ro}, \link{nin.interval.lo},
-\link{nin.interval.ro}
+  \link{nin.interval.ro}
 }
 
