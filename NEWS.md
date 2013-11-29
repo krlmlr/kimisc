@@ -3,6 +3,8 @@
 - New function `thisfile`: Returns a guess for the path of the currently
   executed script
 
+- Removed all dependencies to Rcpp
+
 ## Version 0.1.6
 
 - Removed useless Rcpp "Hello World" code
