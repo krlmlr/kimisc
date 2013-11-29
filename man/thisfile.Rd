@@ -22,6 +22,12 @@ This function currently works only if the script was \code{source}d
 \examples{
 \dontrun{thisfile()}
 }
+\author{
+Kirill Müller, Hadley Wickham, Michael R. Head
+}
+\references{
+\url{http://stackoverflow.com/q/1815606/946850}
+}
 \seealso{
 \link[base]{source}, \link[utils]{Rscript}, \link[base]{getwd}
 }
