@@ -1,5 +1,7 @@
 # NEWS
 
+## Version 0.1.7
+
 - New function `thisfile`: Returns a guess for the path of the currently
   executed script
 

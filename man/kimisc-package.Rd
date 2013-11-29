@@ -11,8 +11,8 @@ This package is intended to be a collection of more or
 \tabular{ll}{
   Package: \tab kimisc\cr
   Type: \tab Package\cr
-  Version: \tab 0.1.6\cr
-  Date: \tab 2013-11-28\cr
+  Version: \tab 0.1.7\cr
+  Date: \tab 2013-11-29\cr
   License: \tab GPL v3\cr
 }
 }
