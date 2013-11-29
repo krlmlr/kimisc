@@ -5,7 +5,8 @@
 #'   cases.
 #' @details This function currently works only if the script was \code{source}d
 #'   or run with \code{Rscript} or using the \code{--file} parameter to the
-#'   \code{R} executable.
+#'   \code{R} executable.  For code run with \code{Rscript}, the exact value
+#'   of the parameter passed to \code{Rscript} is returned.
 #' @return The path of the currently running script, NULL if it cannot be
 #'   determined.
 #' @seealso \link[base]{source}, \link[utils]{Rscript}, \link[base]{getwd}
