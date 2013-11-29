@@ -6,6 +6,9 @@ language: c
 # To build on OSX, switch the previous line to
 # language: objective-c
 script: ./travis-tool.sh run_tests
+env:
+  global:
+    - WARNINGS_ARE_ERRORS=1
 
 before_script:
   - ./travis-tool.sh dump_sysinfo
@@ -19,14 +22,10 @@ before_install:
   - ./travis-tool.sh bootstrap
 install:
   - ./travis-tool.sh r_binary_install Rcpp RUnit inline highlight XML
+  - ./travis-tool.sh install_github hadley/testthat
   - ./travis-tool.sh install_deps
-# Configuration options below this line are suggested options.
+  - ./travis-tool.sh install_deps
 notifications:
   email:
     on_success: change
     on_failure: change
-# One can also restrict the branches to test, see
-#   http://about.travis-ci.org/docs/user/build-configuration/#Specify-branches-to-build
-branches:
-  except:
-    - /-expt$/

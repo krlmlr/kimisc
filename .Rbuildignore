@@ -1,8 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^rename$
 ^\.gitignore$
-^README.md$
-^NEWS.md$
+^README\.md$
+^NEWS\.md$
 ^tools$
-^.travis.yml$
+^\.travis\.yml$

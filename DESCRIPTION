@@ -14,6 +14,8 @@ Depends:
     logging (>= 0.4-13),
     plyr,
     methods
+Suggests:
+    testthat
 LinkingTo: Rcpp
 Roxygen: list(wrap = FALSE)
 Collate:
