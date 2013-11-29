@@ -1,5 +1,10 @@
 # NEWS
 
+- New function `thisfile`: Returns a guess for the path of the currently
+  executed script
+
+## Version 0.1.6
+
 - Removed useless Rcpp "Hello World" code
 
 - New function `ofactor`: Creates a factor that maintains the order of levels

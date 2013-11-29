@@ -29,4 +29,5 @@ Collate:
     'ofactor.R'
     'sample_data_frame.R'
     'seconds_to_hms.R'
+    'thisfile.R'
     'tll.R'

@@ -1,0 +1,28 @@
+\name{thisfile}
+\alias{thisfile}
+\title{Determines the path of the currently running script}
+\usage{
+thisfile()
+}
+\value{
+The path of the currently running script, NULL if it cannot be
+  determined.
+}
+\description{
+\R does not store nor export the path of the currently running
+  script.  This is an attempt to circumvent this limitation by applying
+  heuristics (such as call stack and argument inspection) that work in many
+  cases.
+}
+\details{
+This function currently works only if the script was \code{source}d
+  or run with \code{Rscript} or using the \code{--file} parameter to the
+  \code{R} executable.
+}
+\examples{
+\dontrun{thisfile()}
+}
+\seealso{
+\link[base]{source}, \link[utils]{Rscript}, \link[base]{getwd}
+}
+
