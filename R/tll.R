@@ -18,6 +18,6 @@ tll <- function(l) {
   plyr::llply(
     setMissingNames(object=seq_along(l[[1]]), nm=names(l[[1]])),
     function (n)
-      llply(l, function(ll) ll[[n]])
+      plyr::llply(l, function(ll) ll[[n]])
   )
 }

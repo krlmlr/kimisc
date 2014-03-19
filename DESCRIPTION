@@ -9,10 +9,8 @@ Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
 Description: Intended to be a collection of more or less useful functions not
     found anywhere else
 License: GPL-3
-Depends:
-    logging (>= 0.4-13),
-    plyr,
-    methods
+Imports:
+    plyr
 Suggests:
     testthat
 Roxygen: list(wrap = FALSE)
