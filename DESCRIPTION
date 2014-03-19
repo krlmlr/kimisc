@@ -1,13 +1,13 @@
 Encoding: UTF-8
 Package: kimisc
 Type: Package
-Title: My first attempt to write an R package
+Title: Kirill's miscellaneous functions
 Version: 0.1.7
 Date: 2013-11-29
 Author: Kirill Müller
 Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
 Description: Intended to be a collection of more or less useful functions not
-    found in default R or anywhere else
+    found anywhere else
 License: GPL-3
 Depends:
     logging (>= 0.4-13),
