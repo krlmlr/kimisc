@@ -8,7 +8,7 @@
 #' @inheritParams base::diff
 #' @return If x is a vector of length \code{n} and \code{differences = 1}, then 
 #'   the computed result is equal to the successive differences 
-#'   \code{x[(1+lag):n] - x[1:(n-lag)]}.
+#'   \code{FUN(x[(1+lag):n], x[1:(n-lag)])}.
 #'   
 #'   If \code{difference} is larger than one this algorithm is applied 
 #'   recursively to \code{x}. Note that the returned value is a vector which is 
