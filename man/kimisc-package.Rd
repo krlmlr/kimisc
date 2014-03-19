@@ -17,9 +17,6 @@ This package is intended to be a collection of more or
   License: \tab GPL v3\cr
 }
 }
-\examples{
-data(fortytwo)
-}
 \author{
 Kirill Müller
 }
