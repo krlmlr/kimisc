@@ -17,10 +17,6 @@ env:
     - RELEASE=tags/R-3-0-2
     - RELEASE=tags/R-3-0-1
     - RELEASE=tags/R-3-0-0
-    - RELEASE=tags/R-2-15-3
-    - RELEASE=tags/R-2-15-2
-    - RELEASE=tags/R-2-15-1
-    - RELEASE=tags/R-2-15-0
 
 before_script:
   - ./travis-tool.sh dump_sysinfo
