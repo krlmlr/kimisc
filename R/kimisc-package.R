@@ -10,8 +10,8 @@
 #' \tabular{ll}{
 #'   Package: \tab kimisc\cr
 #'   Type: \tab Package\cr
-#'   Version: \tab 0.1.7\cr
-#'   Date: \tab 2013-11-29\cr
+#'   Version: \tab 0.2\cr
+#'   Date: \tab 2014-03-19\cr
 #'   License: \tab GPL v3\cr
 #' }
 NULL
