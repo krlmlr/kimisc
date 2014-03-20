@@ -5,8 +5,13 @@
 \alias{kimisc-package}
 \title{Kirill's miscellaneous functions}
 \description{
-This package a collection of more or less useful functions not
-  found anywhere else.
+A collection of useful functions not found anywhere else, mainly
+for programming: Generalized lagged differences, checking containment in an
+interval, creating a factor where the levels maintain the order of appearance,
+sampling rows from a data frame, converting seconds from midnight to and from
+H:M:S format, choosing the first non-NA value, transposing lists of lists,
+returning the name of the file currently sourced, smart named lists and
+vectors, and an alternative interface to assign().
 }
 \details{
 \tabular{ll}{
