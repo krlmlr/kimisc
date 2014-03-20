@@ -1,26 +1,30 @@
-# NEWS
+- Cleanup for CRAN release
 
-## Version 0.1.7
+Version 0.1.7
+===
 
 - New function `thisfile`: Returns a guess for the path of the currently
   executed script
 
 - Removed all dependencies to Rcpp
 
-## Version 0.1.6
+Version 0.1.6
+===
 
 - Removed useless Rcpp "Hello World" code
 
 - New function `ofactor`: Creates a factor that maintains the order of levels
   in the data
 
-## Version 0.1.5
+Version 0.1.5
+===
 
 - Remove functions `tc` and `tlist`, they're now part of the sweetnR package
 
 - New function `tll`: Transposes a list of lists
 
-## Version 0.1.4
+Version 0.1.4
+===
 
 - Added functions:
     - `sample.rows`
