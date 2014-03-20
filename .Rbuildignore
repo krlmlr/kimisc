@@ -6,3 +6,4 @@
 ^NEWS\.md\.tmpl$
 ^tools$
 ^\.travis\.yml$
+^Makefile$
