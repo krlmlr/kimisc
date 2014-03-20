@@ -6,7 +6,7 @@
 nc(...)
 }
 \arguments{
-  \item{...}{Vector elements, possibly named}
+\item{...}{Vector elements, possibly named}
 }
 \value{
 A named vector.

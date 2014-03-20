@@ -6,15 +6,14 @@
 sample.rows(x, size, replace = FALSE, prob = NULL)
 }
 \arguments{
-  \item{x}{A data frame.}
+\item{x}{A data frame.}
 
-  \item{size}{A non-negative integer giving the number of
-  items to choose.}
+\item{size}{A non-negative integer giving the number of items to choose.}
 
-  \item{replace}{Should sampling be with replacement?}
+\item{replace}{Should sampling be with replacement?}
 
-  \item{prob}{A vector of probability weights for obtaining
-  the rows of the data frame being sampled.}
+\item{prob}{A vector of probability weights for obtaining the rows of the
+data frame being sampled.}
 }
 \value{
 A data frame of the same shape as \code{x}.

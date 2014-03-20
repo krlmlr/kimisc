@@ -7,7 +7,7 @@
 hms.to.seconds(x)
 }
 \arguments{
-  \item{x}{A (vector of) strings in H:M:S format.}
+\item{x}{A (vector of) strings in H:M:S format.}
 }
 \value{
 A (vector of) integer values of the same length as \code{x}.

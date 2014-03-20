@@ -7,7 +7,7 @@
 seconds.to.hms(x)
 }
 \arguments{
-  \item{x}{A (vector of) numbers.}
+\item{x}{A (vector of) numbers.}
 }
 \value{
 A (vector of) character values of the same length as \code{x}.

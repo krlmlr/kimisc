@@ -6,11 +6,9 @@
 setMissingNames(object, nm)
 }
 \arguments{
-  \item{object}{an object for which a names attribute will
-  be meaningful}
+\item{object}{an object for which a names attribute will be meaningful}
 
-  \item{nm}{a character vector of names to assign to the
-  object}
+\item{nm}{a character vector of names to assign to the object}
 }
 \value{
 An object of the same sort as \code{object} with the new names

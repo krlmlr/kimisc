@@ -6,14 +6,13 @@
 export.list(arg.list, arg.names = names(arg.list), target.env = .GlobalEnv)
 }
 \arguments{
-  \item{arg.list}{list of objects, possibly named.}
+\item{arg.list}{list of objects, possibly named.}
 
-  \item{arg.names}{names to use for the items in the target
-  environment. Use the names of \code{arg.list} by
-  default.}
+\item{arg.names}{names to use for the items in the target environment. Use
+the names of \code{arg.list} by default.}
 
-  \item{target.env}{The target environment.  Use the global
-  environment by default.}
+\item{target.env}{The target environment.  Use the global environment by
+default.}
 }
 \value{
 Invisible \code{NULL}.

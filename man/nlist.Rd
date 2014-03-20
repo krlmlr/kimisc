@@ -6,7 +6,7 @@
 nlist(...)
 }
 \arguments{
-  \item{...}{List items, possibly named}
+\item{...}{List items, possibly named}
 }
 \value{
 A named list.

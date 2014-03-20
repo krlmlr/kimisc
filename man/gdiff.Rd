@@ -6,19 +6,16 @@
 gdiff(x, lag = 1L, differences = 1L, FUN = `-`, ...)
 }
 \arguments{
-  \item{FUN}{A distance function that accepts two
-  parameters}
+\item{FUN}{A distance function that accepts two parameters}
 
-  \item{...}{further arguments to be passed to or from
-  methods.}
+\item{...}{further arguments to be passed to or from methods.}
 
-  \item{x}{a numeric vector or matrix containing the values
-  to be differenced.}
+\item{x}{a numeric vector or matrix containing the values to be
+    differenced.}
 
-  \item{lag}{an integer indicating which lag to use.}
+\item{lag}{an integer indicating which lag to use.}
 
-  \item{differences}{an integer indicating the order of the
-  difference.}
+\item{differences}{an integer indicating the order of the difference.}
 }
 \value{
 If x is a vector of length \code{n} and \code{differences = 1}, then

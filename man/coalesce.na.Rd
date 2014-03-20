@@ -6,9 +6,9 @@
 coalesce.na(x, ...)
 }
 \arguments{
-  \item{x}{The first value to coalesce.}
+\item{x}{The first value to coalesce.}
 
-  \item{...}{Other values to coalesce.}
+\item{...}{Other values to coalesce.}
 }
 \value{
 A vector of the same length as \code{x}.

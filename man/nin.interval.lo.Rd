@@ -6,12 +6,12 @@
 nin.interval.lo(x, lo, hi)
 }
 \arguments{
-  \item{x}{A vector of values. (Lists will be coerced to a
-  numeric vector.)}
+\item{x}{A vector of values. (Lists will be coerced to a numeric
+vector.)}
 
-  \item{lo}{Left end of the interval.}
+\item{lo}{Left end of the interval.}
 
-  \item{hi}{Right end of the interval.}
+\item{hi}{Right end of the interval.}
 }
 \value{
 A boolean vector of the same length as \code{x}.

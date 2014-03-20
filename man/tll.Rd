@@ -6,7 +6,7 @@
 tll(l)
 }
 \arguments{
-  \item{l}{List of lists, possibly named.}
+\item{l}{List of lists, possibly named.}
 }
 \value{
 A list of lists corresponding to a transposition of the argument.
