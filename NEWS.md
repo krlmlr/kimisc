@@ -1,3 +1,6 @@
+Version 2.0 (2014-03-20)
+===
+
 - Cleanup for CRAN release
 
 Version 0.1.7
