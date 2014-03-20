@@ -3,5 +3,6 @@
 ^\.gitignore$
 ^README\.md$
 ^NEWS\.md$
+^NEWS\.md\.tmpl$
 ^tools$
 ^\.travis\.yml$
