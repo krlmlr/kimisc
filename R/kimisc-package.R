@@ -2,8 +2,8 @@
 #' @aliases kimisc
 #' @docType package
 #' @title Kirill's miscellaneous functions
-#' @description This package is intended to be a collection of more or 
-#'   less useful functions not found anywhere else.
+#' @description This package a collection of more or less useful functions not
+#'   found anywhere else.
 #' @author Kirill Müller
 #' @keywords package
 #' @details

@@ -5,8 +5,8 @@
 \alias{kimisc-package}
 \title{Kirill's miscellaneous functions}
 \description{
-This package is intended to be a collection of more or
-  less useful functions not found anywhere else.
+This package a collection of more or less useful functions not
+  found anywhere else.
 }
 \details{
 \tabular{ll}{
