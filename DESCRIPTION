@@ -4,8 +4,8 @@ Type: Package
 Title: Kirill's miscellaneous functions
 Version: 0.2
 Date: 2014-03-20
-Author: Kirill Müller
-Maintainer: Kirill Müller <mail@kirill-mueller.de>
+Author: Kirill Mueller
+Maintainer: Kirill Mueller <mail@kirill-mueller.de>
 Description: Intended to be a collection of more or less useful functions not
     found anywhere else
 License: GPL-3
