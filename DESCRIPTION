@@ -5,7 +5,7 @@ Title: Kirill's miscellaneous functions
 Version: 0.2
 Date: 2014-03-20
 Author: Kirill Müller
-Maintainer: Kirill Müller <kirill.mueller@ivt.baug.ethz.ch>
+Maintainer: Kirill Müller <mail@kirill-mueller.de>
 Description: Intended to be a collection of more or less useful functions not
     found anywhere else
 License: GPL-3
@@ -13,6 +13,8 @@ Imports:
     plyr
 Suggests:
     testthat
+URL: https://github.com/krlmlr/kimisc
+BugReports: https://github.com/krlmlr/kimisc/issues
 Roxygen: list(wrap = FALSE)
 Collate:
     'coalesce_na.R'
