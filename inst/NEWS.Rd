@@ -1,6 +1,11 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
+\section{Changes in kimisc version 0.2 (2014-03-20)}{
+  \itemize{
+    \item Cleanup for CRAN release
+  }
+}
 \section{Changes in kimisc version 0.1.7}{
   \itemize{
     \item New function \code{thisfile}: Returns a guess for the path of the currently
