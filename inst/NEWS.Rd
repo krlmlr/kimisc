@@ -4,6 +4,7 @@
 \section{Changes in kimisc version 0.2 (2014-03-20)}{
   \itemize{
     \item Cleanup for CRAN release
+    \item Requires R 3.0.0
   }
 }
 \section{Changes in kimisc version 0.1.7}{

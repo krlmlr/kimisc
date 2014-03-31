@@ -3,6 +3,8 @@ Version 0.2 (2014-03-20)
 
 - Cleanup for CRAN release
 
+- Requires R 3.0.0
+
 Version 0.1.7
 ===
 
