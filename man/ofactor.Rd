@@ -6,25 +6,21 @@
 ofactor(x = character(), ...)
 }
 \arguments{
-\item{x}{Other arguments passed to \link[base]{factor}}
+\item{x}{A vector of data, usually taking a small number of distinct values.}
 
-\item{...}{(in \code{ordered(.)}): any of the above, apart from
-    \code{ordered} itself.}
+\item{...}{Other arguments passed on to \code{\link[base]{factor}}.}
 }
 \value{
-A factor. See \link[base]{factor} for details.
+A factor. See \code{\link[base]{factor}} for details.
 }
 \description{
 The function \code{ofactor} is a convenience wrapper for
   \code{factor} that orders the levels as they appear in the data if the
-  \code{levels} argument is not specified
+  \code{levels} argument is not specified.
 }
 \examples{
 ofactor(3:1)
 ofactor(9:12, exclude=11)
 ofactor(3:1, levels=1:3)
-}
-\seealso{
-\link[base]{factor}
 }
 
