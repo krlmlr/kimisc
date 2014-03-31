@@ -1,6 +1,13 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
+\section{Changes in kimisc version 0.2-1 (2014-03-31)}{
+  \itemize{
+    \item Function \code{ofactor} now uses \code{...} instead of explicit argument list (making it
+      compatible to R 2.15.3 and future versions of R), and accepts \code{levels}
+      argument (works like \code{factor} then)
+  }
+}
 \section{Changes in kimisc version 0.2 (2014-03-20)}{
   \itemize{
     \item Cleanup for CRAN release

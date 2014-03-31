@@ -3,32 +3,26 @@
 \alias{ofactor}
 \title{Order-preserving factors}
 \usage{
-ofactor(x = character(), exclude = NA, ordered = is.ordered(x),
-  nmax = NA)
+ofactor(x = character(), ...)
 }
 \arguments{
-\item{x}{a vector of data, usually taking a small number of distinct
-    values.}
+\item{x}{Other arguments passed to \link[base]{factor}}
 
-\item{exclude}{a vector of values to be excluded when forming the
-    set of levels.  This should be of the same type as \code{x}, and
-    will be coerced if necessary.}
-
-\item{ordered}{logical flag to determine if the levels should be regarded
-    as ordered (in the order given).}
-
-\item{nmax}{an upper bound on the number of levels; see \sQuote{Details}.}
+\item{...}{(in \code{ordered(.)}): any of the above, apart from
+    \code{ordered} itself.}
 }
 \value{
 A factor. See \link[base]{factor} for details.
 }
 \description{
-The function \code{ofactor} is similar to \code{factor}, but
-  orders the levels as they appear in the data
+The function \code{ofactor} is a convenience wrapper for
+  \code{factor} that orders the levels as they appear in the data if the
+  \code{levels} argument is not specified
 }
 \examples{
 ofactor(3:1)
 ofactor(9:12, exclude=11)
+ofactor(3:1, levels=1:3)
 }
 \seealso{
 \link[base]{factor}

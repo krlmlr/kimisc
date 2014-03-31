@@ -1,16 +1,14 @@
 kimisc [![Build Status](https://travis-ci.org/krlmlr/kimisc.png?branch=master)](https://travis-ci.org/krlmlr/kimisc)
 ======
 
-My first attempt to create an R package. Install using
+A collection of useful functions not found anywhere else. Install from CRAN using
 
 ```
-library(devtools)
-install_github('kimisc', 'krlmlr')
+install.packages('kimisc')
 ```
 
-or (with `devtools` 1.4 or later)
+or the lastest development version (with `devtools` 1.4 or later)
 
 ```
-library(devtools)
-install_github('krlmlr/kimisc')
+devtools::install_github('krlmlr/kimisc')
 ```

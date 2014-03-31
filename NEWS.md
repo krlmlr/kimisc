@@ -1,3 +1,10 @@
+Version 0.2-1 (2014-03-31)
+===
+
+- Function `ofactor` now uses `...` instead of explicit argument list (making it
+  compatible to R 2.15.3 and future versions of R), and accepts `levels`
+  argument (works like `factor` then)
+
 Version 0.2 (2014-03-20)
 ===
 
