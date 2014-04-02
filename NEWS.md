@@ -1,4 +1,4 @@
-Version 0.2-1 (2014-03-31)
+Version 0.2-1 (2014-04-02)
 ===
 
 - Function `ofactor` now uses `...` instead of explicit argument list (making it

@@ -1,7 +1,7 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
-\section{Changes in kimisc version 0.2-1 (2014-03-31)}{
+\section{Changes in kimisc version 0.2-1 (2014-04-02)}{
   \itemize{
     \item Function \code{ofactor} now uses \code{...} instead of explicit argument list (making it
       compatible to R 2.15.3 and future versions of R), and accepts \code{levels}
