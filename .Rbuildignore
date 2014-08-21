@@ -1,5 +1,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^rename$
 ^\.gitignore$
-^README.md$
+^README\.md$
+^NEWS\.md$
+^NEWS\.md\.tmpl$
+^tools$
+^\.travis\.yml$
+^Makefile$

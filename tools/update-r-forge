@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Terminate on error
+set -e
+set -o pipefail
+
+branch_name=r-forge
+master_name=master
+current_branch=$(git status -b --porcelain | head -n 1 | cut -d " " -f 2 | cut -d "." -f 1)
+
+
+fatal()
+{
+  [ -n "$2" ] && echo "$2" >> /dev/stderr
+  exit $1
+}
+
+
+check_clean_wc()
+{
+  scm_status=$(git status --porcelain)
+
+  if [ -n "$scm_status" ]
+  then
+    fatal 2 "Working copy is not clean. Exiting."
+  fi
+}
+
+
+check_clean_wc
+
+git checkout $branch_name
+git svn rebase
+git merge --no-ff --log=9999999 --no-edit $master_name
+git svn dcommit
+git checkout $current_branch
+

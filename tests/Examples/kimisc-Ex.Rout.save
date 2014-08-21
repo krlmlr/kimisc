@@ -1,0 +1,454 @@
+
+R version 3.1.0 beta (2014-03-28 r65330) -- "Spring Dance"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "kimisc"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('kimisc')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("coalesce.na")
+> ### * coalesce.na
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: coalesce.na
+> ### Title: Replaces NA values
+> ### Aliases: coalesce.na
+> 
+> ### ** Examples
+> 
+> coalesce.na(NA, -1)
+[1] -1
+> coalesce.na(5, 3)
+[1] 5
+> coalesce.na(c(1,NA,NA), c(NA,2))
+Warning in coalesce.na(c(1, NA, NA), c(NA, 2)) :
+  object length is not a multiple of first object length
+[1]  1  2 NA
+> coalesce.na(matrix(c(NA, 1:3), nrow=2))
+     [,1] [,2]
+[1,]   NA    2
+[2,]    1    3
+> coalesce.na(NA)
+[1] NA
+> 
+> 
+> 
+> cleanEx()
+> nameEx("export")
+> ### * export
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: export
+> ### Title: Exports to an environment
+> ### Aliases: export
+> 
+> ### ** Examples
+> 
+> local({
++   newly.created.var <- 5
++   export(newly.created.var)
++ })
+> newly.created.var
+[1] 5
+> rm(newly.created.var)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("export.list")
+> ### * export.list
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: export.list
+> ### Title: Exports to an environment
+> ### Aliases: export.list
+> 
+> ### ** Examples
+> 
+> export.list(list(newly.created.var=5))
+> newly.created.var
+[1] 5
+> rm(newly.created.var)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("gdiff")
+> ### * gdiff
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: gdiff
+> ### Title: Generalized lagged differences
+> ### Aliases: gdiff
+> 
+> ### ** Examples
+> 
+> gdiff(1:4)
+[1] 1 1 1
+> gdiff(1:4, FUN = `/`)
+[1] 2.000000 1.500000 1.333333
+> 
+> 
+> 
+> cleanEx()
+> nameEx("hms.to.seconds")
+> ### * hms.to.seconds
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: hms.to.seconds
+> ### Title: Converts a time value given in H:M:S format to the number of
+> ###   seconds since midnight
+> ### Aliases: hms.to.seconds
+> 
+> ### ** Examples
+> 
+> hms.to.seconds(c("00:00:01", "00:01:00", "01:00:00"))
+[1]    1   60 3600
+> hms.to.seconds(c("25:15:00", "23:78:101"))
+[1] 90900 87581
+> hms.to.seconds("invalid")
+Warning in hms.to.seconds("invalid") : NAs introduced by coercion
+[1] NA
+> 
+> 
+> 
+> cleanEx()
+> nameEx("in.interval.lo")
+> ### * in.interval.lo
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: in.interval.lo
+> ### Title: Checks if values are contained in an interval (open on the left)
+> ### Aliases: in.interval.lo
+> 
+> ### ** Examples
+> 
+> in.interval.lo(c(-1, 0, 1, 2), 0, 1)
+[1] FALSE FALSE  TRUE FALSE
+> in.interval.lo(NA, 1, 3)
+[1] FALSE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("in.interval.ro")
+> ### * in.interval.ro
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: in.interval.ro
+> ### Title: Checks if values are contained in an interval (open on the
+> ###   right)
+> ### Aliases: in.interval.ro
+> 
+> ### ** Examples
+> 
+> in.interval.ro(c(-1, 0, 1, 2), 0, 1)
+[1] FALSE  TRUE FALSE FALSE
+> in.interval.ro(NA, 1, 3)
+[1] FALSE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("nc")
+> ### * nc
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: nc
+> ### Title: Smart named vector
+> ### Aliases: nc
+> 
+> ### ** Examples
+> 
+> a <- 1; b <- 2; c <- 3
+> nc(a, b, d=c)
+a b d 
+1 2 3 
+> nc(mean(c(a, b, c)))
+mean(c(a, b, c)) 
+               2 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("nin.interval.lo")
+> ### * nin.interval.lo
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: nin.interval.lo
+> ### Title: Checks if values are outside of an interval (open on the left)
+> ### Aliases: nin.interval.lo
+> 
+> ### ** Examples
+> 
+> nin.interval.lo(c(-1, 0, 1, 2), 0, 1)
+[1]  TRUE  TRUE FALSE  TRUE
+> nin.interval.lo(NA, 1, 3)
+[1] TRUE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("nin.interval.ro")
+> ### * nin.interval.ro
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: nin.interval.ro
+> ### Title: Checks if values are outside of an interval (open on the right)
+> ### Aliases: nin.interval.ro
+> 
+> ### ** Examples
+> 
+> nin.interval.ro(c(-1, 0, 1, 2), 0, 1)
+[1]  TRUE FALSE  TRUE  TRUE
+> nin.interval.ro(NA, 1, 3)
+[1] TRUE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("nlist")
+> ### * nlist
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: nlist
+> ### Title: Smart named list
+> ### Aliases: nlist
+> 
+> ### ** Examples
+> 
+> a <- 1; b <- 2; c <- 3
+> nlist(a, b, d=c)
+$a
+[1] 1
+
+$b
+[1] 2
+
+$d
+[1] 3
+
+> nlist(mean(c(a, b, c)))
+$`mean(c(a, b, c))`
+[1] 2
+
+> 
+> 
+> 
+> cleanEx()
+> nameEx("ofactor")
+> ### * ofactor
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: ofactor
+> ### Title: Order-preserving factors
+> ### Aliases: ofactor
+> 
+> ### ** Examples
+> 
+> ofactor(3:1)
+[1] 3 2 1
+Levels: 3 2 1
+> ofactor(9:12, exclude=11)
+[1] 9    10   <NA> 12  
+Levels: 9 10 12
+> identical(ofactor(3:1, levels=1:3), factor(3:1))
+[1] TRUE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("sample-methos")
+> ### * sample-methos
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: sample.rows
+> ### Title: Random Samples and Permutations for Data Frames
+> ### Aliases: sample.rows
+> 
+> ### ** Examples
+> 
+> set.seed(42)
+> sample.rows(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
+    a b
+c   3 6
+c.1 3 6
+a   1 4
+c.2 3 6
+b   2 5
+b.1 2 5
+c.3 3 6
+a.1 1 4
+b.2 2 5
+c.4 3 6
+> 
+> 
+> 
+> cleanEx()
+> nameEx("seconds.to.hms")
+> ### * seconds.to.hms
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: seconds.to.hms
+> ### Title: Converts a time value given as number of seconds since midnight
+> ###   to the H:M:S format
+> ### Aliases: seconds.to.hms
+> 
+> ### ** Examples
+> 
+> seconds.to.hms(c(1, 60, 3600.5))
+[1] "00:00:01" "00:01:00" "01:00:00"
+> seconds.to.hms(c(100000, -4000.5))
+[1] "27:46:40"  "-01:06:41"
+> seconds.to.hms("invalid")
+Warning in seconds.to.hms("invalid") : NAs introduced by coercion
+[1] NA
+> 
+> 
+> 
+> cleanEx()
+> nameEx("setMissingNames")
+> ### * setMissingNames
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: setMissingNames
+> ### Title: Set the Missing Names in an Object
+> ### Aliases: setMissingNames
+> 
+> ### ** Examples
+> 
+> setMissingNames(c(a=1, b=2, 3), letters[2:4])
+a b d 
+1 2 3 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("thisfile")
+> ### * thisfile
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: thisfile
+> ### Title: Determines the path of the currently running script
+> ### Aliases: thisfile
+> 
+> ### ** Examples
+> 
+> ## Not run: thisfile()
+> 
+> 
+> 
+> cleanEx()
+> nameEx("tll")
+> ### * tll
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: tll
+> ### Title: Transposes a list of lists
+> ### Aliases: tll
+> 
+> ### ** Examples
+> 
+> tll(list(list(1, 2), list(3, 4)))
+[[1]]
+[[1]][[1]]
+[1] 1
+
+[[1]][[2]]
+[1] 3
+
+
+[[2]]
+[[2]][[1]]
+[1] 2
+
+[[2]][[2]]
+[1] 4
+
+
+> tll(list(list(a=1, b=2), list(a=3, b=4)))
+$a
+$a[[1]]
+[1] 1
+
+$a[[2]]
+[1] 3
+
+
+$b
+$b[[1]]
+[1] 2
+
+$b[[2]]
+[1] 4
+
+
+> tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
+$a
+$a$x
+[1] 1
+
+$a$y
+[1] 3
+
+
+$b
+$b$x
+[1] 2
+
+$b$y
+[1] 4
+
+
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.245 0.003 0.248 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
