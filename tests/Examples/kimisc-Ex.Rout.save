@@ -1,5 +1,5 @@
 
-R version 3.1.0 beta (2014-03-28 r65330) -- "Spring Dance"
+R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
 Copyright (C) 2014 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -364,7 +364,7 @@ a b d
 > 
 > ### Name: thisfile
 > ### Title: Determines the path of the currently running script
-> ### Aliases: thisfile
+> ### Aliases: thisfile thisfile_knit thisfile_rscript thisfile_source
 > 
 > ### ** Examples
 > 
