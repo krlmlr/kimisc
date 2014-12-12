@@ -1,6 +1,11 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
+\section{Changes in kimisc version 0.2-1.2 (2014-12-12)}{
+  \itemize{
+    \item Fix CRAN checks.
+  }
+}
 \section{Changes in kimisc version 0.2-1.1 (2014-12-12)}{
   \itemize{
     \item determine knitr input via \code{knitr::current_input} (#6)
