@@ -1,6 +1,12 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
+\section{Changes in kimisc version 0.2-1.1 (2014-12-12)}{
+  \itemize{
+    \item determine knitr input via \code{knitr::current_input} (#6)
+    \item export all helper functions used by \code{thisfile}
+  }
+}
 \section{Changes in kimisc version 0.2-1 (2014-04-02)}{
   \itemize{
     \item Function \code{ofactor} now uses \code{...} instead of explicit argument list (making it
