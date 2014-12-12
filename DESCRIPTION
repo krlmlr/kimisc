@@ -19,8 +19,7 @@ Imports:
     plyr
 Suggests:
     testthat
-Enhances:
-    knitr
+Enhances: knitr
 URL: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
 Roxygen: list(wrap = FALSE)
