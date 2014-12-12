@@ -1,3 +1,6 @@
+- determine knitr input via `knitr::current_input` (#6)
+- export all helper functions used by `thisfile`
+
 Version 0.2-1 (2014-04-02)
 ===
 
