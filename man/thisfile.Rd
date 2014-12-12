@@ -2,9 +2,18 @@
 % Please edit documentation in R/thisfile.R
 \name{thisfile}
 \alias{thisfile}
+\alias{thisfile_knit}
+\alias{thisfile_rscript}
+\alias{thisfile_source}
 \title{Determines the path of the currently running script}
 \usage{
 thisfile()
+
+thisfile_source()
+
+thisfile_rscript()
+
+thisfile_knit()
 }
 \value{
 The path of the currently running script, NULL if it cannot be
@@ -17,7 +26,8 @@ The path of the currently running script, NULL if it cannot be
   cases.
 }
 \details{
-This function currently works only if the script was \code{source}d
+This functions currently work only if the script was \code{source}d,
+  processed with \code{knitr},
   or run with \code{Rscript} or using the \code{--file} parameter to the
   \code{R} executable.  For code run with \code{Rscript}, the exact value
   of the parameter passed to \code{Rscript} is returned.
