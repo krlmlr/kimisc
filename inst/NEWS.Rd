@@ -1,6 +1,11 @@
 \name{NEWS}
 \title{News for Package 'kimisc'}
 \encoding{UTF-8}
+\section{Changes in kimisc version 0.2-1.3 (2014-12-18)}{
+  \itemize{
+    \item first implementation of vecctorized switch function \code{vswitch}
+  }
+}
 \section{Changes in kimisc version 0.2-1.2 (2014-12-12)}{
   \itemize{
     \item Fix CRAN checks.
