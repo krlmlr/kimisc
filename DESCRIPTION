@@ -16,7 +16,8 @@ Description: A collection of useful functions not found anywhere else, mainly
     assign().
 License: GPL-3
 Imports:
-    plyr
+    plyr,
+    pryr
 Suggests:
     testthat
 Enhances: knitr
