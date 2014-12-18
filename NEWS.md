@@ -1,3 +1,6 @@
+Version 0.2-1.4 (2014-12-18)
+===
+
 - Fix CRAN checks.
 
 Version 0.2-1.3 (2014-12-18)

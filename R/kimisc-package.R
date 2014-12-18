@@ -15,7 +15,7 @@
 #' \tabular{ll}{
 #'   Package: \tab kimisc\cr
 #'   Type: \tab Package\cr
-#'   Version: \tab 0.2-1.3\cr
+#'   Version: \tab 0.2-1.4\cr
 #'   Date: \tab 2014-12-18\cr
 #'   License: \tab GPL v3\cr
 #' }
