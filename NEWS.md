@@ -1,3 +1,6 @@
+Version 0.2-1.3 (2014-12-18)
+===
+
 - first implementation of vecctorized switch function `vswitch`
 
 Version 0.2-1.2 (2014-12-12)

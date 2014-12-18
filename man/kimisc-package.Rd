@@ -18,8 +18,8 @@ vectors, and an alternative interface to assign().
 \tabular{ll}{
   Package: \tab kimisc\cr
   Type: \tab Package\cr
-  Version: \tab 0.2-1.2\cr
-  Date: \tab 2014-12-12\cr
+  Version: \tab 0.2-1.3\cr
+  Date: \tab 2014-12-18\cr
   License: \tab GPL v3\cr
 }
 }
