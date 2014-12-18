@@ -9,7 +9,6 @@
 #' tll(list(list(1, 2), list(3, 4)))
 #' tll(list(list(a=1, b=2), list(a=3, b=4)))
 #' tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
-#' @include nlist.R
 #' @export
 tll <- function(l) {
   if (length(l) == 0)

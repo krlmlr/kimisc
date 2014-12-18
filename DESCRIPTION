@@ -23,16 +23,3 @@ Enhances: knitr
 URL: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
 Roxygen: list(wrap = FALSE)
-Collate:
-    'coalesce_na.R'
-    'export.R'
-    'gdiff.R'
-    'hms_to_seconds.R'
-    'in_interval.R'
-    'kimisc-package.R'
-    'nlist.R'
-    'ofactor.R'
-    'sample_data_frame.R'
-    'seconds_to_hms.R'
-    'thisfile.R'
-    'tll.R'
