@@ -7,3 +7,4 @@
 ^tools$
 ^\.travis\.yml$
 ^Makefile$
+^appveyor\.yml$
