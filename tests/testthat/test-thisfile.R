@@ -1,11 +1,11 @@
 context("thisfile")
 
-test_that("thisfile works with source", if (FALSE) {
+test_that("thisfile works with source", {
   res <- source("scripts/thisfile.R")
   expect_true(grepl("thisfile.R$", res$value))
 })
 
-test_that("thisfile works with Rscript", if (FALSE) {
+test_that("thisfile works with Rscript", {
   p <- pipe("Rscript scripts/thisfile-cat.R")
   on.exit(close(p))
   res <- readLines(p)
