@@ -31,14 +31,12 @@ gdiff <- function(x, lag = 1L, differences = 1L, FUN = `-`, ...) {
     stop("'lag' and 'differences' must be integers >= 1")
   if (lag * differences >= xlen) 
     return(x[0L])
-  r <- unclass(x)
   i1 <- -seq_len(lag)
   if (ismat) 
     for (i in seq_len(differences))
-      r <- FUN(r[i1, , drop = FALSE], r[-nrow(r):-(nrow(r) - lag + 1L), , drop = FALSE])
+      x <- FUN(x[i1, , drop = FALSE], x[-nrow(x):-(nrow(x) - lag + 1L), , drop = FALSE])
   else
     for (i in seq_len(differences))
-      r <- FUN(r[i1], r[-length(r):-(length(r) - lag + 1L)])
-  class(r) <- oldClass(x)
-  r
+      x <- FUN(x[i1], x[-length(x):-(length(x) - lag + 1L)])
+  x
 }
