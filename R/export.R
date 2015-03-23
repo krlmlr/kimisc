@@ -1,7 +1,7 @@
 #' @title Exports to an environment
-#' @description This function is a wrapper around \code{\link{assign}} that 
+#' @description This function is a wrapper around \code{\link{assign}} that
 #'   exports the contents of a named list to an environment.  The variable names
-#'   in the target environment are constructed from the names of the list items 
+#'   in the target environment are constructed from the names of the list items
 #'   or taken from a separate argument.
 #' @param arg.list list of objects, possibly named.
 #' @param arg.names names to use for the items in the target environment. Use
@@ -24,7 +24,7 @@ export.list <- function(arg.list, arg.names=names(arg.list), target.env=.GlobalE
 }
 
 #' @title Exports to an environment
-#' @description This function is a wrapper around \code{\link{export.list}} that 
+#' @description This function is a wrapper around \code{\link{export.list}} that
 #'   exports variables by their name to another environment.
 #' @param ... variables to be exported.
 #' @param target.env The target environment.  Use the global environment by

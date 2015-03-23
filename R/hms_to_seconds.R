@@ -1,4 +1,4 @@
-#' @title Converts a time value given in H:M:S format to the number of seconds 
+#' @title Converts a time value given in H:M:S format to the number of seconds
 #'   since midnight
 #' @description This function is very similar to \code{strptime} with the
 #'   \code{\%X} conversion specification. Anything with three numbers between

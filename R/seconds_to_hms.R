@@ -1,7 +1,7 @@
 #' @title Converts a time value given as number of seconds since midnight to the
 #'   H:M:S format
-#' @description This function is very similar to \code{strftime} with the 
-#'   \code{\%X} conversion specification. Hour values larger than 24 are 
+#' @description This function is very similar to \code{strftime} with the
+#'   \code{\%X} conversion specification. Hour values larger than 24 are
 #'   permitted. Fractions will be rounded down to the next integer. Non-numeric
 #'   values are coerced to \code{NA} with a warning.
 #' @param x A (vector of) numbers.
@@ -15,7 +15,7 @@
 seconds.to.hms <- function(x) {
   if (!is.integer(x))
     x <- as.integer(floor(as.numeric(x)))
-  
+
   hours <- as.integer(trunc(x / 3600))
   x <- x - hours * 3600L
   stopifnot(is.integer(x))

@@ -53,7 +53,7 @@ setMissingNames <- function(object, nm) {
   } else {
     missing_names <- names(object) == ""
   }
-  
+
   names(object)[missing_names] <- nm[missing_names]
   object
 }
