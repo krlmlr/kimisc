@@ -16,6 +16,7 @@ before_script:
   - ./travis-tool.sh dump_sysinfo
 after_success:
   - Rscript -e 'library(covr);coveralls()'
+  - Rscript -e 'lintr::lint_package()'
   - ./travis-tool.sh dump_logs_by_extension out
 after_error:
   - ./travis-tool.sh dump_logs
@@ -56,7 +57,7 @@ install:
      sudo make install
    ); fi
   - ./travis-tool.sh r_binary_install RUnit inline highlight XML
-  - ./travis-tool.sh install_github hadley/testthat jimhester/covr
+  - ./travis-tool.sh install_github hadley/testthat jimhester/covr jimhester/lintr
   - ./travis-tool.sh install_deps
 notifications:
   email:
