@@ -1,6 +1,7 @@
 - `gdiff` does not attempt to maintain class information, the function is
   supposed to do this
 - `gdiff` accepts a factor as input
+- use AppVeyor (checks on Windows) and Coveralls (coverage analysis)
 
 Version 0.2-1.4 (2014-12-18)
 ===
