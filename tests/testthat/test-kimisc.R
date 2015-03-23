@@ -1,6 +1,3 @@
-context("example")
+context("examples")
 
-test_that("empty test to satisfy R CMD check", {
-  expect_equal(2 * 2, 4)
-})
-
+testthat::test_examples()
