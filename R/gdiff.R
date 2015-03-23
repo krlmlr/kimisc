@@ -33,8 +33,10 @@ gdiff <- function(x, lag = 1L, differences = 1L, FUN = `-`, ...) {
     return(x[0L])
   i1 <- -seq_len(lag)
   if (ismat)
-    for (i in seq_len(differences))
-      x <- FUN(x[i1, , drop = FALSE], x[-nrow(x):-(nrow(x) - lag + 1L), , drop = FALSE])
+    for (i in seq_len(differences)) {
+      x <- FUN(x[i1, , drop = FALSE],
+               x[-nrow(x):-(nrow(x) - lag + 1L), , drop = FALSE])
+    }
   else
     for (i in seq_len(differences))
       x <- FUN(x[i1], x[-length(x):-(length(x) - lag + 1L)])

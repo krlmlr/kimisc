@@ -15,12 +15,12 @@
 #' hms.to.seconds("invalid")
 #' @export
 hms.to.seconds <- function(x) {
-  re <- '^([0-9]+):([0-9]+):([0-9]+)|.*$'
-  hours <- as.integer(gsub(re, '\\1', x))
-  minutes <- as.integer(gsub(re, '\\2', x))
-  seconds <- as.integer(gsub(re, '\\3', x))
+  re <- "^([0-9]+):([0-9]+):([0-9]+)|.*$"
+  hours <- as.integer(gsub(re, "\\1", x))
+  minutes <- as.integer(gsub(re, "\\2", x))
+  seconds <- as.integer(gsub(re, "\\3", x))
   res <- hours * 3600 + minutes * 60 + seconds
   if (any(is.na(res)))
-    warning('NAs introduced by coercion')
+    warning("NAs introduced by coercion")
   res
 }

@@ -22,7 +22,7 @@ seconds.to.hms <- function(x) {
   minutes <- as.integer(trunc(x / 60))
   seconds <- x - minutes * 60L
   stopifnot(is.integer(seconds))
-  ret <- sprintf('%.2d:%.2d:%.2d', hours, abs(minutes), abs(seconds))
+  ret <- sprintf("%.2d:%.2d:%.2d", hours, abs(minutes), abs(seconds))
   ret[is.na(x)] <- NA
   ret
 }

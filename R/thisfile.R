@@ -37,10 +37,12 @@ thisfile_source <- function() {
 #' @rdname thisfile
 #' @export
 thisfile_rscript <- function() {
-  cmdArgs <- commandArgs(trailingOnly = FALSE)
-  cmdArgsTrailing <- commandArgs(trailingOnly = TRUE)
-  cmdArgs <- cmdArgs[seq.int(from=1, length.out=length(cmdArgs) - length(cmdArgsTrailing))]
-  res <- gsub("^(?:--file=(.*)|.*)$", "\\1", cmdArgs)
+  cmd_args <- commandArgs(trailingOnly = FALSE)
+  cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
+  leading_idx <-
+    seq.int(from=1, length.out=length(cmd_args) - length(cmd_args_trailing))
+  cmd_args <- cmd_args[leading_idx]
+  res <- gsub("^(?:--file=(.*)|.*)$", "\\1", cmd_args)
 
   # If multiple --file arguments are given, R uses the last one
   res <- tail(res[res != ""], 1)

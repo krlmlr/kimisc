@@ -23,9 +23,10 @@ coalesce.na <- function(x, ...) {
       x[is.na(x)] <- y
     } else {
       if (x.len %% y.len != 0)
-        warning('object length is not a multiple of first object length')
+        warning("object length is not a multiple of first object length")
       pos <- which(is.na(x))
-      x[pos] <- y[(pos - 1) %% y.len + 1]
+      ypos <- (pos - 1) %% y.len + 1
+      x[pos] <- y[ypos]
     }
   }
   x
