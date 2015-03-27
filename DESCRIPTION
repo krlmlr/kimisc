@@ -19,7 +19,7 @@ Imports:
     plyr,
     pryr
 Suggests:
-    testthat
+    testthat (>= 0.9.1.9000)
 Enhances: knitr
 URL: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
