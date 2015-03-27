@@ -11,4 +11,4 @@ test:
   override:
     - docker run rocker/r-devel pwd
     - docker run rocker/r-devel ls
-    - docker run rocker/r-devel R CMD build .
+    - docker run rocker/r-devel -v .:/checkout -w /checkout R CMD build .
