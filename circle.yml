@@ -5,10 +5,8 @@ machine:
 
 dependencies:
   override:
-    - docker pull rocker/r-devel
+    - docker pull rocker/hadleyverse
 
 test:
   override:
-    - docker run rocker/r-devel pwd
-    - docker run rocker/r-devel ls
-    - docker run -v $PWD:/checkout -w /checkout rocker/r-devel make test
+    - docker run -v $PWD:/checkout -w /checkout rocker/hadleyverse make test
