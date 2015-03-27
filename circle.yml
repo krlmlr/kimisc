@@ -1,0 +1,8 @@
+# circle.yml
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - docker run rocker/r-devel R CMD build .
