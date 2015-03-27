@@ -9,4 +9,4 @@ dependencies:
 
 test:
   override:
-    - docker run -v $PWD:/checkout -w /checkout rocker/hadleyverse make test
+    - docker run -v $PWD:/checkout -w /checkout rocker/hadleyverse make install test
