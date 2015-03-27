@@ -9,7 +9,7 @@ dependencies:
 
   override:
     - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
-    - docker pull rocker/r-devel .
+    - docker pull rocker/r-devel
     - if ! [[ -e ~/docker/image.tar ]]; then mkdir -p ~/docker; docker save rocker/r-devel > ~/docker/image.tar; fi
 
 test:
