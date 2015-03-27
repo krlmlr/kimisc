@@ -46,6 +46,9 @@ bootstrap_snap:
 	curl -L https://raw.githubusercontent.com/krlmlr/r-snap-texlive/master/install.sh | sh
 	curl -L https://raw.githubusercontent.com/krlmlr/r-snap/master/install.sh | sh
 
+docker-test:
+	docker run -v $$PWD:/checkout -w /checkout rocker/r-devel make test
+
 test:
 	Rscript -e "update.packages(repos = 'http://cran.rstudio.com')"
 	Rscript -e "options(repos = 'http://cran.rstudio.com'); devtools::install_deps(dependencies = TRUE)"
