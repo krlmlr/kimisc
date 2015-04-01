@@ -5,7 +5,7 @@ machine:
 
 dependencies:
   override:
-    - docker pull rocker/hadleyverse
+    - docker pull rocker/hadleyverse:latest
 
 test:
   override:
