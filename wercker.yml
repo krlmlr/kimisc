@@ -2,5 +2,5 @@ box: rocker/hadleyverse
 build:
   steps:
     - script:
-        name: echo
-        code: Rscript -e "devtools::test()"
+        name: install and test
+        code: make install test
