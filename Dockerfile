@@ -11,4 +11,4 @@ COPY DESCRIPTION /pkg-src/
 
 ## Install dependencies
 RUN cd /pkg-src && \
-  Rscript -e "devtools::install_deps()"
+  Rscript -e "install.packages('devtools'); devtools::install_deps()"
