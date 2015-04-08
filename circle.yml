@@ -5,8 +5,8 @@ machine:
 
 dependencies:
   override:
-    - docker pull rocker/hadleyverse:latest
+    - docker pull krlmlr/kimisc-test:latest
 
 test:
   override:
-    - docker run -v $PWD:/checkout -w /checkout rocker/hadleyverse make install test
+    - docker run -v $PWD:/checkout -w /checkout krlmlr/kimisc-test make test
