@@ -50,6 +50,7 @@ docker-test:
 	docker run -v $$PWD:/checkout -w /checkout rocker/r-devel make install test
 
 install:
+	Rscript -e "sessionInfo()"
 	Rscript -e "update.packages(repos = 'http://cran.rstudio.com', ask = FALSE)"
 	Rscript -e "devtools::install_github('hadley/testthat')"
 	Rscript -e "options(repos = 'http://cran.rstudio.com'); devtools::install_deps(dependencies = TRUE)"
