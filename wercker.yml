@@ -1,3 +1,5 @@
+box: python
+
 build:
     box:
       idx: rocker/hadleyverse
