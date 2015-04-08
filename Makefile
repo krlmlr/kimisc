@@ -52,6 +52,10 @@ docker-test:
 update-docker-branch:
 	git push . HEAD:docker
 
+wercker-deploy:
+	Rscript -e "devtools::build()"
+	mv ../*.tar.gz $${WERCKER_OUTPUT_DIR}/output
+
 install:
 	Rscript -e "sessionInfo()"
 	Rscript -e "devtools::install_github('hadley/testthat')"
