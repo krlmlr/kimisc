@@ -8,3 +8,4 @@
 ^\.travis\.yml$
 ^Makefile$
 ^appveyor\.yml$
+^Dockerfile$
