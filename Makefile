@@ -49,6 +49,9 @@ bootstrap_snap:
 docker-test:
 	docker run -v $$PWD:/checkout -w /checkout rocker/r-devel make install test
 
+update-docker-branch:
+	git push . HEAD:docker
+
 install:
 	Rscript -e "sessionInfo()"
 	Rscript -e "devtools::install_github('hadley/testthat')"
