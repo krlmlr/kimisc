@@ -1,10 +1,9 @@
-box: python
-
+box: wercker/default
 build:
-    box:
-      idx: rocker/hadleyverse
-      tag: latest
-    steps:
-      - script:
+  box:
+    idx: rocker/hadleyverse
+    tag: latest
+  steps:
+    - script:
         name: echo
         code: ls
