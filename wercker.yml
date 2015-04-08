@@ -1,8 +1,5 @@
-box: wercker/default
+box: rocker/hadleyverse
 build:
-  box:
-    id: rocker/hadleyverse
-    tag: latest
   steps:
     - script:
         name: echo
