@@ -1,6 +1,6 @@
-box: rocker/hadleyverse
+box: krlmlr/kimisc-test
 build:
   steps:
     - script:
         name: install and test
-        code: make install test
+        code: make test
