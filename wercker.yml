@@ -5,5 +5,5 @@ build:
       idx: rocker/hadleyverse
       tag: latest
     steps:
-      - script:
+      script:
         name: echo
