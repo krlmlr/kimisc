@@ -7,7 +7,7 @@ FROM rocker/drd:latest
 MAINTAINER "Kirill Müller" krlmlr+github@mailbox.org
 
 ## Copy DESCRIPTION file to be able to install dependencies
-COPY ../DESCRIPTION /pkg-src/
+COPY DESCRIPTION /pkg-src/
 
 ## Install dependencies
 RUN cd /pkg-src && \
