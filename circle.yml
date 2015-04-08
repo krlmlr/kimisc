@@ -1,4 +1,9 @@
 # circle.yml
+general:
+  branches:
+    ignore:
+      - docker # list of branches to ignore
+
 machine:
   services:
     - docker
