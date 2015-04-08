@@ -1,7 +1,7 @@
 box: wercker/default
 build:
   box:
-    idx: rocker/hadleyverse
+    id: rocker/hadleyverse
     tag: latest
   steps:
     - script:
