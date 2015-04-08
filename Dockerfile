@@ -11,4 +11,5 @@ COPY DESCRIPTION /pkg-src/
 
 ## Install dependencies
 RUN cd /pkg-src && \
+  Rscript -e "devtools::install_github('hadley/testthat')" && \
   Rscript -e "devtools::install_deps(dependencies = TRUE)"
