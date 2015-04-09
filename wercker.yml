@@ -3,4 +3,4 @@ build:
   steps:
     - script:
         name: install and test
-        code: false && make test && make wercker-deploy
+        code: make test && make wercker-deploy
