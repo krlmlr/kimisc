@@ -54,7 +54,7 @@ update-docker-branch:
 
 wercker-deploy:
 	Rscript -e "devtools::build()"
-	mv ../*.tar.gz $${WERCKER_OUTPUT_DIR}/output
+	mv ../*.tar.gz $${WERCKER_OUTPUT_DIR}/
 
 install:
 	Rscript -e "sessionInfo()"
