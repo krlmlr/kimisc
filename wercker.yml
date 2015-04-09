@@ -3,4 +3,4 @@ build:
   steps:
     - script:
         name: install and test
-        code: fail "make test && make wercker-deploy"
+        code: if ! make test; then fail "Test failed"; fi; if ! make wercker-deploy; then fail "Moving output failed"; fi
