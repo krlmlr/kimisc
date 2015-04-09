@@ -63,4 +63,4 @@ install:
 
 test:
 	Rscript -e "devtools::check(document = FALSE, check_dir = '.', cleanup = FALSE)"
-	! egrep -A 5 "ERROR|WARNING|NOTE" ../*.Rcheck/00check.log
+	! egrep -A 5 "ERROR|WARNING|NOTE" *.Rcheck/00check.log
