@@ -22,4 +22,4 @@ Suggests:
 Enhances: knitr
 URL: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
-Roxygen: list(wrap = FALSE)
+GitHub: https://github.com/krlmlr/kimisc
