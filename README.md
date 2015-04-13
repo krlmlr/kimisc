@@ -1,4 +1,4 @@
-kimisc [![Travis-CI Build Status](https://travis-ci.org/krlmlr/kimisc.png?branch=master)](https://travis-ci.org/krlmlr/kimisc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/krlmlr/kimisc?branch=master)](https://ci.appveyor.com/project/krlmlr/kimisc) [![Coverage Status](https://coveralls.io/repos/krlmlr/kimisc/badge.svg?branch=master)](https://coveralls.io/r/krlmlr/kimisc?branch=master)
+kimisc [![wercker status](https://app.wercker.com/status/956d581f6bb8958ec85fd7d2585d138b/s/master "wercker status")](https://app.wercker.com/project/bykey/956d581f6bb8958ec85fd7d2585d138b) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/krlmlr/kimisc?branch=master)](https://ci.appveyor.com/project/krlmlr/kimisc) 
 ======
 
 A collection of useful functions not found anywhere else. Install from CRAN using
