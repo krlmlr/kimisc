@@ -5,8 +5,6 @@
 ^NEWS\.md$
 ^NEWS\.md\.tmpl$
 ^tools$
-^\.travis\.yml$
-^Makefile$
 ^appveyor\.yml$
 ^circle\.yml$
 ^wercker\.yml$
