@@ -5,6 +5,8 @@
 #' (one for the names, one for the values). If the list is not named, the
 #' natural sequence will be used as item names.
 #'
+#' @param list_for_df The object to be converted to a data frame
+#'
 #' @export
 list_to_df <- function(list_for_df) {
   list_for_df <- as.list(list_for_df)
