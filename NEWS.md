@@ -1,3 +1,8 @@
+Version 0.2-1.7 (2015-09-08)
+===
+
+- new function `df_to_list`
+
 Version 0.2-1.6 (2015-09-08)
 ===
 
