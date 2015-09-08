@@ -11,6 +11,11 @@ test_that("character", {
   expect_error(vswitch(LETTERS, A=stop("Found A")), "Found")
 })
 
+test_that("default vector", {
+  expect_equal(vswitch(LETTERS, A=1, B=2, letters),
+               c(1:2, letters[3:26]))
+})
+
 test_that("numeric", {
   skip("NYI")
 })
