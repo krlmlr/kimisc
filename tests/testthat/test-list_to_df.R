@@ -8,6 +8,14 @@ test_that("vector input", {
   expect_equal(ret$value, as.list(3:1))
 })
 
+test_that("named vector input", {
+  ret <- list_to_df(setNames(nm = 3:1))
+  expect_true(is.data.frame(ret))
+  expect_equal(nrow(ret), 3)
+  expect_equal(ret$name, c("3", "2", "1"))
+  expect_equal(ret$value, as.list(3:1))
+})
+
 test_that("list input", {
   ret <- list_to_df(list(3:1))
   expect_true(is.data.frame(ret))
