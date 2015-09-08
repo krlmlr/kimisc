@@ -1,3 +1,6 @@
+Version 0.2-1.5 (2015-09-08)
+===
+
 - `gdiff` does not attempt to maintain class information, the function is
   supposed to do this
 - `gdiff` accepts a factor as input
