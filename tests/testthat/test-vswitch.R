@@ -13,7 +13,7 @@ test_that("character", {
 
 test_that("default vector", {
   expect_equal(vswitch(LETTERS, A=1, B=2, letters),
-               c(1:2, letters[3:26]))
+               c(1:2, rep(list(letters), 24)))
 })
 
 test_that("numeric", {
