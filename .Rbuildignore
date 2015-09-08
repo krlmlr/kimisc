@@ -9,3 +9,6 @@
 ^circle\.yml$
 ^wercker\.yml$
 ^Dockerfile$
+^Makefile$
+^Makefile\.in$
+^makeR$
