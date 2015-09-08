@@ -7,8 +7,14 @@ A collection of useful functions not found anywhere else. Install from CRAN usin
 install.packages('kimisc')
 ```
 
-or the lastest development version (with `devtools` 1.4 or later)
+or the latest stable version using
 
 ```
 devtools::install_github('krlmlr/kimisc')
+```
+
+or the most recent development version using
+
+```
+devtools::install_github('krlmlr/kimisc@develop')
 ```
