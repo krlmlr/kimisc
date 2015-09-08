@@ -3,6 +3,7 @@
 S3method(vswitch,character)
 S3method(vswitch,default)
 export(coalesce.na)
+export(df_to_list)
 export(export)
 export(export.list)
 export(gdiff)
