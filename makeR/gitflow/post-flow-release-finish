@@ -1,3 +1,4 @@
 #!/usr/bin/env Rscript
 
+devtools::install()
 autoroxy::rox_off()
