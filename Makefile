@@ -134,7 +134,7 @@ test:
 	! egrep -A 5 "ERROR|WARNING|NOTE" *.Rcheck/00check.log
 
 covr:
-	r -e 'if (!requireNamespace("covr")) devtools::install_github("jimhester/covr"); covr::codecov()'
+	Rscript -e 'if (!requireNamespace("covr")) devtools::install_github("jimhester/covr"); covr::codecov()'
 
 lintr:
 	r -e 'if (!requireNamespace("lintr")) devtools::install_github("jimhester/lintr"); lintr::lint_package()'
