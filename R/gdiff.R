@@ -1,6 +1,6 @@
 #' Generalized lagged differences
 #'
-#' Returns suitably lagged and iterated differences using arbitrary differce
+#' Returns suitably lagged and iterated differences using arbitrary difference
 #' functions.
 #'
 #' @param FUN A distance function that accepts two parameters
