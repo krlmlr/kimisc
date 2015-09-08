@@ -31,7 +31,7 @@ If x is a vector of length \code{n} and \code{differences = 1}, then
   column separately.
 }
 \description{
-Returns suitably lagged and iterated differences using arbitrary differce
+Returns suitably lagged and iterated differences using arbitrary difference
 functions.
 }
 \examples{
