@@ -25,4 +25,9 @@ The value of one of the elements of \code{...},
 The function \code{vswitch} is a vectorized version of
   \code{\link[base]{switch}} optimized for performance.
 }
+\details{
+Only the \code{EXPR} argument is treated as a vector. In particular,
+if any of the alternatives (or the default alternative) is a vector, the
+result will be a list of vectors.
+}
 
