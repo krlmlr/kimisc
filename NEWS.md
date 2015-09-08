@@ -1,42 +1,16 @@
-Version 0.2-1.7 (2015-09-08)
+Version 0.2-2 (2015-09-09)
 ===
 
-- new function `df_to_list`
-
-Version 0.2-1.6 (2015-09-08)
-===
-
-- new function `list_to_df`
-
-Version 0.2-1.5 (2015-09-08)
-===
-
-- `gdiff` does not attempt to maintain class information, the function is
+- new functions `list_to_df` and `df_to_list`
+- new vecctorized switch function `vswitch`
+- `gdiff` does not attempt to maintain class information, the called function is
   supposed to do this
 - `gdiff` accepts a factor as input
-- use AppVeyor (checks on Windows), Coveralls (coverage analysis) and lintr
-  (static code analysis)
-
-Version 0.2-1.4 (2014-12-18)
-===
-
-- Fix CRAN checks.
-
-Version 0.2-1.3 (2014-12-18)
-===
-
-- first implementation of vecctorized switch function `vswitch`
-
-Version 0.2-1.2 (2014-12-12)
-===
-
-- Fix CRAN checks.
-
-Version 0.2-1.1 (2014-12-12)
-===
-
 - determine knitr input via `knitr::current_input` (#6)
 - export all helper functions used by `thisfile`
+- use AppVeyor (checks on Windows), Coveralls (coverage analysis) and lintr
+  (static code analysis)
+- fix CRAN checks
 
 Version 0.2-1 (2014-04-02)
 ===
