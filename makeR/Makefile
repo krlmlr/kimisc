@@ -51,7 +51,7 @@ git-is-clean branch-is-master init-gh-pages init-staticdocs gh-pages-build posti
 dt_add_rstudio_project dt_add_test_infrastructure dt_add_travis dt_bash dt_build dt_build_vignettes dt_build_win dt_check dt_check_doc dt_clean_dll dt_clean_vignettes dt_compile_dll dt_document dt_imports_env dt_install dt_install_deps dt_lint dt_load_all dt_load_code dt_load_data dt_load_dll dt_missing_s3 dt_ns_env dt_parse_ns_file dt_pkg_env dt_release dt_release_checks dt_reload dt_revdep dt_revdep_check dt_revdep_maintainers dt_run_examples dt_show_news dt_submit_cran dt_test dt_unload dt_use_appveyor dt_use_cran_comments dt_use_data_raw dt_use_package_doc dt_use_rcpp dt_use_readme_rmd dt_use_revdep dt_use_rstudio dt_use_testthat dt_use_travis dt_wd:
 
 dt_%: git-is-clean
-	Rscript -e "devtools::$(subst dt_,,$@)()"
+	r -e "devtools::$(subst dt_,,$@)()"
 	git add .
 	git commit -m "$(subst dt_,,$@)"
 
@@ -80,7 +80,7 @@ bump-desc: git-is-clean rd
 	crant -u 4 -C
 
 inst/NEWS.Rd: git-is-clean NEWS.md
-	Rscript -e "tools:::news2Rd('$(word 2,$^)', '$@')"
+	r -e "tools:::news2Rd('$(word 2,$^)', '$@')"
 	sed -r -i 's/`([^`]+)`/\\code{\1}/g' $@
 	git add $@
 	test "$$(git status --porcelain | wc -c)" = "0" || git commit -m "update NEWS.Rd"
@@ -115,7 +115,7 @@ bump: bump-desc inst/NEWS.Rd tag
 ## Documentation
 
 rd: git-is-clean
-	Rscript -e "library(methods); devtools::document()"
+	r -e "library(methods); devtools::document()"
 	git add man/ NAMESPACE
 	test "$$(git status --porcelain | wc -c)" = "0" || git commit -m "document"
 
@@ -126,18 +126,18 @@ rd: git-is-clean
 dependencies-hook:
 
 install dependencies: dependencies-hook
-	Rscript -e "sessionInfo()"
-	Rscript -e "options(repos = c(CRAN = 'http://cran.rstudio.com')); devtools::install_deps(dependencies = TRUE)"
+	r -e "sessionInfo()"
+	r -e "options(repos = c(CRAN = 'http://cran.rstudio.com')); devtools::install_deps(dependencies = TRUE)"
 
 test:
-	Rscript -e "devtools::check(document = TRUE, check_dir = '.', cleanup = FALSE)"
+	r -e "devtools::check(document = TRUE, check_dir = '.', cleanup = FALSE)"
 	! egrep -A 5 "ERROR|WARNING|NOTE" *.Rcheck/00check.log
 
 covr:
-	Rscript -e 'if (!requireNamespace("covr")) devtools::install_github("jimhester/covr"); covr::codecov()'
+	r -e 'if (!requireNamespace("covr")) devtools::install_github("jimhester/covr"); covr::codecov()'
 
 lintr:
-	Rscript -e 'if (!requireNamespace("lintr")) devtools::install_github("jimhester/lintr"); lintr::lint_package()'
+	r -e 'if (!requireNamespace("lintr")) devtools::install_github("jimhester/lintr"); lintr::lint_package()'
 
 check-rev-dep:
 	echo "Running reverse dependency checks for CRAN ..."
@@ -160,7 +160,7 @@ gh-pages-init:
 init-staticdocs:
 
 staticdocs: inst/web
-	Rscript -e 'if (!requireNamespace("staticdocs")) devtools::install_github("gaborcsardi/staticdocs"); staticdocs::build_site()'
+	r -e 'if (!requireNamespace("staticdocs")) devtools::install_github("gaborcsardi/staticdocs"); staticdocs::build_site()'
 
 gh-pages-build: staticdocs
 
