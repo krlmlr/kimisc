@@ -2,3 +2,4 @@
 
 devtools::install()
 autoroxy::rox_off()
+system("git push --follow-tags", wait = FALSE)
