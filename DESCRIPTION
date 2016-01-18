@@ -3,7 +3,7 @@ Package: kimisc
 Type: Package
 Title: Kirill's miscellaneous functions
 Version: 0.2-2
-Date: 16687
+Date: 2015-09-11
 Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
 Description: A collection of useful functions not found anywhere else,
         mainly for programming: Generalized lagged differences,
