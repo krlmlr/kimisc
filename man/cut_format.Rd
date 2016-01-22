@@ -5,7 +5,8 @@
 \title{Convert Numeric to Factor, with custom formatting}
 \usage{
 cut_format(x, breaks, include.lowest = FALSE, right = TRUE,
-  ordered_result = FALSE, ..., format_fun = format, sep = ", ")
+  ordered_result = FALSE, ..., format_fun = format, sep = ", ",
+  paren = c("(", "[", ")", "]"))
 }
 \arguments{
 \item{x}{a numeric vector which is to be converted to a factor by cutting.}
@@ -32,10 +33,18 @@ A vectorized function that performs the desired formatting.  Default:
 \item{sep}{\code{[character(1)]}\cr
 The separator between lower and upper end of the interval. Default:
 \code{", "}}
+
+\item{paren}{\code{[character(4)]}\cr
+Opening and closing parentheses in two variants. Default:
+\code{c("(", "[", ")", "]")}}
 }
 \description{
 This is an enhanced version of \code{\link[base]{cut}} that allows a custom
 formatting to be applied to the values.
+}
+\examples{
+cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 100, "\%"))
+cut_format(runif(10), seq(0, 1, by = 0.25), paren = c("<", "{", ">", "}"))
 }
 \seealso{
 \url{http://stackoverflow.com/q/14456371/946850}
