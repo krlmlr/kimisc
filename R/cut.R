@@ -16,6 +16,9 @@
 #'   \code{c("(", "[", ")", "]")}
 #' @seealso \url{http://stackoverflow.com/q/14456371/946850}
 #'
+#' @examples
+#' cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 100, "%"))
+#' cut_format(runif(10), seq(0, 1, by = 0.25), paren = c("<", "{", ">", "}"))
 #' @export
 #' @importFrom utils head tail
 cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
