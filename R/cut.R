@@ -3,6 +3,14 @@
 #' This is an enhanced version of \code{\link[base]{cut}} that allows a custom
 #' formatting to be applied to the values.
 #'
+#' @inheritParams base::cut.default
+#' @param ... Passed to \code{cut}
+#' @param format_fun \code{[function(x): character]}\cr
+#'   A vectorized function that performs the desired formatting.  Default:
+#'   \code{\link[base]{format}}
+#' @param sep \code{[character(1)]}\cr
+#'   The separator between lower and upper end of the interval. Default:
+#'   \code{", "}
 #' @seealso \url{http://stackoverflow.com/q/14456371/946850}
 #'
 #' @export
