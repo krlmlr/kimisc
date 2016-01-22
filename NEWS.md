@@ -1,3 +1,9 @@
+Version 0.2-3 (2016-01-22)
+===
+
+- New `cut_format()` with ability to tweak label formatting, and more sensible defaults (#9).
+
+
 Version 0.2-2 (2015-09-09)
 ===
 
