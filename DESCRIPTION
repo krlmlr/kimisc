@@ -18,7 +18,7 @@ License: GPL-3
 Imports: plyr, pryr
 Suggests: testthat (>= 0.9.1.9000)
 Enhances: knitr
-URL: https://github.com/krlmlr/kimisc
+URL: http://krlmlr.github.io/kimisc
+URLNote: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
-GitHub: https://github.com/krlmlr/kimisc
 RoxygenNote: 5.0.1.9000
