@@ -1,22 +1,2 @@
-#' @name kimisc-package
-#' @aliases kimisc
-#' @docType package
-#' @title Kirill's miscellaneous functions
-#' @description A collection of useful functions not found anywhere else, mainly
-#' for programming: Generalized lagged differences, checking containment in an
-#' interval, creating a factor where the levels maintain the order of appearance,
-#' sampling rows from a data frame, converting seconds from midnight to and from
-#' H:M:S format, choosing the first non-NA value, transposing lists of lists,
-#' returning the name of the file currently sourced, smart named lists and
-#' vectors, and an alternative interface to assign().
 #' @author Kirill Müller
-#' @keywords package
-#' @details
-#' \tabular{ll}{
-#'   Package: \tab kimisc\cr
-#'   Type: \tab Package\cr
-#'   Version: \tab 0.2-1.5\cr
-#'   Date: \tab 2015-09-08\cr
-#'   License: \tab GPL v3\cr
-#' }
-NULL
+"_PACKAGE"

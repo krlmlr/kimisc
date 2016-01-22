@@ -1,8 +1,14 @@
+Version 0.2-3 (2016-01-22)
+===
+
+- New `cut_format()` with ability to tweak label formatting, and more sensible defaults (#9).
+
+
 Version 0.2-2 (2015-09-09)
 ===
 
 - new functions `list_to_df` and `df_to_list`
-- new vecctorized switch function `vswitch`
+- new vectorized switch function `vswitch`
 - `gdiff` does not attempt to maintain class information, the called function is
   supposed to do this
 - `gdiff` accepts a factor as input

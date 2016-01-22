@@ -2,8 +2,6 @@
 ^\.Rproj\.user$
 ^\.gitignore$
 ^README\.md$
-^NEWS\.md$
-^NEWS\.md\.tmpl$
 ^tools$
 ^appveyor\.yml$
 ^circle\.yml$
