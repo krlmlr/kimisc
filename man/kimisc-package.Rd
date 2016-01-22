@@ -7,14 +7,14 @@
 \title{Kirill's miscellaneous functions}
 \description{
 A collection of useful functions not found anywhere else,
-mainly for programming: Pretty intervals, generalized lagged differences,
-checking containment in an interval, creating a factor where
-the levels maintain the order of appearance, sampling rows from
-a data frame, converting seconds from midnight to and from
-H:M:S format, choosing the first non-NA value, transposing
-lists of lists, returning the name of the file currently
-sourced, smart named lists and vectors, and an alternative
-interface to assign().
+mainly for programming: Pretty intervals, generalized lagged
+differences, checking containment in an interval, creating a
+factor where the levels maintain the order of appearance,
+sampling rows from a data frame, converting seconds from
+midnight to and from H:M:S format, choosing the first non-NA
+value, transposing lists of lists, returning the name of the
+file currently sourced, smart named lists and vectors, and an
+alternative interface to assign().
 }
 \author{
 Kirill Müller
