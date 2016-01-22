@@ -11,13 +11,17 @@
 #' @param sep \code{[character(1)]}\cr
 #'   The separator between lower and upper end of the interval. Default:
 #'   \code{", "}
+#' @param paren \code{[character(4)]}\cr
+#'   Opening and closing parentheses in two variants. Default:
+#'   \code{c("(", "[", ")", "]")}
 #' @seealso \url{http://stackoverflow.com/q/14456371/946850}
 #'
 #' @export
 #' @importFrom utils head tail
 cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
                        ordered_result = FALSE, ...,
-                       format_fun = format, sep = ", ") {
+                       format_fun = format, sep = ", ",
+                       paren = c("(", "[", ")", "]")) {
   if (right) {
     ob <- c(include.lowest, rep(FALSE, length(breaks) - 2L))
     cb <- rep(TRUE, length(breaks) - 1L)
@@ -26,8 +30,8 @@ cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
     cb <- c(rep(FALSE, length(breaks) - 2L), include.lowest)
   }
 
-  ob <- ifelse(ob, "[", "(")
-  cb <- ifelse(cb, "]", ")")
+  ob <- ifelse(ob, paren[[2L]], paren[[1L]])
+  cb <- ifelse(cb, paren[[4L]], paren[[3L]])
 
   formatted_breaks <- format_fun(breaks)
   labels <- paste0(ob, head(formatted_breaks, -1L), sep, tail(formatted_breaks, -1L), cb)
