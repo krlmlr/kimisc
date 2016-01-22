@@ -14,7 +14,7 @@ install:
 
 build_script:
   - travis-tool.sh install_deps
-  - travis-tool.sh install_github hadley/testthat
+  - travis-tool.sh install_github hadley/testthat krlmlr/roxygen@develop
 
 test_script:
   - Rscript -e "devtools::load_all()"
