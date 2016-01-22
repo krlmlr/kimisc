@@ -6,7 +6,7 @@ Version: 0.2-2
 Date: 2015-09-11
 Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
 Description: A collection of useful functions not found anywhere else,
-    mainly for programming: Generalized lagged differences,
+    mainly for programming: Pretty intervals, generalized lagged differences,
     checking containment in an interval, creating a factor where
     the levels maintain the order of appearance, sampling rows from
     a data frame, converting seconds from midnight to and from
