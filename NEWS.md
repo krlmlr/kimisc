@@ -1,3 +1,10 @@
+Version 0.2-4 (2016-01-22)
+===
+
+- Add examples for .
+- `cut_format()` gains `paren` argument that allows control over the opening and closing parentheses.
+
+
 Version 0.2-3 (2016-01-22)
 ===
 
