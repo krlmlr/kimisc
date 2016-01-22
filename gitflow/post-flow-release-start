@@ -25,7 +25,7 @@ master <- Reduce(c, git2r::config())$gitflow.branch.master
 if (is.null(master)) {
   warning("Config option gitflow.branch.master not set, are you running git flow?")
 } else {
-  changes_since_master <- system(paste0('git log $(git rev-list --first-parent ', master, '.. | tail -n 1).. --format=format:"%b" | sed "/^$/d"'), intern=TRUE)
+  changes_since_master <- system(paste0('git show -s $(git rev-list --first-parent ', master, '.. | head -n -1) --format=format:"%b" | sed "/^$/d"'), intern=TRUE)
 
   news <- character()
   news <- readLines("NEWS.md")
