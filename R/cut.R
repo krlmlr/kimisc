@@ -4,6 +4,7 @@
 #' formatting to be applied to the values.
 #'
 #' @inheritParams base::cut.default
+#' @param breaks A numeric vector of two or more unique cut points
 #' @param ... Passed to \code{cut}
 #' @param format_fun \code{[function(x): character]}\cr
 #'   A vectorized function that performs the desired formatting.  Default:
@@ -25,6 +26,11 @@ cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
                        ordered_result = FALSE, ...,
                        format_fun = format, sep = ", ",
                        paren = c("(", "[", ")", "]")) {
+  if (length(breaks) < 2L) {
+    stop("Please specify breaks as a numeric vector of length >= 2",
+         call. = FALSE)
+  }
+
   if (right) {
     ob <- c(include.lowest, rep(FALSE, length(breaks) - 2L))
     cb <- rep(TRUE, length(breaks) - 1L)

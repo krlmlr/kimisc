@@ -40,6 +40,10 @@ test_that("custom parentheses", {
   )
 })
 
+test_that("custom parentheses", {
+  expect_error(cut_format(1:10, breaks = 10L), "breaks")
+})
+
 test_that("cut_format has same interface", {
   common_names <- intersect(names(formals(cut.default)), names(formals(cut_format)))
   expect_true(all(diff(match(common_names, names(formals(cut.default)))) > 0))
