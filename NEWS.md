@@ -1,7 +1,13 @@
+Version 0.2-5 (2016-01-24)
+===
+
+- `cut_number()` now throws an error if `breaks` is an atomic value.
+
+
 Version 0.2-4 (2016-01-22)
 ===
 
-- Add examples for .
+- Add examples for `cut_format()`.
 - `cut_format()` gains `paren` argument that allows control over the opening and closing parentheses.
 
 

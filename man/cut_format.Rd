@@ -11,9 +11,7 @@ cut_format(x, breaks, include.lowest = FALSE, right = TRUE,
 \arguments{
 \item{x}{a numeric vector which is to be converted to a factor by cutting.}
 
-\item{breaks}{either a numeric vector of two or more unique cut points or a
-    single number (greater than or equal to 2) giving the number of
-    intervals into which \code{x} is to be cut.}
+\item{breaks}{A numeric vector of two or more unique cut points}
 
 \item{include.lowest}{logical, indicating if an \sQuote{x[i]} equal to
     the lowest (or highest, for \code{right = FALSE}) \sQuote{breaks}
