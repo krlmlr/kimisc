@@ -6,19 +6,22 @@ Version: 0.2-5
 Date: 2016-01-24
 Authors@R: as.person("Kirill Müller <krlmlr+r@mailbox.org> [aut, cre]")
 Description: A collection of useful functions not found anywhere else,
-        mainly for programming: Pretty intervals, generalized lagged
-        differences, checking containment in an interval, creating a
-        factor where the levels maintain the order of appearance,
-        sampling rows from a data frame, converting seconds from
-        midnight to and from H:M:S format, choosing the first non-NA
-        value, transposing lists of lists, returning the name of the
-        file currently sourced, smart named lists and vectors, and an
-        alternative interface to assign().
+    mainly for programming: Pretty intervals, generalized lagged
+    differences, checking containment in an interval, creating a
+    factor where the levels maintain the order of appearance,
+    sampling rows from a data frame, converting seconds from
+    midnight to and from H:M:S format, choosing the first non-NA
+    value, transposing lists of lists, returning the name of the
+    file currently sourced, smart named lists and vectors, and an
+    alternative interface to assign().
 License: GPL-3
-Imports: plyr, pryr
-Suggests: testthat (>= 0.9.1.9000)
+Imports:
+    plyr,
+    pryr
+Suggests:
+    testthat (>= 0.9.1.9000)
 Enhances: knitr
 URL: http://krlmlr.github.io/kimisc
 URLNote: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
-RoxygenNote: 5.0.1.9000
+RoxygenNote: 5.0.1
