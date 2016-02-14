@@ -17,7 +17,7 @@ Description: A collection of useful functions not found anywhere else,
         alternative interface to assign().
 License: GPL-3
 Imports: plyr, pryr
-Suggests: testthat (>= 0.9.1.9000)
+Suggests: testthat (>= 0.10.0)
 Enhances: knitr
 URL: http://krlmlr.github.io/kimisc
 URLNote: https://github.com/krlmlr/kimisc
