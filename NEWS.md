@@ -1,41 +1,18 @@
-Version 0.2-6 (2016-02-14)
-===
-
-- Prepare CRAN release.
-
-
-Version 0.2-5 (2016-01-24)
-===
-
-- `cut_format()` now throws an error if `breaks` is an atomic value.
-
-
-Version 0.2-4 (2016-01-22)
-===
-
-- Add examples for `cut_format()`.
-- `cut_format()` gains `paren` argument that allows control over the opening and closing parentheses.
-
-
-Version 0.2-3 (2016-01-22)
+Version 0.3 (2016-02-12)
 ===
 
 - New `cut_format()` with ability to tweak label formatting, and more sensible defaults (#9).
+    - With examples.
+    - Throws an error if `breaks` is an atomic value.
+- New `list_to_df()` and `df_to_list()`.
+- New vectorized switch function `vswitch`.
+- Export all helper functions used by `thisfile()`.
+- `gdiff()` does not attempt to maintain class information, the called function is supposed to do this.
+- `gdiff()` accepts a factor as input.
+- Determine knitr input via `knitr::current_input()` (#6).
+- Use AppVeyor (checks on Windows), Coveralls (coverage analysis) and lintr (static code analysis).
+- Fix CRAN checks.
 
-
-Version 0.2-2 (2015-09-09)
-===
-
-- new functions `list_to_df` and `df_to_list`
-- new vectorized switch function `vswitch`
-- `gdiff` does not attempt to maintain class information, the called function is
-  supposed to do this
-- `gdiff` accepts a factor as input
-- determine knitr input via `knitr::current_input` (#6)
-- export all helper functions used by `thisfile`
-- use AppVeyor (checks on Windows), Coveralls (coverage analysis) and lintr
-  (static code analysis)
-- fix CRAN checks
 
 Version 0.2-1 (2014-04-02)
 ===
