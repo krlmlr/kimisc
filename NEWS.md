@@ -1,7 +1,13 @@
+Version 0.2-6 (2016-02-14)
+===
+
+- Prepare CRAN release.
+
+
 Version 0.2-5 (2016-01-24)
 ===
 
-- `cut_number()` now throws an error if `breaks` is an atomic value.
+- `cut_format()` now throws an error if `breaks` is an atomic value.
 
 
 Version 0.2-4 (2016-01-22)
