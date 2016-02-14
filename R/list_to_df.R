@@ -31,6 +31,7 @@ list_to_df <- function(list_for_df) {
 #' @param df_for_list The data frame to be converted to a list
 #'
 #' @export
+#' @importFrom stats setNames
 df_to_list <- function(df_for_list) {
   value_cols <- which(vapply(df_for_list, is.list, logical(1L)))
   value_col <- coalesce.na(value_cols["value"], value_cols[1L])
