@@ -1,7 +1,7 @@
 Encoding: UTF-8
 Package: kimisc
 Type: Package
-Title: Kirill's miscellaneous functions
+Title: Kirill's Miscellaneous Functions
 Version: 0.3
 Date: 2016-02-14
 Authors@R: person(given = "Kirill", family = "Müller", role = c("aut",
