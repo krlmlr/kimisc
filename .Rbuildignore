@@ -10,3 +10,5 @@
 ^Makefile$
 ^Makefile\.in$
 ^makeR$
+^cran-comments\.md$
+^revdep$

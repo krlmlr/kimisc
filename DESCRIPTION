@@ -1,8 +1,8 @@
 Encoding: UTF-8
 Package: kimisc
 Type: Package
-Title: Kirill's miscellaneous functions
-Version: 0.2-6
+Title: Kirill's Miscellaneous Functions
+Version: 0.3
 Date: 2016-02-14
 Authors@R: person(given = "Kirill", family = "Müller", role = c("aut",
         "cre"), email = "krlmlr+r@mailbox.org")
@@ -17,7 +17,7 @@ Description: A collection of useful functions not found anywhere else,
         alternative interface to assign().
 License: GPL-3
 Imports: plyr, pryr
-Suggests: testthat (>= 0.9.1.9000)
+Suggests: testthat (>= 0.10.0)
 Enhances: knitr
 URL: http://krlmlr.github.io/kimisc
 URLNote: https://github.com/krlmlr/kimisc
