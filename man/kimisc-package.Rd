@@ -4,7 +4,7 @@
 \name{kimisc-package}
 \alias{kimisc}
 \alias{kimisc-package}
-\title{Kirill's miscellaneous functions}
+\title{Kirill's Miscellaneous Functions}
 \description{
 A collection of useful functions not found anywhere else,
 mainly for programming: Pretty intervals, generalized lagged
