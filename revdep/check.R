@@ -1,5 +1,4 @@
 library("devtools")
-requireNamespace("git2r")
 
 revdep_check_reset()
 revdep_check()
