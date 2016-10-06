@@ -18,6 +18,7 @@
 #' @export
 thisfile <- function() {
   if (!is.null(res <- thisfile_source())) res
+  else if (!is.null(res <- thisfile_r())) res
   else if (!is.null(res <- thisfile_rscript())) res
   else if (!is.null(res <- thisfile_knit())) res
   else NULL
@@ -36,8 +37,33 @@ thisfile_source <- function() {
 
 #' @rdname thisfile
 #' @export
+thisfile_r <- function() {
+  cmd_args <- commandArgs(trailingOnly = FALSE)
+  if (!grepl("^R(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
+    return (NULL)
+
+  cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
+  leading_idx <-
+    seq.int(from=1, length.out=length(cmd_args) - length(cmd_args_trailing))
+  cmd_args <- cmd_args[leading_idx]
+  file_idx <- c(which(cmd_args == "-f") + 1, which(grepl("^--file=", cmd_args)))
+  res <- gsub("^(?:|--file=)(.*)$", "\\1", cmd_args[file_idx])
+
+  # If multiple --file arguments are given, R uses the last one
+  res <- tail(res[res != ""], 1)
+  if (length(res) > 0)
+    return (res)
+
+  NULL
+}
+
+#' @rdname thisfile
+#' @export
 thisfile_rscript <- function() {
   cmd_args <- commandArgs(trailingOnly = FALSE)
+  if (!grepl("^Rscript(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
+    return(NULL)
+
   cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
   leading_idx <-
     seq.int(from=1, length.out=length(cmd_args) - length(cmd_args_trailing))
