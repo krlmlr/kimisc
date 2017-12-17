@@ -12,3 +12,5 @@
 ^makeR$
 ^cran-comments\.md$
 ^revdep$
+^\.travis\.yml$
+^tic\.R$
