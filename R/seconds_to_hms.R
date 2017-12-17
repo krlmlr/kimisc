@@ -12,7 +12,10 @@
 #' seconds.to.hms(c(100000, -4000.5))
 #' seconds.to.hms("invalid")
 #' @export
+#' @family deprecated functions
+#' @name seconds.to.hms-deprecated
 seconds.to.hms <- function(x) {
+  deprecate("hms::as.character()")
   if (!is.integer(x))
     x <- as.integer(floor(as.numeric(x)))
 

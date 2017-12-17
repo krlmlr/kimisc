@@ -13,8 +13,12 @@
 #' @author Hadley Wickham
 #' @references http://stackoverflow.com/a/5043280/946850,
 #'   http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html
-nlist <- function(...)
+#' @family deprecated functions
+#' @name nlist-deprecated
+nlist <- function(...) {
+  deprecate("tibble::lst")
   .nworker(list(...), substitute(list(...))[-1])
+}
 
 #' @title Smart named vector
 #' @description This function is a wrapper around [c()] that
@@ -31,22 +35,26 @@ nlist <- function(...)
 #' @author Hadley Wickham
 #' @references http://stackoverflow.com/a/5043280/946850,
 #'   http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html
-nc <- function(...)
+#' @family deprecated functions
+#' @name nc-deprecated
+nc <- function(...) {
+  deprecate("tibble::lst")
   .nworker(c(...), substitute(list(...))[-1])
+}
 
-#' @title Set the Missing Names in an Object
-#' @description This function is an enhanced version of [setNames()]
-#'   in the sense that the elements that already have names are not renamed.
-#' @param object an object for which a names attribute will be meaningful
-#' @param nm a character vector of names to assign to the object
-#' @return An object of the same sort as `object` with the new names
-#'   assigned to the unnamed elements.
-#' @seealso \link{setNames}
-#' @examples
-#' setMissingNames(c(a=1, b=2, 3), letters[2:4])
-#' @export
-#' @author Hadley Wickham, Kirill Müller
-#' @references http://stackoverflow.com/a/5043280/946850
+# @title Set the Missing Names in an Object
+# @description This function is an enhanced version of [setNames()]
+#   in the sense that the elements that already have names are not renamed.
+# @param object an object for which a names attribute will be meaningful
+# @param nm a character vector of names to assign to the object
+# @return An object of the same sort as `object` with the new names
+#   assigned to the unnamed elements.
+# @seealso \link{setNames}
+# @examples
+# setMissingNames(c(a=1, b=2, 3), letters[2:4])
+# @export
+# @author Hadley Wickham, Kirill Müller
+# @references http://stackoverflow.com/a/5043280/946850
 setMissingNames <- function(object, nm) {
   if (is.null(names(object))) {
     missing_names <- rep(TRUE, length(object))

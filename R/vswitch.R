@@ -14,11 +14,17 @@
 #'   always visible.
 #'
 #' @export
-vswitch <- function(EXPR, ...) UseMethod("vswitch", EXPR)
+#' @family deprecated functions
+#' @name vswitch-deprecated
+vswitch <- function(EXPR, ...) {
+  deprecate("dplyr::recode")
+  UseMethod("vswitch", EXPR)
+}
 
 #' @export
-vswitch.default <- function(EXPR, ...)
+vswitch.default <- function(EXPR, ...) {
   stop("EXPR must be a character")
+}
 
 #' @export
 vswitch.character <- function(EXPR, ...) {

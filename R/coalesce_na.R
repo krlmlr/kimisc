@@ -14,7 +14,10 @@
 #' coalesce.na(matrix(c(NA, 1:3), nrow=2))
 #' coalesce.na(NA)
 #' @export
+#' @family deprecated functions
+#' @name coalesce.na-deprecated
 coalesce.na <- function(x, ...) {
+  deprecate("dplyr::coalesce")
   x.len <- length(x)
   ly <- list(...)
   for (y in ly) {

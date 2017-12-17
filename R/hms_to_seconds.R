@@ -14,7 +14,10 @@
 #' hms.to.seconds(c("25:15:00", "23:78:101"))
 #' hms.to.seconds("invalid")
 #' @export
+#' @family deprecated functions
+#' @name hms.to.seconds-deprecated
 hms.to.seconds <- function(x) {
+  deprecate("hms::parse_hms")
   re <- "^([0-9]+):([0-9]+):([0-9]+)|.*$"
   hours <- as.integer(gsub(re, "\\1", x))
   minutes <- as.integer(gsub(re, "\\2", x))

@@ -16,7 +16,10 @@ Description: A collection of useful functions not found anywhere else,
         file currently sourced, smart named lists and vectors, and an
         alternative interface to assign().
 License: GPL-3
-Imports: plyr, pryr
+Imports: 
+    memoise,
+    plyr,
+    pryr
 Suggests: testthat (>= 0.10.0)
 Enhances: knitr
 URL: http://krlmlr.github.io/kimisc

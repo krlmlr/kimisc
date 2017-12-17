@@ -12,8 +12,10 @@
 #' set.seed(42)
 #' sample.rows(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
 #' @export
-#' @rdname sample-methos
+#' @family deprecated functions
+#' @name sample.rows-deprecated
 sample.rows <- function(x, size, replace=FALSE, prob=NULL) {
+  deprecate("dplyr::sample_n")
   stopifnot(is.data.frame(x))
   x.indexes <- sample.int(nrow(x), size, replace, prob)
   x[x.indexes, ]

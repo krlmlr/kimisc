@@ -16,7 +16,10 @@
 #' @examples
 #' \dontrun{thisfile()}
 #' @export
+#' @family deprecated functions
+#' @name thisfile-deprecated
 thisfile <- function() {
+  deprecate("rprojroot::thisfile")
   if (!is.null(res <- thisfile_source())) res
   else if (!is.null(res <- thisfile_r())) res
   else if (!is.null(res <- thisfile_rscript())) res
@@ -24,9 +27,10 @@ thisfile <- function() {
   else NULL
 }
 
-#' @rdname thisfile
+#' @rdname thisfile-deprecated
 #' @export
 thisfile_source <- function() {
+  deprecate("rprojroot::thisfile_source")
   for (i in -(1:sys.nframe())) {
     if (identical(args(sys.function(i)), args(base::source)))
       return (normalizePath(sys.frame(i)$ofile))
@@ -35,9 +39,10 @@ thisfile_source <- function() {
   NULL
 }
 
-#' @rdname thisfile
+#' @rdname thisfile-deprecated
 #' @export
 thisfile_r <- function() {
+  deprecate("rprojroot::thisfile_r")
   cmd_args <- commandArgs(trailingOnly = FALSE)
   if (!grepl("^R(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
     return (NULL)
@@ -57,9 +62,10 @@ thisfile_r <- function() {
   NULL
 }
 
-#' @rdname thisfile
+#' @rdname thisfile-deprecated
 #' @export
 thisfile_rscript <- function() {
+  deprecate("rprojroot::thisfile_rscript")
   cmd_args <- commandArgs(trailingOnly = FALSE)
   if (!grepl("^Rscript(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
     return(NULL)
@@ -78,9 +84,10 @@ thisfile_rscript <- function() {
   NULL
 }
 
-#' @rdname thisfile
+#' @rdname thisfile-deprecated
 #' @export
 thisfile_knit <- function() {
+  deprecate("rprojroot::thisfile_knit")
   if (requireNamespace("knitr"))
     return (knitr::current_input())
 
