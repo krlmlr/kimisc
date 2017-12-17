@@ -1,11 +1,11 @@
 #' @title Converts a time value given as number of seconds since midnight to the
 #'   H:M:S format
-#' @description This function is very similar to \code{strftime} with the
+#' @description This function is very similar to `strftime` with the
 #'   \code{\%X} conversion specification. Hour values larger than 24 are
 #'   permitted. Fractions will be rounded down to the next integer. Non-numeric
-#'   values are coerced to \code{NA} with a warning.
+#'   values are coerced to `NA` with a warning.
 #' @param x A (vector of) numbers.
-#' @return A (vector of) character values of the same length as \code{x}.
+#' @return A (vector of) character values of the same length as `x`.
 #' @seealso \link[base]{strftime}
 #' @examples
 #' seconds.to.hms(c(1, 60, 3600.5))
