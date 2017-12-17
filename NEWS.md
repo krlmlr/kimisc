@@ -1,8 +1,16 @@
 kimisc 0.4 (2017-12-17)
 ===
 
-- Deprecate functions with better alternatives found elsewhere.
-- New `thisfile_r()`.
+- Deprecate functions with better alternatives found elsewhere:
+    - `coalesce.na()`: `dplyr::coalesce()`
+    - `hms.to.seconds()` and `seconds.to.hms()`: the hms package
+    - `list.to.df()`, `df.to.list()`, `nlist()` and `nc()`: the tibble package
+    - `ofactor()`: `forcats::fct_inorder()`
+    - `sample.data.frame()`: `dplyr::sample_n()`
+    - `thisfile()` and others: the rprojroot package
+    - `tll()`: `purrr::transpose()`
+    - `vswitch()`: `dplyr::recode()`
+- Unexported `setMissingNames()`
 - Remove call to `test_examples()` in tests (#12, @jimhester).
 
 
