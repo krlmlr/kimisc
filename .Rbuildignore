@@ -14,3 +14,5 @@
 ^revdep$
 ^\.travis\.yml$
 ^tic\.R$
+^_pkgdown\.yml$
+^docs$
