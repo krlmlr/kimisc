@@ -1,3 +1,11 @@
+kimisc 0.4 (2017-12-17)
+===
+
+- Deprecate functions with better alternatives found elsewhere.
+- New `thisfile_r()`.
+- Remove call to `test_examples()` in tests (#12, @jimhester).
+
+
 Version 0.3 (2016-02-12)
 ===
 
