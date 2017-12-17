@@ -8,7 +8,7 @@
 #'   converted to `NA` with a warning.
 #' @param x A (vector of) strings in H:M:S format.
 #' @return A (vector of) integer values of the same length as `x`.
-#' @seealso \link[base]{strptime}
+#' @seealso [base::strptime()]
 #' @examples
 #' hms.to.seconds(c("00:00:01", "00:01:00", "01:00:00"))
 #' hms.to.seconds(c("25:15:00", "23:78:101"))

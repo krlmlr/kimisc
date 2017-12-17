@@ -16,7 +16,7 @@
 #'
 #'   If `x` is a matrix then the difference operations are carried out on each
 #'   column separately.
-#' @seealso \link[base]{diff}
+#' @seealso [base::diff()]
 #' @examples
 #' gdiff(1:4)
 #' gdiff(1:4, FUN = `/`)

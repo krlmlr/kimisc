@@ -15,7 +15,7 @@
 #'   `", "`
 #' @param paren `[character(4)]`\cr
 #'   Opening and closing parentheses in two variants. Default:
-#'   `c("(", "[", ")", "]")`
+#'   \code{c("(", "[", ")", "]")}
 #' @seealso http://stackoverflow.com/q/14456371/946850
 #'
 #' @examples

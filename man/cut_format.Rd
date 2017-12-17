@@ -35,9 +35,7 @@ The separator between lower and upper end of the interval. Default:
 
 \item{paren}{\code{[character(4)]}\cr
 Opening and closing parentheses in two variants. Default:
-\code{c("(", "[", ")", "]")}
-
-[", ")", "]: R:%22,%20%22)%22,%20%22}
+\code{c("(", "[", ")", "]")}}
 }
 \description{
 This is an enhanced version of \code{\link[base:cut]{base::cut()}} that allows a custom

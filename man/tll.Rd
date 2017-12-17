@@ -23,5 +23,5 @@ tll(list(list(a=1, b=2), list(a=3, b=4)))
 tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
 }
 \seealso{
-\link\link{base}{t}
+\code{\link[base:t]{base::t()}}
 }

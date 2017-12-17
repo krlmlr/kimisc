@@ -27,5 +27,5 @@ hms.to.seconds(c("25:15:00", "23:78:101"))
 hms.to.seconds("invalid")
 }
 \seealso{
-\link\link{base}{strptime}
+\code{\link[base:strptime]{base::strptime()}}
 }

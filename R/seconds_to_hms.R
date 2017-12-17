@@ -6,7 +6,7 @@
 #'   values are coerced to `NA` with a warning.
 #' @param x A (vector of) numbers.
 #' @return A (vector of) character values of the same length as `x`.
-#' @seealso \link[base]{strftime}
+#' @seealso [base::strftime()]
 #' @examples
 #' seconds.to.hms(c(1, 60, 3600.5))
 #' seconds.to.hms(c(100000, -4000.5))

@@ -4,7 +4,7 @@
 #'   elements with length \eqn{n} each.
 #' @param l List of lists, possibly named.
 #' @return A list of lists corresponding to a transposition of the argument.
-#' @seealso \link[base]{t}
+#' @seealso [base::t()]
 #' @examples
 #' tll(list(list(1, 2), list(3, 4)))
 #' tll(list(list(a=1, b=2), list(a=3, b=4)))

@@ -39,5 +39,5 @@ gdiff(1:4)
 gdiff(1:4, FUN = `/`)
 }
 \seealso{
-\link\link{base}{diff}
+\code{\link[base:diff]{base::diff()}}
 }

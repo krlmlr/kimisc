@@ -25,5 +25,5 @@ seconds.to.hms(c(100000, -4000.5))
 seconds.to.hms("invalid")
 }
 \seealso{
-\link\link{base}{strftime}
+\code{\link[base:strftime]{base::strftime()}}
 }

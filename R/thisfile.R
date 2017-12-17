@@ -10,7 +10,7 @@
 #'   of the parameter passed to `Rscript` is returned.
 #' @return The path of the currently running script, NULL if it cannot be
 #'   determined.
-#' @seealso \link[base]{source}, \link[utils]{Rscript}, \link[base]{getwd}
+#' @seealso [base::source()], [utils::Rscript()], [base::getwd()]
 #' @references http://stackoverflow.com/q/1815606/946850
 #' @author Kirill Müller, Hadley Wickham, Michael R. Head
 #' @examples
