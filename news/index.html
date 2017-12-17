@@ -87,8 +87,33 @@
 <h1 class="hasAnchor">
 <a href="#kimisc-0-4-2017-12-17" class="anchor"></a>kimisc 0.4 (2017-12-17)</h1>
 <ul>
-<li>Deprecate functions with better alternatives found elsewhere.</li>
-<li>New <code><a href="../reference/thisfile-deprecated.html">thisfile_r()</a></code>.</li>
+<li>Deprecate functions with better alternatives found elsewhere:
+<ul>
+<li>
+<code><a href="../reference/coalesce.na-deprecated.html">coalesce.na()</a></code>: <code>dplyr::coalesce()</code>
+</li>
+<li>
+<code><a href="../reference/hms.to.seconds-deprecated.html">hms.to.seconds()</a></code> and <code><a href="../reference/seconds.to.hms-deprecated.html">seconds.to.hms()</a></code>: the hms package</li>
+<li>
+<code>list.to.df()</code>, <code>df.to.list()</code>, <code><a href="../reference/nlist-deprecated.html">nlist()</a></code> and <code><a href="../reference/nc-deprecated.html">nc()</a></code>: the tibble package</li>
+<li>
+<code><a href="../reference/ofactor-deprecated.html">ofactor()</a></code>: <code>forcats::fct_inorder()</code>
+</li>
+<li>
+<code>sample.data.frame()</code>: <code>dplyr::sample_n()</code>
+</li>
+<li>
+<code><a href="../reference/thisfile-deprecated.html">thisfile()</a></code> and others: the rprojroot package</li>
+<li>
+<code><a href="../reference/tll-deprecated.html">tll()</a></code>: <code><a href="http://www.rdocumentation.org/packages/purrr/topics/transpose">purrr::transpose()</a></code>
+</li>
+<li>
+<code><a href="../reference/vswitch-deprecated.html">vswitch()</a></code>: <code>dplyr::recode()</code>
+</li>
+</ul>
+</li>
+<li>Unexported <code>setMissingNames()</code>
+</li>
 <li>Remove call to <code>test_examples()</code> in tests (#12, @jimhester).</li>
 </ul>
 </div>
