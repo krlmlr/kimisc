@@ -13,6 +13,6 @@ if (inherits(ci(), "TravisCI") && Sys.getenv("BUILD_PKGDOWN") != "" && Sys.geten
     add_step(step_build_pkgdown()) %>%
     add_step(step_push_deploy(
       path = "docs",
-      branch = if (ci$get_branch() == "master") "gh-pages" else paste0("gh-pages-", ci$get_branch())
+      branch = if (ci()$get_branch() == "master") "gh-pages" else paste0("gh-pages-", ci()$get_branch())
     ))
 }
