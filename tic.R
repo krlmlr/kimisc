@@ -1,6 +1,6 @@
 add_package_checks()
 
-if (Sys.getenv("id_rsa") != "") {
+if (inherits(ci(), "TravisCI") && Sys.getenv("BUILD_PKGDOWN") != "" && Sys.getenv("id_rsa") != "") {
   # pkgdown documentation can be built optionally. Other example criteria:
   # - `inherits(ci(), "TravisCI")`: Only for Travis CI
   # - `ci()$is_tag()`: Only for tags, not for branches
@@ -11,5 +11,8 @@ if (Sys.getenv("id_rsa") != "") {
 
   get_stage("deploy") %>%
     add_step(step_build_pkgdown()) %>%
-    add_step(step_push_deploy(path = "docs", branch = "gh-pages"))
+    add_step(step_push_deploy(
+      path = "docs",
+      branch = if (ci$get_branch() == "master") "gh-pages" else paste0("gh-pages-", ci$get_branch())
+    ))
 }
