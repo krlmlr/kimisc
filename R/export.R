@@ -16,7 +16,7 @@
 #' rm(newly.created.var)
 #' @export
 #' @author Roland
-#' @references http://stackoverflow.com/a/17484932/946850
+#' @references [http://stackoverflow.com/a/17484932/946850]()
 export.list <- function(arg.list, arg.names=names(arg.list),
                         target.env=.GlobalEnv) { # nolint
   stopifnot(length(arg.list) == length(arg.names))
@@ -43,7 +43,7 @@ export.list <- function(arg.list, arg.names=names(arg.list),
 #' rm(newly.created.var)
 #' @export
 #' @author Roland
-#' @references http://stackoverflow.com/a/17484932/946850
+#' @references [http://stackoverflow.com/a/17484932/946850]()
 export <- function(...,
                    target.env=.GlobalEnv) { # nolint
   arg.list <- list(...)

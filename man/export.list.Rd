@@ -30,7 +30,7 @@ newly.created.var
 rm(newly.created.var)
 }
 \references{
-http://stackoverflow.com/a/17484932/946850
+\url{http://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
 \link{export}, \link{assign}

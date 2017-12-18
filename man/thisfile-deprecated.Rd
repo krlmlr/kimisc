@@ -40,7 +40,7 @@ of the parameter passed to \code{Rscript} is returned.
 \dontrun{thisfile()}
 }
 \references{
-http://stackoverflow.com/q/1815606/946850
+\url{http://stackoverflow.com/q/1815606/946850}
 }
 \seealso{
 \code{\link[base:source]{base::source()}}, \code{\link[utils:Rscript]{utils::Rscript()}}, \code{\link[base:getwd]{base::getwd()}}

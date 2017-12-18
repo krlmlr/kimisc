@@ -2,18 +2,13 @@ Encoding: UTF-8
 Package: kimisc
 Type: Package
 Title: Kirill's Miscellaneous Functions
-Version: 0.3
-Date: 2016-02-14
+Version: 0.4
+Date: 2017-12-17
 Authors@R: person(given = "Kirill", family = "Müller", role = c("aut",
         "cre"), email = "krlmlr+r@mailbox.org")
 Description: A collection of useful functions not found anywhere else,
         mainly for programming: Pretty intervals, generalized lagged
-        differences, checking containment in an interval, creating a
-        factor where the levels maintain the order of appearance,
-        sampling rows from a data frame, converting seconds from
-        midnight to and from H:M:S format, choosing the first non-NA
-        value, transposing lists of lists, returning the name of the
-        file currently sourced, smart named lists and vectors, and an
+        differences, checking containment in an interval, and an
         alternative interface to assign().
 License: GPL-3
 Imports: 
