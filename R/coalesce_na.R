@@ -1,12 +1,12 @@
 #' @title Replaces NA values
 #' @description This (vectorized) function returns the first
-#'   non-\code{NA} argument, similar to the SQL function
-#'   \code{COALESCE}. If a vector or matrix is passed as first argument,
+#'   non-`NA` argument, similar to the SQL function
+#'   `COALESCE`. If a vector or matrix is passed as first argument,
 #'   the remaining arguments are recycled to generate a vector/matrix of
 #'   the same dimension, and coalescing is done element by element.
 #' @param x The first value to coalesce.
 #' @param ... Other values to coalesce.
-#' @return A vector of the same length as \code{x}.
+#' @return A vector of the same length as `x`.
 #' @examples
 #' coalesce.na(NA, -1)
 #' coalesce.na(5, 3)
@@ -14,7 +14,10 @@
 #' coalesce.na(matrix(c(NA, 1:3), nrow=2))
 #' coalesce.na(NA)
 #' @export
+#' @family deprecated functions
+#' @name coalesce.na-deprecated
 coalesce.na <- function(x, ...) {
+  deprecate("dplyr::coalesce")
   x.len <- length(x)
   ly <- list(...)
   for (y in ly) {

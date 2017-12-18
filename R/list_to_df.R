@@ -8,7 +8,10 @@
 #' @param list_for_df The object to be converted to a data frame
 #'
 #' @export
+#' @family deprecated functions
+#' @name list_to_df-deprecated
 list_to_df <- function(list_for_df) {
+  deprecate("tibble::enframe")
   list_for_df <- as.list(list_for_df)
 
   nm <- names(list_for_df)
@@ -32,7 +35,10 @@ list_to_df <- function(list_for_df) {
 #'
 #' @export
 #' @importFrom stats setNames
+#' @family deprecated functions
+#' @name df_to_list-deprecated
 df_to_list <- function(df_for_list) {
+  deprecate("tibble::deframe()")
   value_cols <- which(vapply(df_for_list, is.list, logical(1L)))
   value_col <- coalesce.na(value_cols["value"], value_cols[1L])
   if (is.na(value_col)) {

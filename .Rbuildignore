@@ -12,3 +12,7 @@
 ^makeR$
 ^cran-comments\.md$
 ^revdep$
+^\.travis\.yml$
+^tic\.R$
+^_pkgdown\.yml$
+^docs$

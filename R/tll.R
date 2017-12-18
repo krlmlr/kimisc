@@ -4,13 +4,16 @@
 #'   elements with length \eqn{n} each.
 #' @param l List of lists, possibly named.
 #' @return A list of lists corresponding to a transposition of the argument.
-#' @seealso \link[base]{t}
+#' @seealso [base::t()]
 #' @examples
 #' tll(list(list(1, 2), list(3, 4)))
 #' tll(list(list(a=1, b=2), list(a=3, b=4)))
 #' tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
 #' @export
+#' @family deprecated functions
+#' @name tll-deprecated
 tll <- function(l) {
+  deprecate("purrr::transpose")
   if (length(l) == 0)
     return(list())
 

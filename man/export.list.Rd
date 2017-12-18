@@ -19,18 +19,15 @@ default.}
 Invisible \code{NULL}.
 }
 \description{
-This function is a wrapper around \code{\link{assign}} that
-  exports the contents of a named list to an environment.  The variable names
-  in the target environment are constructed from the names of the list items
-  or taken from a separate argument.
+This function is a wrapper around \code{\link[=assign]{assign()}} that
+exports the contents of a named list to an environment.  The variable names
+in the target environment are constructed from the names of the list items
+or taken from a separate argument.
 }
 \examples{
 export.list(list(newly.created.var=5))
 newly.created.var
 rm(newly.created.var)
-}
-\author{
-Roland
 }
 \references{
 \url{http://stackoverflow.com/a/17484932/946850}
@@ -38,4 +35,6 @@ Roland
 \seealso{
 \link{export}, \link{assign}
 }
-
+\author{
+Roland
+}

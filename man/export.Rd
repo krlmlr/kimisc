@@ -16,8 +16,8 @@ default.}
 Invisible \code{NULL}.
 }
 \description{
-This function is a wrapper around \code{\link{export.list}} that
-  exports variables by their name to another environment.
+This function is a wrapper around \code{\link[=export.list]{export.list()}} that
+exports variables by their name to another environment.
 }
 \examples{
 local({
@@ -27,13 +27,12 @@ local({
 newly.created.var
 rm(newly.created.var)
 }
-\author{
-Roland
-}
 \references{
 \url{http://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
 \link{export.list}, \link{assign}
 }
-
+\author{
+Roland
+}

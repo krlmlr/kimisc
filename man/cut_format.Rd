@@ -11,7 +11,8 @@ cut_format(x, breaks, include.lowest = FALSE, right = TRUE,
 \arguments{
 \item{x}{a numeric vector which is to be converted to a factor by cutting.}
 
-\item{breaks}{A numeric vector of two or more unique cut points}
+\item{breaks}{\code{[numeric]}\cr
+A vector of two or more unique cut points}
 
 \item{include.lowest}{logical, indicating if an \sQuote{x[i]} equal to
     the lowest (or highest, for \code{right = FALSE}) \sQuote{breaks}
@@ -22,11 +23,11 @@ cut_format(x, breaks, include.lowest = FALSE, right = TRUE,
 
 \item{ordered_result}{logical: should the result be an ordered factor?}
 
-\item{...}{Passed to \code{cut}}
+\item{...}{Passed to \code{cut()}}
 
 \item{format_fun}{\code{[function(x): character]}\cr
 A vectorized function that performs the desired formatting.  Default:
-\code{\link[base]{format}}}
+\code{\link[base:format]{base::format()}}}
 
 \item{sep}{\code{[character(1)]}\cr
 The separator between lower and upper end of the interval. Default:
@@ -37,7 +38,7 @@ Opening and closing parentheses in two variants. Default:
 \code{c("(", "[", ")", "]")}}
 }
 \description{
-This is an enhanced version of \code{\link[base]{cut}} that allows a custom
+This is an enhanced version of \code{\link[base:cut]{base::cut()}} that allows a custom
 formatting to be applied to the values.
 }
 \examples{
@@ -47,4 +48,3 @@ cut_format(runif(10), seq(0, 1, by = 0.25), paren = c("<", "{", ">", "}"))
 \seealso{
 \url{http://stackoverflow.com/q/14456371/946850}
 }
-
