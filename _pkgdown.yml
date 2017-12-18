@@ -1,3 +1,7 @@
+templates:
+  params:
+    bootswatch: flatly # https://bootswatch.com/flatly/
+
 reference:
 - title: Supported functions
   desc: |
