@@ -6,7 +6,6 @@
 
 0 errors | 0 warnings | 1 note
 
-* Now using umlaut in my last name, and new e-mail address
 * Spelling of my first name
 
 ## Reverse dependencies
