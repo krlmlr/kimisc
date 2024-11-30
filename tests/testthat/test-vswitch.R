@@ -1,5 +1,3 @@
-context("vswitch")
-
 test_that("character", {
   expect_error(vswitch(LETTERS, 1, 2, 3), "unnamed")
   expect_equal(vswitch(LETTERS), rep(NA, length(LETTERS)))

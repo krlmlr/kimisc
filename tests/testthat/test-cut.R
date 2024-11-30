@@ -1,5 +1,3 @@
-context("cut")
-
 test_that("cut works the same by default (with certain sep and format_fun)", {
   x <- runif(10)
   breaks <- seq(0, 1, by = 0.25)

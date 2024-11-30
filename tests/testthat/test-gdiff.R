@@ -1,5 +1,3 @@
-context("gdiff")
-
 test_that("simple cases are identical with diff", {
   x <- 1:10
   expect_equal(gdiff(x), diff(x))

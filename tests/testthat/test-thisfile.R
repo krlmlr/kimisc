@@ -1,5 +1,3 @@
-context("thisfile")
-
 test_that("thisfile works with source", {
   res <- source("scripts/thisfile.R")
   expect_true(grepl("thisfile.R$", res$value))
