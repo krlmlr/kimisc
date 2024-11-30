@@ -18,3 +18,4 @@
 ^docs$
 ^\.github$
 ^README\.Rmd$
+^pkgdown$

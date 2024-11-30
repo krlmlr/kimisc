@@ -1,4 +1,7 @@
+url: http://krlmlr.github.io/kimisc/
+
 template:
+  bootstrap: 5
   params:
     bootswatch: flatly # https://bootswatch.com/flatly/
 
@@ -7,15 +10,15 @@ reference:
   desc: |
     Helper functions for which I don't know other implementations
   contents:
-  - cut_format
-  - export.list
-  - export
-  - gdiff
-  - in.interval.lo
-  - in.interval.ro
-  - nin.interval.lo
-  - nin.interval.ro
-
+    - cut_format
+    - export.list
+    - export
+    - gdiff
+    - in.interval.lo
+    - in.interval.ro
+    - nin.interval.lo
+    - nin.interval.ro
 - title: Deprecated functions
   contents:
-  - kimisc-deprecated
+    - kimisc-deprecated
+
