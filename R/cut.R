@@ -29,7 +29,8 @@ cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
                        paren = c("(", "[", ")", "]")) {
   if (length(breaks) < 2L) {
     stop("Please specify breaks as a numeric vector of length >= 2",
-         call. = FALSE)
+      call. = FALSE
+    )
   }
 
   if (right) {
@@ -45,6 +46,8 @@ cut_format <- function(x, breaks, include.lowest = FALSE, right = TRUE,
 
   formatted_breaks <- format_fun(breaks)
   labels <- paste0(ob, head(formatted_breaks, -1L), sep, tail(formatted_breaks, -1L), cb)
-  cut.default(x = x, breaks = breaks, labels = labels, include.lowest = include.lowest,
-              right = right, ordered_result = ordered_result, ...)
+  cut.default(
+    x = x, breaks = breaks, labels = labels, include.lowest = include.lowest,
+    right = right, ordered_result = ordered_result, ...
+  )
 }
