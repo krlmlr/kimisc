@@ -29,7 +29,7 @@ This function internally calls \code{\link[=sample.int]{sample.int()}}.
 }
 \examples{
 set.seed(42)
-sample.rows(data.frame(a = c(1, 2, 3), b = c(4, 5, 6), row.names = c('a', 'b', 'c')), 10, replace = TRUE)
+sample.rows(data.frame(a = c(1, 2, 3), b = c(4, 5, 6), row.names = c("a", "b", "c")), 10, replace = TRUE)
 }
 \seealso{
 Other deprecated functions: 

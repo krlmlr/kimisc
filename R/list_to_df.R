@@ -15,8 +15,9 @@ list_to_df <- function(list_for_df) {
   list_for_df <- as.list(list_for_df)
 
   nm <- names(list_for_df)
-  if (is.null(nm))
+  if (is.null(nm)) {
     nm <- seq_along(list_for_df)
+  }
 
   df <- data.frame(name = nm, stringsAsFactors = FALSE)
   df$value <- unname(list_for_df)
@@ -51,8 +52,9 @@ df_to_list <- function(df_for_list) {
 
   if (!is.na(name_col)) {
     nm <- df_for_list[[name_col]]
-    if (any(nm != seq_along(value)))
+    if (any(nm != seq_along(value))) {
       names(value) <- nm
+    }
   }
 
   value

@@ -14,12 +14,14 @@
 #' @name tll-deprecated
 tll <- function(l) {
   deprecate("purrr::transpose")
-  if (length(l) == 0)
+  if (length(l) == 0) {
     return(list())
+  }
 
   plyr::llply(
     setMissingNames(object = seq_along(l[[1]]), nm = names(l[[1]])),
-    function(n)
+    function(n) {
       plyr::llply(l, function(ll) ll[[n]])
+    }
   )
 }

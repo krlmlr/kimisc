@@ -23,7 +23,8 @@ hms.to.seconds <- function(x) {
   minutes <- as.integer(gsub(re, "\\2", x))
   seconds <- as.integer(gsub(re, "\\3", x))
   res <- hours * 3600 + minutes * 60 + seconds
-  if (any(is.na(res)))
+  if (any(is.na(res))) {
     warning("NAs introduced by coercion")
+  }
   res
 }

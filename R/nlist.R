@@ -71,5 +71,6 @@ setMissingNames <- function(object, nm) {
 }
 
 # Simple helper to avoid code duplication
-.nworker <- function(object, expr)
+.nworker <- function(object, expr) {
   setMissingNames(object, vapply(expr, deparse, character(1)))
+}

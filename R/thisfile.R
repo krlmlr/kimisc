@@ -22,11 +22,17 @@
 #' @name thisfile-deprecated
 thisfile <- function() {
   deprecate("rprojroot::thisfile")
-  if (!is.null(res <- thisfile_source())) res
-  else if (!is.null(res <- thisfile_r())) res
-  else if (!is.null(res <- thisfile_rscript())) res
-  else if (!is.null(res <- thisfile_knit())) res
-  else NULL
+  if (!is.null(res <- thisfile_source())) {
+    res
+  } else if (!is.null(res <- thisfile_r())) {
+    res
+  } else if (!is.null(res <- thisfile_rscript())) {
+    res
+  } else if (!is.null(res <- thisfile_knit())) {
+    res
+  } else {
+    NULL
+  }
 }
 
 #' @rdname thisfile-deprecated
@@ -34,8 +40,9 @@ thisfile <- function() {
 thisfile_source <- function() {
   deprecate("rprojroot::thisfile_source")
   for (i in -(1:sys.nframe())) {
-    if (identical(args(sys.function(i)), args(base::source)))
+    if (identical(args(sys.function(i)), args(base::source))) {
       return(normalizePath(sys.frame(i)$ofile))
+    }
   }
 
   NULL
@@ -46,8 +53,9 @@ thisfile_source <- function() {
 thisfile_r <- function() {
   deprecate("rprojroot::thisfile_r")
   cmd_args <- commandArgs(trailingOnly = FALSE)
-  if (!grepl("^R(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
+  if (!grepl("^R(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE)) {
     return(NULL)
+  }
 
   cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
   leading_idx <-
@@ -58,8 +66,9 @@ thisfile_r <- function() {
 
   # If multiple --file arguments are given, R uses the last one
   res <- tail(res[res != ""], 1)
-  if (length(res) > 0)
+  if (length(res) > 0) {
     return(res)
+  }
 
   NULL
 }
@@ -69,8 +78,9 @@ thisfile_r <- function() {
 thisfile_rscript <- function() {
   deprecate("rprojroot::thisfile_rscript")
   cmd_args <- commandArgs(trailingOnly = FALSE)
-  if (!grepl("^Rscript(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
+  if (!grepl("^Rscript(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE)) {
     return(NULL)
+  }
 
   cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
   leading_idx <-
@@ -80,8 +90,9 @@ thisfile_rscript <- function() {
 
   # If multiple --file arguments are given, R uses the last one
   res <- tail(res[res != ""], 1)
-  if (length(res) > 0)
+  if (length(res) > 0) {
     return(res)
+  }
 
   NULL
 }
@@ -90,8 +101,9 @@ thisfile_rscript <- function() {
 #' @export
 thisfile_knit <- function() {
   deprecate("rprojroot::thisfile_knit")
-  if (requireNamespace("knitr"))
+  if (requireNamespace("knitr")) {
     return(knitr::current_input())
+  }
 
   NULL
 }

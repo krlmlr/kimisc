@@ -16,8 +16,9 @@ ofactor <- function(x = character(), ...) {
   deprecate("forcats::fct_inorder")
   x <- as.character(x)
   args <- list(...)
-  if (!("levels" %in% names(args)))
+  if (!("levels" %in% names(args))) {
     args <- c(list(levels = unique(x)), args)
+  }
   args <- c(list(x = x), args)
   do.call(factor, args)
 }
