@@ -10,7 +10,11 @@
 #' @details This function internally calls [sample.int()].
 #' @examples
 #' set.seed(42)
-#' sample.rows(data.frame(a = c(1, 2, 3), b = c(4, 5, 6), row.names = c("a", "b", "c")), 10, replace = TRUE)
+#' sample.rows(
+#'   data.frame(a = c(1, 2, 3), b = c(4, 5, 6), row.names = c("a", "b", "c")),
+#'   10,
+#'   replace = TRUE
+#' )
 #' @export
 #' @family deprecated functions
 #' @name sample.rows-deprecated
