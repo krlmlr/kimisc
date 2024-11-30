@@ -54,5 +54,5 @@ cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 1
 cut_format(runif(10), seq(0, 1, by = 0.25), paren = c("<", "{", ">", "}"))
 }
 \seealso{
-\url{http://stackoverflow.com/q/14456371/946850}
+\url{https://stackoverflow.com/q/14456371/946850}
 }

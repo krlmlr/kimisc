@@ -13,7 +13,7 @@
 #' nlist(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham
-#' @references [http://stackoverflow.com/a/5043280/946850]()
+#' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nlist-deprecated
 nlist <- function(...) {
@@ -36,7 +36,7 @@ nlist <- function(...) {
 #' nc(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham
-#' @references [http://stackoverflow.com/a/5043280/946850]()
+#' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nc-deprecated
 nc <- function(...) {
@@ -56,7 +56,7 @@ nc <- function(...) {
 # setMissingNames(c(a=1, b=2, 3), letters[2:4])
 # @export
 # @author Hadley Wickham, Kirill Müller
-# @references [http://stackoverflow.com/a/5043280/946850]()
+# @references [https://stackoverflow.com/a/5043280/946850]()
 setMissingNames <- function(object, nm) {
   if (is.null(names(object))) {
     missing_names <- rep(TRUE, length(object))

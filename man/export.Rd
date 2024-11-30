@@ -28,7 +28,7 @@ newly.created.var
 rm(newly.created.var)
 }
 \references{
-\url{http://stackoverflow.com/a/17484932/946850}
+\url{https://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
 \code{\link[=export.list]{export.list()}}, \code{\link[=assign]{assign()}}

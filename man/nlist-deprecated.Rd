@@ -26,7 +26,7 @@ nlist(a, b, d = c)
 nlist(mean(c(a, b, c)))
 }
 \references{
-\url{http://stackoverflow.com/a/5043280/946850}
+\url{https://stackoverflow.com/a/5043280/946850}
 }
 \seealso{
 \code{\link[=list]{list()}}

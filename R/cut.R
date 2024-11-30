@@ -16,7 +16,7 @@
 #' @param paren `[character(4)]`\cr
 #'   Opening and closing parentheses in two variants. Default:
 #'   \code{c("(", "[", ")", "]")}
-#' @seealso [http://stackoverflow.com/q/14456371/946850]()
+#' @seealso [https://stackoverflow.com/q/14456371/946850]()
 #'
 #' @examples
 #' cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 100, "%"))
