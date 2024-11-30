@@ -4,17 +4,19 @@
 #'   in the call.
 #' @param ... List items, possibly named
 #' @return A named list.
-#' @seealso \link{list}
+#' @seealso [list()]
 #' @examples
-#' a <- 1; b <- 2; c <- 3
-#' nlist(a, b, d=c)
+#' a <- 1
+#' b <- 2
+#' c <- 3
+#' nlist(a, b, d = c)
 #' nlist(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham
-#' @references [http://stackoverflow.com/a/5043280/946850](),
-#'   [http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html]()
+#' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nlist-deprecated
+#' @keywords internal
 nlist <- function(...) {
   deprecate("tibble::lst")
   .nworker(list(...), substitute(list(...))[-1])
@@ -26,17 +28,19 @@ nlist <- function(...) {
 #'   in the call.
 #' @param ... Vector elements, possibly named
 #' @return A named vector.
-#' @seealso \link{c}, \link{nlist}
+#' @seealso [c()], [nlist()]
 #' @examples
-#' a <- 1; b <- 2; c <- 3
-#' nc(a, b, d=c)
+#' a <- 1
+#' b <- 2
+#' c <- 3
+#' nc(a, b, d = c)
 #' nc(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham
-#' @references [http://stackoverflow.com/a/5043280/946850](),
-#'   [http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html]()
+#' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nc-deprecated
+#' @keywords internal
 nc <- function(...) {
   deprecate("tibble::lst")
   .nworker(c(...), substitute(list(...))[-1])
@@ -54,7 +58,7 @@ nc <- function(...) {
 # setMissingNames(c(a=1, b=2, 3), letters[2:4])
 # @export
 # @author Hadley Wickham, Kirill Müller
-# @references [http://stackoverflow.com/a/5043280/946850]()
+# @references [https://stackoverflow.com/a/5043280/946850]()
 setMissingNames <- function(object, nm) {
   if (is.null(names(object))) {
     missing_names <- rep(TRUE, length(object))
@@ -67,5 +71,6 @@ setMissingNames <- function(object, nm) {
 }
 
 # Simple helper to avoid code duplication
-.nworker <- function(object, expr)
+.nworker <- function(object, expr) {
   setMissingNames(object, vapply(expr, deparse, character(1)))
+}

@@ -8,3 +8,4 @@
 *.so
 /inst/web
 /revdep/.cache.rds
+docs

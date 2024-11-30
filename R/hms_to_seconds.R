@@ -16,6 +16,7 @@
 #' @export
 #' @family deprecated functions
 #' @name hms.to.seconds-deprecated
+#' @keywords internal
 hms.to.seconds <- function(x) {
   deprecate("hms::parse_hms")
   re <- "^([0-9]+):([0-9]+):([0-9]+)|.*$"
@@ -23,7 +24,8 @@ hms.to.seconds <- function(x) {
   minutes <- as.integer(gsub(re, "\\2", x))
   seconds <- as.integer(gsub(re, "\\3", x))
   res <- hours * 3600 + minutes * 60 + seconds
-  if (any(is.na(res)))
+  if (any(is.na(res))) {
     warning("NAs introduced by coercion")
+  }
   res
 }

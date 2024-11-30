@@ -23,22 +23,29 @@
 #' @export
 gdiff <- function(x, lag = 1L, differences = 1L, FUN = `-`, ...) {
   ismat <- is.matrix(x)
-  xlen <- if (ismat)
+  xlen <- if (ismat) {
     dim(x)[1L]
-  else length(x)
-  if (length(lag) > 1L || length(differences) > 1L || lag <
-        1L || differences < 1L)
+  } else {
+    length(x)
+  }
+  if (length(lag) > 1L || length(differences) > 1L || lag < 1L || differences < 1L) {
     stop("'lag' and 'differences' must be integers >= 1")
-  if (lag * differences >= xlen)
+  }
+  if (lag * differences >= xlen) {
     return(x[0L])
+  }
   i1 <- -seq_len(lag)
-  if (ismat)
+  if (ismat) {
     for (i in seq_len(differences)) {
-      x <- FUN(x[i1, , drop = FALSE],
-               x[-nrow(x):-(nrow(x) - lag + 1L), , drop = FALSE])
+      x <- FUN(
+        x[i1, , drop = FALSE],
+        x[-nrow(x):-(nrow(x) - lag + 1L), , drop = FALSE]
+      )
     }
-  else
-    for (i in seq_len(differences))
+  } else {
+    for (i in seq_len(differences)) {
       x <- FUN(x[i1], x[-length(x):-(length(x) - lag + 1L)])
+    }
+  }
   x
 }

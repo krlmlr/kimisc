@@ -19,30 +19,34 @@ assigns names to unnamed arguments based on the unevaluated expression used
 in the call.
 }
 \examples{
-a <- 1; b <- 2; c <- 3
-nlist(a, b, d=c)
+a <- 1
+b <- 2
+c <- 3
+nlist(a, b, d = c)
 nlist(mean(c(a, b, c)))
 }
 \references{
-\url{http://stackoverflow.com/a/5043280/946850},
-\url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
+\url{https://stackoverflow.com/a/5043280/946850}
 }
 \seealso{
-\link{list}
+\code{\link[=list]{list()}}
 
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{df_to_list-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{sample.rows-deprecated}},
-  \code{\link{seconds.to.hms-deprecated}},
-  \code{\link{thisfile-deprecated}},
-  \code{\link{tll-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{df_to_list-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{sample.rows-deprecated}},
+\code{\link{seconds.to.hms-deprecated}},
+\code{\link{thisfile-deprecated}},
+\code{\link{tll-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
 \author{
 Hadley Wickham
 }
+\concept{deprecated functions}
+\keyword{internal}

@@ -29,19 +29,26 @@ This function internally calls \code{\link[=sample.int]{sample.int()}}.
 }
 \examples{
 set.seed(42)
-sample.rows(data.frame(a=c(1,2,3), b=c(4,5,6), row.names=c('a', 'b', 'c')), 10, replace=TRUE)
+sample.rows(
+  data.frame(a = c(1, 2, 3), b = c(4, 5, 6), row.names = c("a", "b", "c")),
+  10,
+  replace = TRUE
+)
 }
 \seealso{
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{df_to_list-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{nlist-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{seconds.to.hms-deprecated}},
-  \code{\link{thisfile-deprecated}},
-  \code{\link{tll-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{df_to_list-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{nlist-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{seconds.to.hms-deprecated}},
+\code{\link{thisfile-deprecated}},
+\code{\link{tll-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
+\concept{deprecated functions}
+\keyword{internal}

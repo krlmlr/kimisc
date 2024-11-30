@@ -6,19 +6,19 @@
 \alias{kimisc-package}
 \title{kimisc: Kirill's Miscellaneous Functions}
 \description{
-A collection of useful functions not found anywhere else,
-mainly for programming: Pretty intervals, generalized lagged
-differences, checking containment in an interval, and an
-alternative interface to assign().
+A collection of useful functions not found anywhere else, mainly for programming: Pretty intervals, generalized lagged differences, checking containment in an interval, and an alternative interface to assign().
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://krlmlr.github.io/kimisc}
+  \item \url{https://krlmlr.github.io/kimisc/}
+  \item \url{https://github.com/krlmlr/kimisc}
   \item Report bugs at \url{https://github.com/krlmlr/kimisc/issues}
 }
 
 }
 \author{
-Kirill Müller
+\strong{Maintainer}: Kirill Müller \email{krlmlr+r@mailbox.org}
+
 }
+\keyword{internal}

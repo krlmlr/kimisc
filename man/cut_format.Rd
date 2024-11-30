@@ -4,14 +4,22 @@
 \alias{cut_format}
 \title{Convert Numeric to Factor, with custom formatting}
 \usage{
-cut_format(x, breaks, include.lowest = FALSE, right = TRUE,
-  ordered_result = FALSE, ..., format_fun = format, sep = ", ",
-  paren = c("(", "[", ")", "]"))
+cut_format(
+  x,
+  breaks,
+  include.lowest = FALSE,
+  right = TRUE,
+  ordered_result = FALSE,
+  ...,
+  format_fun = format,
+  sep = ", ",
+  paren = c("(", "[", ")", "]")
+)
 }
 \arguments{
 \item{x}{a numeric vector which is to be converted to a factor by cutting.}
 
-\item{breaks}{\code{[numeric]}\cr
+\item{breaks}{\verb{[numeric]}\cr
 A vector of two or more unique cut points}
 
 \item{include.lowest}{logical, indicating if an \sQuote{x[i]} equal to
@@ -25,15 +33,15 @@ A vector of two or more unique cut points}
 
 \item{...}{Passed to \code{cut()}}
 
-\item{format_fun}{\code{[function(x): character]}\cr
+\item{format_fun}{\verb{[function(x): character]}\cr
 A vectorized function that performs the desired formatting.  Default:
 \code{\link[base:format]{base::format()}}}
 
-\item{sep}{\code{[character(1)]}\cr
+\item{sep}{\verb{[character(1)]}\cr
 The separator between lower and upper end of the interval. Default:
 \code{", "}}
 
-\item{paren}{\code{[character(4)]}\cr
+\item{paren}{\verb{[character(4)]}\cr
 Opening and closing parentheses in two variants. Default:
 \code{c("(", "[", ")", "]")}}
 }
@@ -46,5 +54,5 @@ cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 1
 cut_format(runif(10), seq(0, 1, by = 0.25), paren = c("<", "{", ">", "}"))
 }
 \seealso{
-\url{http://stackoverflow.com/q/14456371/946850}
+\url{https://stackoverflow.com/q/14456371/946850}
 }

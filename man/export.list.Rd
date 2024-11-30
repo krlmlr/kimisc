@@ -25,15 +25,15 @@ in the target environment are constructed from the names of the list items
 or taken from a separate argument.
 }
 \examples{
-export.list(list(newly.created.var=5))
+export.list(list(newly.created.var = 5))
 newly.created.var
 rm(newly.created.var)
 }
 \references{
-\url{http://stackoverflow.com/a/17484932/946850}
+\url{https://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
-\link{export}, \link{assign}
+\code{\link[=export]{export()}}, \code{\link[=assign]{assign()}}
 }
 \author{
 Roland

@@ -1,24 +1,26 @@
-Encoding: UTF-8
-Package: kimisc
 Type: Package
+Package: kimisc
 Title: Kirill's Miscellaneous Functions
-Version: 0.4
+Version: 0.4.0
 Date: 2017-12-17
-Authors@R: person(given = "Kirill", family = "Müller", role = c("aut",
-        "cre"), email = "krlmlr+r@mailbox.org")
+Authors@R: 
+    person("Kirill", "Müller", , "krlmlr+r@mailbox.org", role = c("aut", "cre"))
 Description: A collection of useful functions not found anywhere else,
-        mainly for programming: Pretty intervals, generalized lagged
-        differences, checking containment in an interval, and an
-        alternative interface to assign().
-License: GPL-3
+    mainly for programming: Pretty intervals, generalized lagged
+    differences, checking containment in an interval, and an alternative
+    interface to assign().
+License: MIT + file LICENSE
+URL: https://krlmlr.github.io/kimisc/, https://github.com/krlmlr/kimisc
+BugReports: https://github.com/krlmlr/kimisc/issues
 Imports: 
     memoise,
     plyr,
     pryr
-Suggests: testthat (>= 0.10.0)
-Enhances: knitr
-URL: http://krlmlr.github.io/kimisc
-URLNote: https://github.com/krlmlr/kimisc
-BugReports: https://github.com/krlmlr/kimisc/issues
-RoxygenNote: 6.0.1
+Suggests: 
+    testthat (>= 3.0.0)
+Enhances: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2.9000

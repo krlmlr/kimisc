@@ -12,23 +12,26 @@ df_to_list(df_for_list)
 }
 \description{
 This function converts a data frame back to a list. It is the reverse
-operation to \link{list_to_df}.
+operation to \code{\link[=list_to_df]{list_to_df()}}.
 }
 \details{
 In a data frame with more than two columns, heuristics are applied to detect
 the name and value column.
 }
 \seealso{
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{nlist-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{sample.rows-deprecated}},
-  \code{\link{seconds.to.hms-deprecated}},
-  \code{\link{thisfile-deprecated}},
-  \code{\link{tll-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{nlist-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{sample.rows-deprecated}},
+\code{\link{seconds.to.hms-deprecated}},
+\code{\link{thisfile-deprecated}},
+\code{\link{tll-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
+\concept{deprecated functions}
+\keyword{internal}

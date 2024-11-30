@@ -1,5 +1,3 @@
-context("list_to_df")
-
 test_that("vector input", {
   inp <- 3:1
   ret <- list_to_df(inp)

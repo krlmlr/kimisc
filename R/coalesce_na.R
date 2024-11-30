@@ -10,12 +10,13 @@
 #' @examples
 #' coalesce.na(NA, -1)
 #' coalesce.na(5, 3)
-#' coalesce.na(c(1,NA,NA), c(NA,2))
-#' coalesce.na(matrix(c(NA, 1:3), nrow=2))
+#' coalesce.na(c(1, NA, NA), c(NA, 2))
+#' coalesce.na(matrix(c(NA, 1:3), nrow = 2))
 #' coalesce.na(NA)
 #' @export
 #' @family deprecated functions
 #' @name coalesce.na-deprecated
+#' @keywords internal
 coalesce.na <- function(x, ...) {
   deprecate("dplyr::coalesce")
   x.len <- length(x)
@@ -25,8 +26,9 @@ coalesce.na <- function(x, ...) {
     if (y.len == 1) {
       x[is.na(x)] <- y
     } else {
-      if (x.len %% y.len != 0)
+      if (x.len %% y.len != 0) {
         warning("object length is not a multiple of first object length")
+      }
       pos <- which(is.na(x))
       ypos <- (pos - 1) %% y.len + 1
       x[pos] <- y[ypos]

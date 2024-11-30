@@ -20,22 +20,25 @@ elements with length \eqn{n} each.
 }
 \examples{
 tll(list(list(1, 2), list(3, 4)))
-tll(list(list(a=1, b=2), list(a=3, b=4)))
-tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
+tll(list(list(a = 1, b = 2), list(a = 3, b = 4)))
+tll(list(x = list(a = 1, b = 2), y = list(a = 3, b = 4)))
 }
 \seealso{
 \code{\link[base:t]{base::t()}}
 
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{df_to_list-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{nlist-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{sample.rows-deprecated}},
-  \code{\link{seconds.to.hms-deprecated}},
-  \code{\link{thisfile-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{df_to_list-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{nlist-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{sample.rows-deprecated}},
+\code{\link{seconds.to.hms-deprecated}},
+\code{\link{thisfile-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
+\concept{deprecated functions}
+\keyword{internal}

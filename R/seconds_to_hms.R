@@ -14,10 +14,12 @@
 #' @export
 #' @family deprecated functions
 #' @name seconds.to.hms-deprecated
+#' @keywords internal
 seconds.to.hms <- function(x) {
   deprecate("hms::as.character()")
-  if (!is.integer(x))
+  if (!is.integer(x)) {
     x <- as.integer(floor(as.numeric(x)))
+  }
 
   hours <- as.integer(trunc(x / 3600))
   x <- x - hours * 3600L

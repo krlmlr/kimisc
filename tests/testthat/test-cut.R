@@ -1,5 +1,3 @@
-context("cut")
-
 test_that("cut works the same by default (with certain sep and format_fun)", {
   x <- runif(10)
   breaks <- seq(0, 1, by = 0.25)
@@ -8,9 +6,11 @@ test_that("cut works the same by default (with certain sep and format_fun)", {
       eval(bquote(
         expect_identical(
           cut_format(x, breaks,
-                     right = .(right), include.lowest = .(include.lowest),
-                     format_fun = formatC, sep = ","),
-          cut(x, breaks, right = .(right), include.lowest = .(include.lowest)))
+            right = .(right), include.lowest = .(include.lowest),
+            format_fun = formatC, sep = ","
+          ),
+          cut(x, breaks, right = .(right), include.lowest = .(include.lowest))
+        )
       ))
     }
   }
@@ -24,7 +24,8 @@ test_that("cut is better", {
     structure(
       c(1L, 2L, 2L, 3L, 4L),
       .Label = c("(0.00, 0.25]", "(0.25, 0.50]", "(0.50, 0.75]", "(0.75, 1.00]"),
-      class = "factor")
+      class = "factor"
+    )
   )
 })
 
@@ -36,7 +37,8 @@ test_that("custom parentheses", {
     structure(
       c(1L, 2L, 2L, 3L, 4L),
       .Label = c("<0.00, 0.25}", "<0.25, 0.50}", "<0.50, 0.75}", "<0.75, 1.00}"),
-      class = "factor")
+      class = "factor"
+    )
   )
 })
 
@@ -48,8 +50,12 @@ test_that("cut_format has same interface", {
   common_names <- intersect(names(formals(cut.default)), names(formals(cut_format)))
   expect_true(all(diff(match(common_names, names(formals(cut.default)))) > 0))
   expect_true(all(diff(match(common_names, names(formals(cut_format)))) > 0))
-  expect_identical(setdiff(names(formals(cut.default)), common_names),
-                   c("labels", "dig.lab"))
-  expect_identical(setdiff(names(formals(cut_format)), common_names),
-                   c("format_fun", "sep", "paren"))
+  expect_identical(
+    setdiff(names(formals(cut.default)), common_names),
+    c("labels", "dig.lab")
+  )
+  expect_identical(
+    setdiff(names(formals(cut_format)), common_names),
+    c("format_fun", "sep", "paren")
+  )
 })

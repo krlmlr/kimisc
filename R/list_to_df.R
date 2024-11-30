@@ -10,13 +10,15 @@
 #' @export
 #' @family deprecated functions
 #' @name list_to_df-deprecated
+#' @keywords internal
 list_to_df <- function(list_for_df) {
   deprecate("tibble::enframe")
   list_for_df <- as.list(list_for_df)
 
   nm <- names(list_for_df)
-  if (is.null(nm))
+  if (is.null(nm)) {
     nm <- seq_along(list_for_df)
+  }
 
   df <- data.frame(name = nm, stringsAsFactors = FALSE)
   df$value <- unname(list_for_df)
@@ -26,7 +28,7 @@ list_to_df <- function(list_for_df) {
 #' Converts a name-value data frame to a named list
 #'
 #' This function converts a data frame back to a list. It is the reverse
-#' operation to \link{list_to_df}.
+#' operation to [list_to_df()].
 #'
 #' In a data frame with more than two columns, heuristics are applied to detect
 #' the name and value column.
@@ -37,6 +39,7 @@ list_to_df <- function(list_for_df) {
 #' @importFrom stats setNames
 #' @family deprecated functions
 #' @name df_to_list-deprecated
+#' @keywords internal
 df_to_list <- function(df_for_list) {
   deprecate("tibble::deframe()")
   value_cols <- which(vapply(df_for_list, is.list, logical(1L)))
@@ -51,8 +54,9 @@ df_to_list <- function(df_for_list) {
 
   if (!is.na(name_col)) {
     nm <- df_for_list[[name_col]]
-    if (any(nm != seq_along(value)))
+    if (any(nm != seq_along(value))) {
       names(value) <- nm
+    }
   }
 
   value

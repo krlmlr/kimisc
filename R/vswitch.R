@@ -16,6 +16,7 @@
 #' @export
 #' @family deprecated functions
 #' @name vswitch-deprecated
+#' @keywords internal
 vswitch <- function(EXPR, ...) {
   deprecate("dplyr::recode")
   UseMethod("vswitch", EXPR)
@@ -33,8 +34,9 @@ vswitch.character <- function(EXPR, ...) {
   if (is.null(nvalues)) nvalues <- rep("", length(values))
   named <- nvalues != ""
   unnamed_i <- which(!named)
-  if (length(unnamed_i) > 1)
+  if (length(unnamed_i) > 1) {
     stop("At most one argument can be unnamed")
+  }
 
   default <- if (length(unnamed_i) == 0) list(NA) else values[[unnamed_i]]
   tbl <- c(unname(values[named]), default)
