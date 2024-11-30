@@ -26,7 +26,7 @@ list_to_df <- function(list_for_df) {
 #' Converts a name-value data frame to a named list
 #'
 #' This function converts a data frame back to a list. It is the reverse
-#' operation to \link{list_to_df}.
+#' operation to [list_to_df()].
 #'
 #' In a data frame with more than two columns, heuristics are applied to detect
 #' the name and value column.

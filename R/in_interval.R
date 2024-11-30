@@ -7,8 +7,8 @@
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
-#' @seealso \link{in.interval.lo}, \link{in.interval.ro},
-#'   \link{nin.interval.lo}
+#' @seealso [in.interval.lo()], [in.interval.ro()],
+#'   [nin.interval.lo()]
 #' @examples
 #' nin.interval.ro(c(-1, 0, 1, 2), 0, 1)
 #' nin.interval.ro(NA, 1, 3)
@@ -25,8 +25,8 @@ nin.interval.ro <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right=F))
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
-#' @seealso \link{in.interval.lo}, \link{nin.interval.lo},
-#'   \link{nin.interval.ro}
+#' @seealso [in.interval.lo()], [nin.interval.lo()],
+#'   [nin.interval.ro()]
 #' @examples
 #' in.interval.ro(c(-1, 0, 1, 2), 0, 1)
 #' in.interval.ro(NA, 1, 3)
@@ -42,8 +42,8 @@ in.interval.ro <- function(x, lo, hi) !nin.interval.ro(x, lo, hi)
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
-#' @seealso \link{in.interval.lo}, \link{in.interval.ro},
-#'   \link{nin.interval.ro}
+#' @seealso [in.interval.lo()], [in.interval.ro()],
+#'   [nin.interval.ro()]
 #' @examples
 #' nin.interval.lo(c(-1, 0, 1, 2), 0, 1)
 #' nin.interval.lo(NA, 1, 3)
@@ -60,8 +60,8 @@ nin.interval.lo <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right=T))
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
-#' @seealso \link{in.interval.ro}, \link{nin.interval.lo},
-#'   \link{nin.interval.ro}
+#' @seealso [in.interval.ro()], [nin.interval.lo()],
+#'   [nin.interval.ro()]
 #' @examples
 #' in.interval.lo(c(-1, 0, 1, 2), 0, 1)
 #' in.interval.lo(NA, 1, 3)

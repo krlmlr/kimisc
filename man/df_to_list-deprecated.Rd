@@ -12,7 +12,7 @@ df_to_list(df_for_list)
 }
 \description{
 This function converts a data frame back to a list. It is the reverse
-operation to \link{list_to_df}.
+operation to \code{\link[=list_to_df]{list_to_df()}}.
 }
 \details{
 In a data frame with more than two columns, heuristics are applied to detect

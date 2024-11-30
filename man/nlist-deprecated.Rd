@@ -28,7 +28,7 @@ nlist(mean(c(a, b, c)))
 \url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
 }
 \seealso{
-\link{list}
+\code{\link[=list]{list()}}
 
 Other deprecated functions: 
 \code{\link{coalesce.na-deprecated}},

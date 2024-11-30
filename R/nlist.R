@@ -4,7 +4,7 @@
 #'   in the call.
 #' @param ... List items, possibly named
 #' @return A named list.
-#' @seealso \link{list}
+#' @seealso [list()]
 #' @examples
 #' a <- 1; b <- 2; c <- 3
 #' nlist(a, b, d=c)
@@ -26,7 +26,7 @@ nlist <- function(...) {
 #'   in the call.
 #' @param ... Vector elements, possibly named
 #' @return A named vector.
-#' @seealso \link{c}, \link{nlist}
+#' @seealso [c()], [nlist()]
 #' @examples
 #' a <- 1; b <- 2; c <- 3
 #' nc(a, b, d=c)

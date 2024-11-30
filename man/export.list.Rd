@@ -33,7 +33,7 @@ rm(newly.created.var)
 \url{http://stackoverflow.com/a/17484932/946850}
 }
 \seealso{
-\link{export}, \link{assign}
+\code{\link[=export]{export()}}, \code{\link[=assign]{assign()}}
 }
 \author{
 Roland

@@ -9,7 +9,7 @@
 #' @param target.env The target environment.  Use the global environment by
 #'   default.
 #' @return Invisible `NULL`.
-#' @seealso \link{export}, \link{assign}
+#' @seealso [export()], [assign()]
 #' @examples
 #' export.list(list(newly.created.var=5))
 #' newly.created.var
@@ -33,7 +33,7 @@ export.list <- function(arg.list, arg.names=names(arg.list),
 #' @param target.env The target environment.  Use the global environment by
 #'   default.
 #' @return Invisible `NULL`.
-#' @seealso \link{export.list}, \link{assign}
+#' @seealso [export.list()], [assign()]
 #' @examples
 #' local({
 #'   newly.created.var <- 5

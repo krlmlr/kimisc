@@ -28,6 +28,6 @@ in.interval.lo(c(-1, 0, 1, 2), 0, 1)
 in.interval.lo(NA, 1, 3)
 }
 \seealso{
-\link{in.interval.ro}, \link{nin.interval.lo},
-\link{nin.interval.ro}
+\code{\link[=in.interval.ro]{in.interval.ro()}}, \code{\link[=nin.interval.lo]{nin.interval.lo()}},
+\code{\link[=nin.interval.ro]{nin.interval.ro()}}
 }
