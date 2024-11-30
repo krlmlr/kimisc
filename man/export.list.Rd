@@ -25,7 +25,7 @@ in the target environment are constructed from the names of the list items
 or taken from a separate argument.
 }
 \examples{
-export.list(list(newly.created.var=5))
+export.list(list(newly.created.var = 5))
 newly.created.var
 rm(newly.created.var)
 }

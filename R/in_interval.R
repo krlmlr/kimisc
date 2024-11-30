@@ -13,7 +13,7 @@
 #' nin.interval.ro(c(-1, 0, 1, 2), 0, 1)
 #' nin.interval.ro(NA, 1, 3)
 #' @export
-nin.interval.ro <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right=F))
+nin.interval.ro <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right = F))
 
 #' @title Checks if values are contained in an interval (open on the
 #'   right)
@@ -48,7 +48,7 @@ in.interval.ro <- function(x, lo, hi) !nin.interval.ro(x, lo, hi)
 #' nin.interval.lo(c(-1, 0, 1, 2), 0, 1)
 #' nin.interval.lo(NA, 1, 3)
 #' @export
-nin.interval.lo <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right=T))
+nin.interval.lo <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right = T))
 
 #' @title Checks if values are contained in an interval (open on the
 #'   left)

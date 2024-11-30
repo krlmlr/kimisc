@@ -9,7 +9,7 @@
 #' a <- 1
 #' b <- 2
 #' c <- 3
-#' nlist(a, b, d=c)
+#' nlist(a, b, d = c)
 #' nlist(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham
@@ -33,7 +33,7 @@ nlist <- function(...) {
 #' a <- 1
 #' b <- 2
 #' c <- 3
-#' nc(a, b, d=c)
+#' nc(a, b, d = c)
 #' nc(mean(c(a, b, c)))
 #' @export
 #' @author Hadley Wickham

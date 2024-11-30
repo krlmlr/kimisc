@@ -22,7 +22,7 @@ in the call.
 a <- 1
 b <- 2
 c <- 3
-nc(a, b, d=c)
+nc(a, b, d = c)
 nc(mean(c(a, b, c)))
 }
 \references{

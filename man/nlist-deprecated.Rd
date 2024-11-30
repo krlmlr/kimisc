@@ -22,7 +22,7 @@ in the call.
 a <- 1
 b <- 2
 c <- 3
-nlist(a, b, d=c)
+nlist(a, b, d = c)
 nlist(mean(c(a, b, c)))
 }
 \references{

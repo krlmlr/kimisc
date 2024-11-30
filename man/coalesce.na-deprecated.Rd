@@ -25,8 +25,8 @@ the same dimension, and coalescing is done element by element.
 \examples{
 coalesce.na(NA, -1)
 coalesce.na(5, 3)
-coalesce.na(c(1,NA,NA), c(NA,2))
-coalesce.na(matrix(c(NA, 1:3), nrow=2))
+coalesce.na(c(1, NA, NA), c(NA, 2))
+coalesce.na(matrix(c(NA, 1:3), nrow = 2))
 coalesce.na(NA)
 }
 \seealso{

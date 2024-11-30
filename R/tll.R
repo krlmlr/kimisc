@@ -7,8 +7,8 @@
 #' @seealso [base::t()]
 #' @examples
 #' tll(list(list(1, 2), list(3, 4)))
-#' tll(list(list(a=1, b=2), list(a=3, b=4)))
-#' tll(list(x=list(a=1, b=2), y=list(a=3, b=4)))
+#' tll(list(list(a = 1, b = 2), list(a = 3, b = 4)))
+#' tll(list(x = list(a = 1, b = 2), y = list(a = 3, b = 4)))
 #' @export
 #' @family deprecated functions
 #' @name tll-deprecated
@@ -18,8 +18,8 @@ tll <- function(l) {
     return(list())
 
   plyr::llply(
-    setMissingNames(object=seq_along(l[[1]]), nm=names(l[[1]])),
-    function (n)
+    setMissingNames(object = seq_along(l[[1]]), nm = names(l[[1]])),
+    function(n)
       plyr::llply(l, function(ll) ll[[n]])
   )
 }

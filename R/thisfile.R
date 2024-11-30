@@ -35,7 +35,7 @@ thisfile_source <- function() {
   deprecate("rprojroot::thisfile_source")
   for (i in -(1:sys.nframe())) {
     if (identical(args(sys.function(i)), args(base::source)))
-      return (normalizePath(sys.frame(i)$ofile))
+      return(normalizePath(sys.frame(i)$ofile))
   }
 
   NULL
@@ -47,11 +47,11 @@ thisfile_r <- function() {
   deprecate("rprojroot::thisfile_r")
   cmd_args <- commandArgs(trailingOnly = FALSE)
   if (!grepl("^R(?:|[.]exe)$", basename(cmd_args[[1L]]), ignore.case = TRUE))
-    return (NULL)
+    return(NULL)
 
   cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
   leading_idx <-
-    seq.int(from=1, length.out=length(cmd_args) - length(cmd_args_trailing))
+    seq.int(from = 1, length.out = length(cmd_args) - length(cmd_args_trailing))
   cmd_args <- cmd_args[leading_idx]
   file_idx <- c(which(cmd_args == "-f") + 1, which(grepl("^--file=", cmd_args)))
   res <- gsub("^(?:|--file=)(.*)$", "\\1", cmd_args[file_idx])
@@ -59,7 +59,7 @@ thisfile_r <- function() {
   # If multiple --file arguments are given, R uses the last one
   res <- tail(res[res != ""], 1)
   if (length(res) > 0)
-    return (res)
+    return(res)
 
   NULL
 }
@@ -74,14 +74,14 @@ thisfile_rscript <- function() {
 
   cmd_args_trailing <- commandArgs(trailingOnly = TRUE)
   leading_idx <-
-    seq.int(from=1, length.out=length(cmd_args) - length(cmd_args_trailing))
+    seq.int(from = 1, length.out = length(cmd_args) - length(cmd_args_trailing))
   cmd_args <- cmd_args[leading_idx]
   res <- gsub("^(?:--file=(.*)|.*)$", "\\1", cmd_args)
 
   # If multiple --file arguments are given, R uses the last one
   res <- tail(res[res != ""], 1)
   if (length(res) > 0)
-    return (res)
+    return(res)
 
   NULL
 }
@@ -91,7 +91,7 @@ thisfile_rscript <- function() {
 thisfile_knit <- function() {
   deprecate("rprojroot::thisfile_knit")
   if (requireNamespace("knitr"))
-    return (knitr::current_input())
+    return(knitr::current_input())
 
   NULL
 }
