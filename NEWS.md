@@ -1,6 +1,6 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
-# kimisc 0.4.0.9000 (2024-11-30)
+# kimisc 0.99.99.9900 (2024-11-30)
 
 ## Chore
 
