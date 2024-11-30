@@ -9,7 +9,7 @@ Description: A collection of useful functions not found anywhere else,
     mainly for programming: Pretty intervals, generalized lagged
     differences, checking containment in an interval, and an alternative
     interface to assign().
-License: GPL-3
+License: MIT + file LICENSE
 URL: https://krlmlr.github.io/kimisc/, https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
 Imports: 

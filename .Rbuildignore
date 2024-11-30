@@ -19,3 +19,4 @@
 ^\.github$
 ^README\.Rmd$
 ^pkgdown$
+^LICENSE\.md$
