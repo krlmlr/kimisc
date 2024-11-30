@@ -26,8 +26,7 @@ nc(a, b, d = c)
 nc(mean(c(a, b, c)))
 }
 \references{
-\url{http://stackoverflow.com/a/5043280/946850},
-\url{http://tolstoy.newcastle.edu.au/R/e9/help/10/03/8392.html}
+\url{http://stackoverflow.com/a/5043280/946850}
 }
 \seealso{
 \code{\link[=c]{c()}}, \code{\link[=nlist]{nlist()}}
