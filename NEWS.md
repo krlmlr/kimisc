@@ -4,9 +4,9 @@
 
 ## Chore
 
-- Upkeep, relicense as MIT (#14, #16).
+- Upkeep (#14, #16).
 
-- Fix check (#15).
+- Relicense as MIT (#14, #16).
 
 
 kimisc 0.4 (2017-12-17)
