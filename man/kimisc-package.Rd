@@ -6,10 +6,7 @@
 \alias{kimisc-package}
 \title{kimisc: Kirill's Miscellaneous Functions}
 \description{
-A collection of useful functions not found anywhere else,
-mainly for programming: Pretty intervals, generalized lagged
-differences, checking containment in an interval, and an
-alternative interface to assign().
+A collection of useful functions not found anywhere else, mainly for programming: Pretty intervals, generalized lagged differences, checking containment in an interval, and an alternative interface to assign().
 }
 \seealso{
 Useful links:

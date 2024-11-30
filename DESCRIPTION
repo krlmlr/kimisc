@@ -20,5 +20,5 @@ Enhances: knitr
 URL: http://krlmlr.github.io/kimisc
 URLNote: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 7.3.2.9000
 Roxygen: list(markdown = TRUE)

@@ -45,19 +45,21 @@ of the parameter passed to \code{Rscript} is returned.
 \seealso{
 \code{\link[base:source]{base::source()}}, \code{\link[utils:Rscript]{utils::Rscript()}}, \code{\link[base:getwd]{base::getwd()}}
 
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{df_to_list-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{nlist-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{sample.rows-deprecated}},
-  \code{\link{seconds.to.hms-deprecated}},
-  \code{\link{tll-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{df_to_list-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{nlist-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{sample.rows-deprecated}},
+\code{\link{seconds.to.hms-deprecated}},
+\code{\link{tll-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
 \author{
 Kirill Müller, Hadley Wickham, Michael R. Head
 }
+\concept{deprecated functions}

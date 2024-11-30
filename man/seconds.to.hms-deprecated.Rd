@@ -26,18 +26,20 @@ seconds.to.hms(c(100000, -4000.5))
 seconds.to.hms("invalid")
 }
 \seealso{
-\code{\link[base:strftime]{base::strftime()}}
+\code{\link[base:strptime]{base::strftime()}}
 
-Other deprecated functions: \code{\link{coalesce.na-deprecated}},
-  \code{\link{df_to_list-deprecated}},
-  \code{\link{hms.to.seconds-deprecated}},
-  \code{\link{kimisc-deprecated}},
-  \code{\link{list_to_df-deprecated}},
-  \code{\link{nc-deprecated}},
-  \code{\link{nlist-deprecated}},
-  \code{\link{ofactor-deprecated}},
-  \code{\link{sample.rows-deprecated}},
-  \code{\link{thisfile-deprecated}},
-  \code{\link{tll-deprecated}},
-  \code{\link{vswitch-deprecated}}
+Other deprecated functions: 
+\code{\link{coalesce.na-deprecated}},
+\code{\link{df_to_list-deprecated}},
+\code{\link{hms.to.seconds-deprecated}},
+\code{\link{kimisc-deprecated}},
+\code{\link{list_to_df-deprecated}},
+\code{\link{nc-deprecated}},
+\code{\link{nlist-deprecated}},
+\code{\link{ofactor-deprecated}},
+\code{\link{sample.rows-deprecated}},
+\code{\link{thisfile-deprecated}},
+\code{\link{tll-deprecated}},
+\code{\link{vswitch-deprecated}}
 }
+\concept{deprecated functions}
