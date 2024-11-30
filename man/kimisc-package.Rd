@@ -18,6 +18,7 @@ Useful links:
 
 }
 \author{
-Kirill Müller
+\strong{Maintainer}: Kirill Müller \email{krlmlr+r@mailbox.org}
+
 }
 \keyword{internal}
