@@ -12,6 +12,7 @@
 #' @export
 #' @family deprecated functions
 #' @name ofactor-deprecated
+#' @keywords internal
 ofactor <- function(x = character(), ...) {
   deprecate("forcats::fct_inorder")
   x <- as.character(x)

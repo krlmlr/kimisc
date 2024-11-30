@@ -65,3 +65,4 @@ Other deprecated functions:
 Kirill Müller, Hadley Wickham, Michael R. Head
 }
 \concept{deprecated functions}
+\keyword{internal}

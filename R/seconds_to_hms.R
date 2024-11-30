@@ -14,6 +14,7 @@
 #' @export
 #' @family deprecated functions
 #' @name seconds.to.hms-deprecated
+#' @keywords internal
 seconds.to.hms <- function(x) {
   deprecate("hms::as.character()")
   if (!is.integer(x)) {

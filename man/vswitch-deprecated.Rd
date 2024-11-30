@@ -47,3 +47,4 @@ Other deprecated functions:
 \code{\link{tll-deprecated}}
 }
 \concept{deprecated functions}
+\keyword{internal}

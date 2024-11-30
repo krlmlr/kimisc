@@ -14,6 +14,7 @@
 #' @export
 #' @family deprecated functions
 #' @name sample.rows-deprecated
+#' @keywords internal
 sample.rows <- function(x, size, replace = FALSE, prob = NULL) {
   deprecate("dplyr::sample_n")
   stopifnot(is.data.frame(x))

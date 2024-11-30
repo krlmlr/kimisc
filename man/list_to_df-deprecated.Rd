@@ -32,3 +32,4 @@ Other deprecated functions:
 \code{\link{vswitch-deprecated}}
 }
 \concept{deprecated functions}
+\keyword{internal}

@@ -49,3 +49,4 @@ Other deprecated functions:
 Hadley Wickham
 }
 \concept{deprecated functions}
+\keyword{internal}

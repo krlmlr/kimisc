@@ -16,6 +16,7 @@
 #' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nlist-deprecated
+#' @keywords internal
 nlist <- function(...) {
   deprecate("tibble::lst")
   .nworker(list(...), substitute(list(...))[-1])
@@ -39,6 +40,7 @@ nlist <- function(...) {
 #' @references [https://stackoverflow.com/a/5043280/946850]()
 #' @family deprecated functions
 #' @name nc-deprecated
+#' @keywords internal
 nc <- function(...) {
   deprecate("tibble::lst")
   .nworker(c(...), substitute(list(...))[-1])

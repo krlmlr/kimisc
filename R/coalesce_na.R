@@ -16,6 +16,7 @@
 #' @export
 #' @family deprecated functions
 #' @name coalesce.na-deprecated
+#' @keywords internal
 coalesce.na <- function(x, ...) {
   deprecate("dplyr::coalesce")
   x.len <- length(x)

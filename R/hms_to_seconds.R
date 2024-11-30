@@ -16,6 +16,7 @@
 #' @export
 #' @family deprecated functions
 #' @name hms.to.seconds-deprecated
+#' @keywords internal
 hms.to.seconds <- function(x) {
   deprecate("hms::parse_hms")
   re <- "^([0-9]+):([0-9]+):([0-9]+)|.*$"

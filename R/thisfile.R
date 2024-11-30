@@ -20,6 +20,7 @@
 #' @export
 #' @family deprecated functions
 #' @name thisfile-deprecated
+#' @keywords internal
 thisfile <- function() {
   deprecate("rprojroot::thisfile")
   if (!is.null(res <- thisfile_source())) {

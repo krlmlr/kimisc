@@ -10,6 +10,7 @@
 #' @export
 #' @family deprecated functions
 #' @name list_to_df-deprecated
+#' @keywords internal
 list_to_df <- function(list_for_df) {
   deprecate("tibble::enframe")
   list_for_df <- as.list(list_for_df)
@@ -38,6 +39,7 @@ list_to_df <- function(list_for_df) {
 #' @importFrom stats setNames
 #' @family deprecated functions
 #' @name df_to_list-deprecated
+#' @keywords internal
 df_to_list <- function(df_for_list) {
   deprecate("tibble::deframe()")
   value_cols <- which(vapply(df_for_list, is.list, logical(1L)))

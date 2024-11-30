@@ -12,6 +12,7 @@
 #' @export
 #' @family deprecated functions
 #' @name tll-deprecated
+#' @keywords internal
 tll <- function(l) {
   deprecate("purrr::transpose")
   if (length(l) == 0) {

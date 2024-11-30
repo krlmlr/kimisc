@@ -16,6 +16,7 @@
 #' @export
 #' @family deprecated functions
 #' @name vswitch-deprecated
+#' @keywords internal
 vswitch <- function(EXPR, ...) {
   deprecate("dplyr::recode")
   UseMethod("vswitch", EXPR)
