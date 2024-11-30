@@ -19,7 +19,9 @@ assigns names to unnamed arguments based on the unevaluated expression used
 in the call.
 }
 \examples{
-a <- 1; b <- 2; c <- 3
+a <- 1
+b <- 2
+c <- 3
 nlist(a, b, d=c)
 nlist(mean(c(a, b, c)))
 }

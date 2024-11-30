@@ -6,7 +6,9 @@
 #' @return A named list.
 #' @seealso [list()]
 #' @examples
-#' a <- 1; b <- 2; c <- 3
+#' a <- 1
+#' b <- 2
+#' c <- 3
 #' nlist(a, b, d=c)
 #' nlist(mean(c(a, b, c)))
 #' @export
@@ -28,7 +30,9 @@ nlist <- function(...) {
 #' @return A named vector.
 #' @seealso [c()], [nlist()]
 #' @examples
-#' a <- 1; b <- 2; c <- 3
+#' a <- 1
+#' b <- 2
+#' c <- 3
 #' nc(a, b, d=c)
 #' nc(mean(c(a, b, c)))
 #' @export
