@@ -4,7 +4,7 @@ Title: Kirill's Miscellaneous Functions
 Version: 0.99.99.9900
 Date: 2024-11-30
 Authors@R: 
-    person("Kirill", "Müller", , "krlmlr+r@mailbox.org", role = c("aut", "cre"))
+    person("Kirill", "Müller", email = "kirill@cynkra.com", role = c("aut", "cre"))
 Description: A collection of useful functions not found anywhere else,
     mainly for programming: Pretty intervals, generalized lagged
     differences, checking containment in an interval, and an alternative
