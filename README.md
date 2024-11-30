@@ -1,25 +1,19 @@
-kimisc
-======
 
-[![Travis build status](https://travis-ci.org/krlmlr/kimisc.svg?branch=master)](https://travis-ci.org/krlmlr/kimisc) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/krlmlr/kimisc?branch=master&svg=true)](https://ci.appveyor.com/project/krlmlr/kimisc) [![codecov.io](https://codecov.io/github/krlmlr/kimisc/coverage.svg?branch=master)](https://codecov.io/github/krlmlr/kimisc?branch=master) [![CRAN](http://www.r-pkg.org/badges/version/kimisc)](https://cran.rstudio.com/web/packages/kimisc/)
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# kimisc
+
+<!-- badges: start -->
+<!-- badges: end -->
 
 A collection of useful functions not found anywhere else.
 
-
 ## Installation
 
-```
-install.packages('kimisc')
-```
+You can install the development version of kimisc from
+[GitHub](https://github.com/) with:
 
-or the latest stable version using
-
-```
-devtools::install_github('krlmlr/kimisc@production')
-```
-
-or the most recent development version using
-
-```
-devtools::install_github('krlmlr/kimisc')
+``` r
+# install.packages("pak")
+pak::pak("krlmlr/kimisc")
 ```
