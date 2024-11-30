@@ -17,7 +17,7 @@ Imports:
     pryr
 Suggests: testthat (>= 0.10.0)
 Enhances: knitr
-URL: http://krlmlr.github.io/kimisc
+URL: http://krlmlr.github.io/kimisc, https://github.com/krlmlr/kimisc
 URLNote: https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
 RoxygenNote: 7.3.2.9000

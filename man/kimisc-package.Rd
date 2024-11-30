@@ -12,6 +12,7 @@ A collection of useful functions not found anywhere else, mainly for programming
 Useful links:
 \itemize{
   \item \url{http://krlmlr.github.io/kimisc}
+  \item \url{https://github.com/krlmlr/kimisc}
   \item Report bugs at \url{https://github.com/krlmlr/kimisc/issues}
 }
 
