@@ -37,7 +37,9 @@ or run with \code{Rscript} or using the \code{--file} parameter to the
 of the parameter passed to \code{Rscript} is returned.
 }
 \examples{
-\dontrun{thisfile()}
+\dontrun{
+thisfile()
+}
 }
 \references{
 \url{http://stackoverflow.com/q/1815606/946850}

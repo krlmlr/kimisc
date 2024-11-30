@@ -14,7 +14,9 @@
 #' @references [http://stackoverflow.com/q/1815606/946850]()
 #' @author Kirill Müller, Hadley Wickham, Michael R. Head
 #' @examples
-#' \dontrun{thisfile()}
+#' \dontrun{
+#' thisfile()
+#' }
 #' @export
 #' @family deprecated functions
 #' @name thisfile-deprecated
