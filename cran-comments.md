@@ -1,13 +1,5 @@
-## Test environments
-* local Ubuntu 17.10 install, R 3.4.3
-* win-builder (devel and release)
+kimisc 0.99.99.9900
 
-## R CMD check results
+## Cran Repository Policy
 
-0 errors | 0 warnings | 1 note
-
-* Spelling of my first name
-
-## Reverse dependencies
-
-* I have run R CMD check on the one downstream dependency with no failures.
+- [x] Reviewed CRP last edited 2024-08-27.
