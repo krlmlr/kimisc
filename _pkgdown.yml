@@ -22,3 +22,10 @@ reference:
   contents:
     - kimisc-deprecated
 
+authors:
+  Kirill Müller:
+    href: https://krlmlr.info
+
+development:
+  mode:
+    auto
