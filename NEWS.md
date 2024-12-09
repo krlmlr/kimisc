@@ -1,5 +1,14 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.0.9000 (2024-12-09)
+
+## Continuous integration
+
+- Avoid failure in fledge workflow if no changes (#20).
+
+- Sync with base (#19).
+
+
 # kimisc 1.0.0 (2024-11-30)
 
 ## Chore
