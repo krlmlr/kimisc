@@ -113,12 +113,12 @@ Opening and closing parentheses in two variants. Default:
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">cut_format</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html" class="external-link">runif</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, by <span class="op">=</span> <span class="fl">0.25</span><span class="op">)</span>, format_fun <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">x</span> <span class="op">*</span> <span class="fl">100</span>, <span class="st">"%"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] (0 %, 25 %]   (75 %, 100 %] (50 %, 75 %]  (0 %, 25 %]   (0 %, 25 %]  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] (25 %, 50 %]  (25 %, 50 %]  (25 %, 50 %]  (50 %, 75 %]  (75 %, 100 %]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] (0 %, 25 %]   (25 %, 50 %]  (25 %, 50 %]  (25 %, 50 %]  (50 %, 75 %] </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] (75 %, 100 %] (75 %, 100 %] (0 %, 25 %]   (0 %, 25 %]   (25 %, 50 %] </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Levels: (0 %, 25 %] (25 %, 50 %] (50 %, 75 %] (75 %, 100 %]</span>
 <span class="r-in"><span><span class="fu">cut_format</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html" class="external-link">runif</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, by <span class="op">=</span> <span class="fl">0.25</span><span class="op">)</span>, paren <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"&lt;"</span>, <span class="st">"{"</span>, <span class="st">"&gt;"</span>, <span class="st">"}"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] &lt;0.75, 1.00} &lt;0.00, 0.25} &lt;0.00, 0.25} &lt;0.25, 0.50} &lt;0.25, 0.50}</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] &lt;0.00, 0.25} &lt;0.25, 0.50} &lt;0.00, 0.25} &lt;0.25, 0.50} &lt;0.75, 1.00}</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] &lt;0.25, 0.50} &lt;0.00, 0.25} &lt;0.25, 0.50} &lt;0.00, 0.25} &lt;0.25, 0.50}</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] &lt;0.75, 1.00} &lt;0.25, 0.50} &lt;0.50, 0.75} &lt;0.50, 0.75} &lt;0.00, 0.25}</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Levels: &lt;0.00, 0.25} &lt;0.25, 0.50} &lt;0.50, 0.75} &lt;0.75, 1.00}</span>
 </code></pre></div>
     </div>
@@ -131,7 +131,7 @@ Opening and closing parentheses in two variants. Default:
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.9000.</p>
 </div>
 
     </footer></div>
