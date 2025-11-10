@@ -1,5 +1,40 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.0.9001 (2025-11-10)
+
+## Chore
+
+- Auto-update from GitHub Actions (#32).
+
+## Continuous integration
+
+- Use workflows for fledge (#35).
+
+- Sync (#34).
+
+- Use reviewdog for external PRs (#33).
+
+- Cleanup and fix macOS (#31).
+
+- Format with air, check detritus, better handling of `extra-packages` (#30).
+
+- Enhance permissions for workflow (#29).
+
+- Permissions, better tests for missing suggests, lints (#28).
+
+- Only fail covr builds if token is given (#27).
+
+- Always use `_R_CHECK_FORCE_SUGGESTS_=false` (#26).
+
+- Correct installation of xml2 (#25).
+
+- Explain (#24).
+
+- Add xml2 for covr, print testthat results (#23).
+
+- Sync (#22).
+
+
 # kimisc 1.0.0.9000 (2024-12-09)
 
 ## Continuous integration
