@@ -29,7 +29,7 @@ vswitch.default <- function(EXPR, ...) {
 
 #' @export
 vswitch.character <- function(EXPR, ...) {
-  values <- pryr::dots(...)
+  values <- eval(substitute(alist(...)))
   nvalues <- names(values)
   if (is.null(nvalues)) nvalues <- rep("", length(values))
   named <- nvalues != ""
