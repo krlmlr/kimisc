@@ -14,8 +14,7 @@ URL: https://krlmlr.github.io/kimisc/, https://github.com/krlmlr/kimisc
 BugReports: https://github.com/krlmlr/kimisc/issues
 Imports: 
     memoise,
-    plyr,
-    pryr
+    plyr
 Suggests: 
     testthat (>= 3.0.0)
 Enhances: 

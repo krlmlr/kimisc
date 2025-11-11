@@ -47,8 +47,7 @@ Other deprecated functions:
 \code{\link{ofactor-deprecated}},
 \code{\link{seconds.to.hms-deprecated}},
 \code{\link{thisfile-deprecated}},
-\code{\link{tll-deprecated}},
-\code{\link{vswitch-deprecated}}
+\code{\link{tll-deprecated}}
 }
 \concept{deprecated functions}
 \keyword{internal}

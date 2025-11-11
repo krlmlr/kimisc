@@ -58,8 +58,7 @@ Other deprecated functions:
 \code{\link{ofactor-deprecated}},
 \code{\link{sample.rows-deprecated}},
 \code{\link{seconds.to.hms-deprecated}},
-\code{\link{tll-deprecated}},
-\code{\link{vswitch-deprecated}}
+\code{\link{tll-deprecated}}
 }
 \author{
 Kirill Müller, Hadley Wickham, Michael R. Head

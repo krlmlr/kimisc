@@ -18,7 +18,6 @@ Other deprecated functions:
 \code{\link{sample.rows-deprecated}},
 \code{\link{seconds.to.hms-deprecated}},
 \code{\link{thisfile-deprecated}},
-\code{\link{tll-deprecated}},
-\code{\link{vswitch-deprecated}}
+\code{\link{tll-deprecated}}
 }
 \concept{deprecated functions}

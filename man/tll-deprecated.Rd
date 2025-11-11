@@ -37,8 +37,7 @@ Other deprecated functions:
 \code{\link{ofactor-deprecated}},
 \code{\link{sample.rows-deprecated}},
 \code{\link{seconds.to.hms-deprecated}},
-\code{\link{thisfile-deprecated}},
-\code{\link{vswitch-deprecated}}
+\code{\link{thisfile-deprecated}}
 }
 \concept{deprecated functions}
 \keyword{internal}
