@@ -1,5 +1,50 @@
 # Changelog
 
+## kimisc 1.0.0.9001 (2025-11-10)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#32](https://github.com/krlmlr/kimisc/issues/32)).
+
+### Continuous integration
+
+- Use workflows for fledge
+  ([\#35](https://github.com/krlmlr/kimisc/issues/35)).
+
+- Sync ([\#34](https://github.com/krlmlr/kimisc/issues/34)).
+
+- Use reviewdog for external PRs
+  ([\#33](https://github.com/krlmlr/kimisc/issues/33)).
+
+- Cleanup and fix macOS
+  ([\#31](https://github.com/krlmlr/kimisc/issues/31)).
+
+- Format with air, check detritus, better handling of `extra-packages`
+  ([\#30](https://github.com/krlmlr/kimisc/issues/30)).
+
+- Enhance permissions for workflow
+  ([\#29](https://github.com/krlmlr/kimisc/issues/29)).
+
+- Permissions, better tests for missing suggests, lints
+  ([\#28](https://github.com/krlmlr/kimisc/issues/28)).
+
+- Only fail covr builds if token is given
+  ([\#27](https://github.com/krlmlr/kimisc/issues/27)).
+
+- Always use `_R_CHECK_FORCE_SUGGESTS_=false`
+  ([\#26](https://github.com/krlmlr/kimisc/issues/26)).
+
+- Correct installation of xml2
+  ([\#25](https://github.com/krlmlr/kimisc/issues/25)).
+
+- Explain ([\#24](https://github.com/krlmlr/kimisc/issues/24)).
+
+- Add xml2 for covr, print testthat results
+  ([\#23](https://github.com/krlmlr/kimisc/issues/23)).
+
+- Sync ([\#22](https://github.com/krlmlr/kimisc/issues/22)).
+
 ## kimisc 1.0.0.9000 (2024-12-09)
 
 ### Continuous integration
