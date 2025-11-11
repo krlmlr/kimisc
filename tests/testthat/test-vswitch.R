@@ -1,22 +1,22 @@
 test_that("character", {
-  expect_error(vswitch(LETTERS, 1, 2, 3), "unnamed")
-  expect_equal(vswitch(LETTERS), rep(NA, length(LETTERS)))
-  expect_equal(
+  expect_error(vswitch(LETTERS, 1, 2, 3), "deprecated")
+  expect_error(vswitch(LETTERS), "deprecated")
+  expect_error(
     vswitch(LETTERS, A = 1, B = 2, 3),
-    c(1:3, rep(3, length(LETTERS) - 3))
+    "deprecated"
   )
-  expect_equal(
+  expect_error(
     vswitch(LETTERS, A = 1, B = 1 + 1, 3, D = 2 * 2),
-    c(1:4, rep(3, length(LETTERS) - 4))
+    "deprecated"
   )
-  expect_equal(vswitch(LETTERS, ZZ = stop()), rep(NA, length(LETTERS)))
-  expect_error(vswitch(LETTERS, A = stop("Found A")), "Found")
+  expect_error(vswitch(LETTERS, ZZ = stop()), "deprecated")
+  expect_error(vswitch(LETTERS, A = stop("Found A")), "deprecated")
 })
 
 test_that("default vector", {
-  expect_equal(
+  expect_error(
     vswitch(LETTERS, A = 1, B = 2, letters),
-    c(1:2, rep(list(letters), 24))
+    "deprecated"
   )
 })
 
