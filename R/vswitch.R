@@ -29,23 +29,5 @@ vswitch.default <- function(EXPR, ...) {
 
 #' @export
 vswitch.character <- function(EXPR, ...) {
-  values <- eval(substitute(alist(...)))
-  nvalues <- names(values)
-  if (is.null(nvalues)) nvalues <- rep("", length(values))
-  named <- nvalues != ""
-  unnamed_i <- which(!named)
-  if (length(unnamed_i) > 1) {
-    stop("At most one argument can be unnamed")
-  }
-
-  default <- if (length(unnamed_i) == 0) list(NA) else values[[unnamed_i]]
-  tbl <- c(unname(values[named]), default)
-  idx <- match(x = EXPR, table = nvalues[named], nomatch = length(tbl))
-  idxu <- unique(idx)
-
-  tblv <- sapply(tbl[idxu], eval)
-  rev_idxu <- integer(length(tbl))
-  rev_idxu[idxu] <- seq_along(idxu)
-
-  tblv[rev_idxu[idx]]
+  stop("`vswitch()` is deprecated, use `dplyr::recode()` instead.")
 }
