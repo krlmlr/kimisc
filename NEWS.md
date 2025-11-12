@@ -1,5 +1,20 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.0.9002 (2025-11-12)
+
+## Chore
+
+- Remove pryr dependency, hard-deprecate `vswitch()` (#37, #38).
+
+## Continuous integration
+
+- Fix reviewdog and add commenting workflow (#42).
+
+## Documentation
+
+- Update `thisfile()` deprecation to point to the whereami package (#10, #41).
+
+
 # kimisc 1.0.0.9001 (2025-11-10)
 
 ## Chore
