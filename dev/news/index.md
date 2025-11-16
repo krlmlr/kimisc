@@ -1,5 +1,27 @@
 # Changelog
 
+## kimisc 1.0.0.9002 (2025-11-12)
+
+### Chore
+
+- Remove pryr dependency, hard-deprecate
+  [`vswitch()`](http://krlmlr.github.io/kimisc/dev/reference/vswitch-deprecated.md)
+  ([\#37](https://github.com/krlmlr/kimisc/issues/37),
+  [\#38](https://github.com/krlmlr/kimisc/issues/38)).
+
+### Continuous integration
+
+- Fix reviewdog and add commenting workflow
+  ([\#42](https://github.com/krlmlr/kimisc/issues/42)).
+
+### Documentation
+
+- Update
+  [`thisfile()`](http://krlmlr.github.io/kimisc/dev/reference/thisfile-deprecated.md)
+  deprecation to point to the whereami package
+  ([\#10](https://github.com/krlmlr/kimisc/issues/10),
+  [\#41](https://github.com/krlmlr/kimisc/issues/41)).
+
 ## kimisc 1.0.0.9001 (2025-11-10)
 
 ### Chore
