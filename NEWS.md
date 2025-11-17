@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.0.9003 (2025-11-17)
+
+## Continuous integration
+
+- Install binaries from r-universe for dev workflow (#44).
+
+
 # kimisc 1.0.0.9002 (2025-11-12)
 
 ## Chore
