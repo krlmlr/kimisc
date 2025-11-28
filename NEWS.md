@@ -6,44 +6,6 @@
 
 - Remove pryr dependency, hard-deprecate `vswitch()` (#37, #38).
 
-- Auto-update from GitHub Actions (#32).
-
-## Continuous integration
-
-- Install binaries from r-universe for dev workflow (#44).
-
-- Fix reviewdog and add commenting workflow (#42).
-
-- Use workflows for fledge (#35).
-
-- Sync (#34).
-
-- Use reviewdog for external PRs (#33).
-
-- Cleanup and fix macOS (#31).
-
-- Format with air, check detritus, better handling of `extra-packages` (#30).
-
-- Enhance permissions for workflow (#29).
-
-- Permissions, better tests for missing suggests, lints (#28).
-
-- Only fail covr builds if token is given (#27).
-
-- Always use `_R_CHECK_FORCE_SUGGESTS_=false` (#26).
-
-- Correct installation of xml2 (#25).
-
-- Explain (#24).
-
-- Add xml2 for covr, print testthat results (#23).
-
-- Sync (#22).
-
-- Avoid failure in fledge workflow if no changes (#20).
-
-- Sync with base (#19).
-
 ## Documentation
 
 - Update `thisfile()` deprecation to point to the whereami package (#10, #41).
