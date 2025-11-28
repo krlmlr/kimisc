@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/krlmlr/kimisc/blob/cran-1.0.1/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/krlmlr/kimisc/blob/main/DESCRIPTION)
 
 Müller K (2025). *kimisc: Kirill's Miscellaneous Functions*. R package
 version 1.0.1, <https://krlmlr.github.io/kimisc/>.
