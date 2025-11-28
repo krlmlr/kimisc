@@ -1,4 +1,4 @@
-kimisc 1.0.0
+kimisc 1.0.1
 
 ## Cran Repository Policy
 
