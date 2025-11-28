@@ -1,7 +1,7 @@
 Type: Package
 Package: kimisc
 Title: Kirill's Miscellaneous Functions
-Version: 1.0.0.9003
+Version: 1.0.1
 Date: 2025-11-17
 Authors@R: 
     person("Kirill", "Müller", email = "kirill@cynkra.com", role = c("aut", "cre"))
