@@ -1,8 +1,8 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1.9000
-pkgdown_sha: dfa28bef27858bd442334b5cce8f645d555914be
+pkgdown: 2.2.0.9000
+pkgdown_sha: c07d935583c90125586821e3b39ed52f16593e42
 articles: {}
-last_built: 2024-12-08T07:05Z
+last_built: 2025-11-28T18:28Z
 urls:
   reference: http://krlmlr.github.io/kimisc/reference
   article: http://krlmlr.github.io/kimisc/articles
