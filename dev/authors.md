@@ -9,13 +9,13 @@
 Source:
 [`DESCRIPTION`](https://github.com/krlmlr/kimisc/blob/main/DESCRIPTION)
 
-Müller K (2025). *kimisc: Kirill's Miscellaneous Functions*. R package
-version 1.0.0.9002, <https://krlmlr.github.io/kimisc/>.
+Müller K (2026). *kimisc: Kirill's Miscellaneous Functions*. R package
+version 1.0.1.9000, <https://krlmlr.github.io/kimisc/>.
 
     @Manual{,
       title = {kimisc: Kirill's Miscellaneous Functions},
       author = {Kirill Müller},
-      year = {2025},
-      note = {R package version 1.0.0.9002},
+      year = {2026},
+      note = {R package version 1.0.1.9000},
       url = {https://krlmlr.github.io/kimisc/},
     }
