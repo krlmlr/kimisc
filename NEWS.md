@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.1.9001 (2026-01-14)
+
+## Continuous integration
+
+- Fix comment (#50).
+
+- Tweaks (#49).
+
+- Test all R versions on branches that start with cran- (#48).
+
+
 # kimisc 1.0.1.9000 (2025-11-29)
 
 ## fledge
