@@ -19,7 +19,7 @@ In a data frame with more than two columns, heuristics are applied to detect
 the name and value column.
 }
 \seealso{
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},
 \code{\link{kimisc-deprecated}},
