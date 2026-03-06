@@ -26,7 +26,7 @@ ofactor(9:12, exclude = 11)
 identical(ofactor(3:1, levels = 1:3), factor(3:1))
 }
 \seealso{
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},

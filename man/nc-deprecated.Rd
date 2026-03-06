@@ -31,7 +31,7 @@ nc(mean(c(a, b, c)))
 \seealso{
 \code{\link[=c]{c()}}, \code{\link[=nlist]{nlist()}}
 
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},

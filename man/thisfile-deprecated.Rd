@@ -47,7 +47,7 @@ thisfile()
 \seealso{
 \code{\link[base:source]{base::source()}}, \code{\link[utils:Rscript]{utils::Rscript()}}, \code{\link[base:getwd]{base::getwd()}}
 
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},

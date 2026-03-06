@@ -36,7 +36,7 @@ sample.rows(
 )
 }
 \seealso{
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},

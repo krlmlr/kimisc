@@ -30,7 +30,7 @@ coalesce.na(matrix(c(NA, 1:3), nrow = 2))
 coalesce.na(NA)
 }
 \seealso{
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},
 \code{\link{kimisc-deprecated}},

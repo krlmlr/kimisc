@@ -26,7 +26,7 @@ tll(list(x = list(a = 1, b = 2), y = list(a = 3, b = 4)))
 \seealso{
 \code{\link[base:t]{base::t()}}
 
-Other deprecated functions: 
+Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
 \code{\link{df_to_list-deprecated}},
 \code{\link{hms.to.seconds-deprecated}},
