@@ -26,7 +26,7 @@ seconds.to.hms(c(100000, -4000.5))
 seconds.to.hms("invalid")
 }
 \seealso{
-\code{\link[base:strptime]{base::strftime()}}
+\code{\link[base:strftime]{base::strftime()}}
 
 Other deprecated functions:
 \code{\link{coalesce.na-deprecated}},
