@@ -17,3 +17,7 @@ Useful links:
 ## Author
 
 **Maintainer**: Kirill Müller <kirill@cynkra.com>
+
+Authors:
+
+- Kirill Müller <kirill@cynkra.com>

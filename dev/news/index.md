@@ -1,5 +1,44 @@
 # Changelog
 
+## kimisc 1.0.1.9005 (2026-05-04)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#58](https://github.com/krlmlr/kimisc/issues/58)).
+
+## kimisc 1.0.1.9004 (2026-03-12)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#56](https://github.com/krlmlr/kimisc/issues/56)).
+
+## kimisc 1.0.1.9003 (2026-03-08)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#54](https://github.com/krlmlr/kimisc/issues/54)).
+
+## kimisc 1.0.1.9002 (2026-03-07)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#52](https://github.com/krlmlr/kimisc/issues/52)).
+
+## kimisc 1.0.1.9001 (2026-01-14)
+
+### Continuous integration
+
+- Fix comment ([\#50](https://github.com/krlmlr/kimisc/issues/50)).
+
+- Tweaks ([\#49](https://github.com/krlmlr/kimisc/issues/49)).
+
+- Test all R versions on branches that start with cran-
+  ([\#48](https://github.com/krlmlr/kimisc/issues/48)).
+
 ## kimisc 1.0.1.9000 (2025-11-29)
 
 ### fledge
