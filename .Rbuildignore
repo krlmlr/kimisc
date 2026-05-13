@@ -20,3 +20,4 @@
 ^README\.Rmd$
 ^pkgdown$
 ^LICENSE\.md$
+^\.ccache$

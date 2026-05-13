@@ -9,3 +9,4 @@
 /inst/web
 /revdep/.cache.rds
 docs
+.ccache/
