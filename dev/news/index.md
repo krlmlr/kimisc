@@ -1,5 +1,10 @@
 # Changelog
 
+## kimisc 1.0.1.9008 (2026-05-16)
+
+- Ci: Unify fledge.yaml across cynkratemplate and fledge
+  ([\#86](https://github.com/krlmlr/kimisc/issues/86)).
+
 ## kimisc 1.0.1.9007 (2026-05-14)
 
 ### Chore
