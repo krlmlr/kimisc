@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.1.9010 (2026-07-02)
+
+## Chore
+
+- Auto-update from GitHub Actions (#69).
+
+
 # kimisc 1.0.1.9009 (2026-05-24)
 
 ## Continuous integration
