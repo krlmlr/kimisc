@@ -1,5 +1,20 @@
 # Changelog
 
+## kimisc 1.0.1.9010 (2026-07-02)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#69](https://github.com/krlmlr/kimisc/issues/69)).
+
+## kimisc 1.0.1.9009 (2026-05-24)
+
+### Continuous integration
+
+- Update ccache-action reference.
+
+- Bump action version.
+
 ## kimisc 1.0.1.9008 (2026-05-16)
 
 - Ci: Unify fledge.yaml across cynkratemplate and fledge
