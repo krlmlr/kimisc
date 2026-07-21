@@ -23,7 +23,7 @@ test_that("cut is better", {
     cut_format(x, breaks),
     structure(
       c(1L, 2L, 2L, 3L, 4L),
-      .Label = c("(0.00, 0.25]", "(0.25, 0.50]", "(0.50, 0.75]", "(0.75, 1.00]"),
+      levels = c("(0.00, 0.25]", "(0.25, 0.50]", "(0.50, 0.75]", "(0.75, 1.00]"),
       class = "factor"
     )
   )
@@ -36,7 +36,7 @@ test_that("custom parentheses", {
     cut_format(x, breaks, paren = c("<", "{", ">", "}")),
     structure(
       c(1L, 2L, 2L, 3L, 4L),
-      .Label = c("<0.00, 0.25}", "<0.25, 0.50}", "<0.50, 0.75}", "<0.75, 1.00}"),
+      levels = c("<0.00, 0.25}", "<0.25, 0.50}", "<0.50, 0.75}", "<0.75, 1.00}"),
       class = "factor"
     )
   )
