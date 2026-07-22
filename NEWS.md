@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.1.9011 (2026-07-22)
+
+## Testing
+
+- Replace deprecated `.Label` with `levels` in `cut_format()` tests (#71).
+
+
 # kimisc 1.0.1.9010 (2026-07-02)
 
 ## Chore
