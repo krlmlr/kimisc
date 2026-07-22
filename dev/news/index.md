@@ -1,5 +1,13 @@
 # Changelog
 
+## kimisc 1.0.1.9011 (2026-07-22)
+
+### Testing
+
+- Replace deprecated `.Label` with `levels` in
+  [`cut_format()`](http://krlmlr.github.io/kimisc/dev/reference/cut_format.md)
+  tests ([\#71](https://github.com/krlmlr/kimisc/issues/71)).
+
 ## kimisc 1.0.1.9010 (2026-07-02)
 
 ### Chore
