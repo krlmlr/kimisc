@@ -1,5 +1,27 @@
 # Changelog
 
+## kimisc 1.0.1.9016 (2026-08-05)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#77](https://github.com/krlmlr/kimisc/issues/77)).
+
+### Continuous integration
+
+- Remove unused pr-commands workflow.
+
+### Uncategorized
+
+- Ci: Give every workflow and job an explicit `permissions` block
+  ([\#103](https://github.com/krlmlr/kimisc/issues/103)).
+
+- Ci: Pass workflow context through the environment, not into script
+  text ([\#102](https://github.com/krlmlr/kimisc/issues/102)).
+
+- Ci: Add a Windows arm64 (`windows-11-arm`) check on R-release
+  ([\#99](https://github.com/krlmlr/kimisc/issues/99)).
+
 ## kimisc 1.0.1.9015 (2026-07-28)
 
 - Ci: Run all smoke-test checks even when one fails
