@@ -1,5 +1,13 @@
 # Changelog
 
+## kimisc 1.0.1.9019 (2026-09-05)
+
+### Bug fixes
+
+#### ci
+
+- Backport kit fixes from `rigraph`, `duckdb-r` and `dm`.
+
 ## kimisc 1.0.1.9018 (2026-08-08)
 
 ### Continuous integration
