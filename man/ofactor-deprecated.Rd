@@ -14,7 +14,7 @@ ofactor(x = character(), ...)
 }
 \value{
 A factor.
-See \code{\link[base:factor]{base::factor()}} for details.
+ See \code{\link[base:factor]{base::factor()}} for details.
 }
 \description{
 The function \code{ofactor()} is a convenience wrapper for \code{\link[=factor]{factor()}}

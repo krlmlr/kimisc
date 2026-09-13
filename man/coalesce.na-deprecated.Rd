@@ -17,7 +17,7 @@ A vector of the same length as \code{x}.
 }
 \description{
 This (vectorized) function returns the first non-\code{NA} argument, similar to the SQL function \code{COALESCE}.
-If a vector or matrix is passed as first argument,
+ If a vector or matrix is passed as first argument,
 the remaining arguments are recycled to generate a vector/matrix of the same dimension,
 and coalescing is done element by element.
 }
