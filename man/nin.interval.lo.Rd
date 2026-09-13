@@ -7,8 +7,8 @@
 nin.interval.lo(x, lo, hi)
 }
 \arguments{
-\item{x}{A vector of values. (Lists will be coerced to a numeric
-vector.)}
+\item{x}{A vector of values.
+(Lists will be coerced to a numeric vector.)}
 
 \item{lo}{Left end of the interval.}
 
@@ -18,8 +18,7 @@ vector.)}
 A boolean vector of the same length as \code{x}.
 }
 \description{
-This function checks if the values in the \code{x}
-parameter are contained in the interval (\code{lo}, \code{hi}].
+This function checks if the values in the \code{x} parameter are contained in the interval (\code{lo}, \code{hi}].
 \code{NA} values are treated as "not in the interval".
 }
 \examples{
@@ -27,6 +26,5 @@ nin.interval.lo(c(-1, 0, 1, 2), 0, 1)
 nin.interval.lo(NA, 1, 3)
 }
 \seealso{
-\code{\link[=in.interval.lo]{in.interval.lo()}}, \code{\link[=in.interval.ro]{in.interval.ro()}},
-\code{\link[=nin.interval.ro]{nin.interval.ro()}}
+\code{\link[=in.interval.lo]{in.interval.lo()}}, \code{\link[=in.interval.ro]{in.interval.ro()}}, \code{\link[=nin.interval.ro]{nin.interval.ro()}}
 }
