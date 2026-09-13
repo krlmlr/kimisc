@@ -1,6 +1,6 @@
 #' @title Smart named list
 #' @description This function is a wrapper around [list()]
-#'   that assigns names to unnamed arguments based on the unevaluated expression used in the call.
+#'  that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 #' @param ... List items, possibly named
 #' @return A named list.
 #' @seealso [list()]
@@ -23,7 +23,7 @@ nlist <- function(...) {
 
 #' @title Smart named vector
 #' @description This function is a wrapper around [c()]
-#'   that assigns names to unnamed arguments based on the unevaluated expression used in the call.
+#'  that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 #' @param ... Vector elements, possibly named
 #' @return A named vector.
 #' @seealso [c()], [nlist()]
