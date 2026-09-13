@@ -10,10 +10,10 @@ export.list(arg.list, arg.names = names(arg.list), target.env = .GlobalEnv)
 \item{arg.list}{list of objects, possibly named.}
 
 \item{arg.names}{names to use for the items in the target environment.
-Use the names of \code{arg.list} by default.}
+ Use the names of \code{arg.list} by default.}
 
 \item{target.env}{The target environment.
-Use the global environment by default.}
+ Use the global environment by default.}
 }
 \value{
 Invisible \code{NULL}.
@@ -21,7 +21,7 @@ Invisible \code{NULL}.
 \description{
 This function is a wrapper around \code{\link[=assign]{assign()}} that
 exports the contents of a named list to an environment.
-The variable names in the target environment are constructed from the names of the list items
+ The variable names in the target environment are constructed from the names of the list items
 or taken from a separate argument.
 }
 \examples{

@@ -15,7 +15,7 @@ A list of lists corresponding to a transposition of the argument.
 }
 \description{
 The argument is assumed to be a list of \eqn{n} (named) lists with length \eqn{m} each.
-It is converted to a (named) list of \eqn{m} elements with length \eqn{n} each.
+ It is converted to a (named) list of \eqn{m} elements with length \eqn{n} each.
 }
 \examples{
 tll(list(list(1, 2), list(3, 4)))

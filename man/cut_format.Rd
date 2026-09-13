@@ -35,15 +35,15 @@ A vector of two or more unique cut points}
 
 \item{format_fun}{\verb{[function(x): character]}\cr
 A vectorized function that performs the desired formatting.
-Default: \code{\link[base:format]{base::format()}}}
+ Default: \code{\link[base:format]{base::format()}}}
 
 \item{sep}{\verb{[character(1)]}\cr
 The separator between lower and upper end of the interval.
-Default: \code{", "}}
+ Default: \code{", "}}
 
 \item{paren}{\verb{[character(4)]}\cr
 Opening and closing parentheses in two variants.
-Default: \code{c("(", "[", ")", "]")}}
+ Default: \code{c("(", "[", ")", "]")}}
 }
 \description{
 This is an enhanced version of \code{\link[base:cut]{base::cut()}} that allows a custom formatting to be applied to the values.
