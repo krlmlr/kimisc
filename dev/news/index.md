@@ -1,5 +1,24 @@
 # Changelog
 
+## kimisc 1.0.1.9020 (2026-09-13)
+
+### Features
+
+#### ci
+
+- Align the `revdep2`, `revdep4` and `revdepx` subsystems with
+  `rigraph`.
+
+### Uncategorized
+
+- Perf(revdepx): Compile the revdeps’ checks through ccache.
+
+- Fix(ci): Survive an archived CRAN package, and install it from where
+  it still lives.
+
+- Ci: Fail the roxygenize step on roxygen2 warnings
+  ([\#111](https://github.com/krlmlr/kimisc/issues/111)).
+
 ## kimisc 1.0.1.9019 (2026-09-05)
 
 ### Bug fixes
