@@ -1,11 +1,9 @@
 #' @title Random Samples and Permutations for Data Frames
-#' @description This function takes a sample of the specified size
-#'   from the rows of `x` using either with or without replacement.
+#' @description This function takes a sample of the specified size from the rows of `x` using either with or without replacement.
 #' @param x A data frame.
 #' @param size A non-negative integer giving the number of items to choose.
 #' @param replace Should sampling be with replacement?
-#' @param prob A vector of probability weights for obtaining the rows of the
-#'   data frame being sampled.
+#' @param prob A vector of probability weights for obtaining the rows of the data frame being sampled.
 #' @return A data frame of the same shape as `x`.
 #' @details This function internally calls [sample.int()].
 #' @examples

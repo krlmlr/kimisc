@@ -1,21 +1,20 @@
 #' Convert Numeric to Factor, with custom formatting
 #'
-#' This is an enhanced version of [base::cut()] that allows a custom
-#' formatting to be applied to the values.
+#' This is an enhanced version of [base::cut()] that allows a custom formatting to be applied to the values.
 #'
 #' @inheritParams base::cut.default
 #' @param breaks  `[numeric]`\cr
 #' A vector of two or more unique cut points
 #' @param ... Passed to `cut()`
 #' @param format_fun `[function(x): character]`\cr
-#'   A vectorized function that performs the desired formatting.  Default:
-#'   [base::format()]
+#'   A vectorized function that performs the desired formatting.
+#'   Default: [base::format()]
 #' @param sep `[character(1)]`\cr
-#'   The separator between lower and upper end of the interval. Default:
-#'   `", "`
+#'   The separator between lower and upper end of the interval.
+#'   Default: `", "`
 #' @param paren `[character(4)]`\cr
-#'   Opening and closing parentheses in two variants. Default:
-#'   \code{c("(", "[", ")", "]")}
+#'   Opening and closing parentheses in two variants.
+#'   Default: \code{c("(", "[", ")", "]")}
 #' @seealso [https://stackoverflow.com/q/14456371/946850]()
 #'
 #' @examples

@@ -1,11 +1,9 @@
-#' @title Converts a time value given in H:M:S format to the number of seconds
-#'   since midnight
-#' @description This function is very similar to `strptime` with the
-#'   \code{\%X} conversion specification. Anything with three numbers between
-#'   two colons is interpreted as a time, no consistency check is performed on
-#'   the actual hour, minute and second values. Thus, strings like 25:15:00 and
-#'   23:78:101 also will be converted. Incorrectly formatted strings are
-#'   converted to `NA` with a warning.
+#' @title Converts a time value given in H:M:S format to the number of seconds since midnight
+#' @description This function is very similar to `strptime` with the \code{\%X} conversion specification.
+#'   Anything with three numbers between two colons is interpreted as a time,
+#'   no consistency check is performed on the actual hour, minute and second values.
+#'   Thus, strings like 25:15:00 and 23:78:101 also will be converted.
+#'   Incorrectly formatted strings are converted to `NA` with a warning.
 #' @param x A (vector of) strings in H:M:S format.
 #' @return A (vector of) integer values of the same length as `x`.
 #' @seealso [base::strptime()]

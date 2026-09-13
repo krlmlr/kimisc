@@ -5,11 +5,9 @@
 #'   cases.
 #' @details This functions currently work only if the script was `source`d,
 #'   processed with `knitr`,
-#'   or run with `Rscript` or using the `--file` parameter to the
-#'   `R` executable.  For code run with `Rscript`, the exact value
-#'   of the parameter passed to `Rscript` is returned.
-#' @return The path of the currently running script, NULL if it cannot be
-#'   determined.
+#'   or run with `Rscript` or using the `--file` parameter to the `R` executable.  For code run with `Rscript`,
+#'   the exact value of the parameter passed to `Rscript` is returned.
+#' @return The path of the currently running script, NULL if it cannot be determined.
 #' @seealso [base::source()], [utils::Rscript()], [base::getwd()]
 #' @references [https://stackoverflow.com/q/1815606/946850]()
 #' @author Kirill Müller, Hadley Wickham, Michael R. Head
