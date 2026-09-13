@@ -1,12 +1,6 @@
 #' @title Determines the path of the currently running script
-#' @description \R does not store nor export the path of the currently running
-#'   script.  This is an attempt to circumvent this limitation by applying
-#'   heuristics (such as call stack and argument inspection) that work in many
-#'   cases.
-#' @details This functions currently work only if the script was `source`d,
-#'   processed with `knitr`,
-#'   or run with `Rscript` or using the `--file` parameter to the `R` executable.  For code run with `Rscript`,
-#'   the exact value of the parameter passed to `Rscript` is returned.
+#' @description \R does not store nor export the path of the currently running script.  This is an attempt to circumvent this limitation by applying heuristics (such as call stack and argument inspection) that work in many cases.
+#' @details This functions currently work only if the script was `source`d, processed with `knitr`, or run with `Rscript` or using the `--file` parameter to the `R` executable.  For code run with `Rscript`, the exact value of the parameter passed to `Rscript` is returned.
 #' @return The path of the currently running script, NULL if it cannot be determined.
 #' @seealso [base::source()], [utils::Rscript()], [base::getwd()]
 #' @references [https://stackoverflow.com/q/1815606/946850]()
