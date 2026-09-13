@@ -1,8 +1,8 @@
 #' @title Checks if values are outside of an interval (open on the right)
 #' @description This function checks if the values in the `x` parameter are contained in the interval [`lo`, `hi`).
-#'  `NA` values are treated as "not in the interval".
+#'   `NA` values are treated as "not in the interval".
 #' @param x A vector of values.
-#'  (Lists will be coerced to a numeric vector.)
+#'   (Lists will be coerced to a numeric vector.)
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
@@ -15,9 +15,9 @@ nin.interval.ro <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right = F))
 
 #' @title Checks if values are contained in an interval (open on the right)
 #' @description This function checks if the values in the `x` parameter are contained in the interval [`lo`, `hi`).
-#'  `NA` values are treated as "not in the interval".
+#'   `NA` values are treated as "not in the interval".
 #' @param x A vector of values.
-#'  (Lists will be coerced to a numeric vector.)
+#'   (Lists will be coerced to a numeric vector.)
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
@@ -30,9 +30,9 @@ in.interval.ro <- function(x, lo, hi) !nin.interval.ro(x, lo, hi)
 
 #' @title Checks if values are outside of an interval (open on the left)
 #' @description This function checks if the values in the `x` parameter are contained in the interval (`lo`, `hi`].
-#'  `NA` values are treated as "not in the interval".
+#'   `NA` values are treated as "not in the interval".
 #' @param x A vector of values.
-#'  (Lists will be coerced to a numeric vector.)
+#'   (Lists will be coerced to a numeric vector.)
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.
@@ -45,9 +45,9 @@ nin.interval.lo <- function(x, lo, hi) is.na(.bincode(x, c(lo, hi), right = T))
 
 #' @title Checks if values are contained in an interval (open on the left)
 #' @description This function checks if the values in the `x` parameter are contained in the interval (`lo`, `hi`].
-#'  `NA` values are treated as "not in the interval".
+#'   `NA` values are treated as "not in the interval".
 #' @param x A vector of values.
-#'  (Lists will be coerced to a numeric vector.)
+#'   (Lists will be coerced to a numeric vector.)
 #' @param lo Left end of the interval.
 #' @param hi Right end of the interval.
 #' @return A boolean vector of the same length as `x`.

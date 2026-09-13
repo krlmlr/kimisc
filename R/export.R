@@ -1,11 +1,11 @@
 #' @title Exports to an environment
 #' @description This function is a wrapper around [assign()] that
-#'  exports the contents of a named list to an environment.  The variable names
-#'  in the target environment are constructed from the names of the list items
-#'  or taken from a separate argument.
+#'   exports the contents of a named list to an environment.  The variable names
+#'   in the target environment are constructed from the names of the list items
+#'   or taken from a separate argument.
 #' @param arg.list list of objects, possibly named.
 #' @param arg.names names to use for the items in the target environment.
-#'  Use the names of `arg.list` by default.
+#'   Use the names of `arg.list` by default.
 #' @param target.env The target environment.  Use the global environment by default.
 #' @return Invisible `NULL`.
 #' @seealso [export()], [assign()]

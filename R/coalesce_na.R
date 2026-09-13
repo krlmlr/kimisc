@@ -1,8 +1,8 @@
 #' @title Replaces NA values
 #' @description This (vectorized) function returns the first non-`NA` argument, similar to the SQL function `COALESCE`.
-#'  If a vector or matrix is passed as first argument,
-#'  the remaining arguments are recycled to generate a vector/matrix of the same dimension,
-#'  and coalescing is done element by element.
+#'   If a vector or matrix is passed as first argument,
+#'   the remaining arguments are recycled to generate a vector/matrix of the same dimension,
+#'   and coalescing is done element by element.
 #' @param x The first value to coalesce.
 #' @param ... Other values to coalesce.
 #' @return A vector of the same length as `x`.

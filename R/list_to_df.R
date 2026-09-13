@@ -1,8 +1,8 @@
 #' Converts a list to a name-value data frame
 #'
 #' This function coerces its input to a list and returns a data frame with as many rows as there are list items in the input,
-#'  and two columns (one for the names, one for the values).
-#'  If the list is not named, the natural sequence will be used as item names.
+#' and two columns (one for the names, one for the values).
+#' If the list is not named, the natural sequence will be used as item names.
 #'
 #' @param list_for_df The object to be converted to a data frame
 #'
@@ -27,7 +27,7 @@ list_to_df <- function(list_for_df) {
 #' Converts a name-value data frame to a named list
 #'
 #' This function converts a data frame back to a list.
-#'  It is the reverse operation to [list_to_df()].
+#' It is the reverse operation to [list_to_df()].
 #'
 #' In a data frame with more than two columns, heuristics are applied to detect the name and value column.
 #'

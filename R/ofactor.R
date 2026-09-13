@@ -1,10 +1,10 @@
 #' @title Order-preserving factors
 #' @description The function `ofactor()` is a convenience wrapper for [factor()]
-#'  that orders the levels as they appear in the data if the `levels` argument is not specified.
+#'   that orders the levels as they appear in the data if the `levels` argument is not specified.
 #' @param x A vector of data, usually taking a small number of distinct values.
 #' @param ... Other arguments passed on to [base::factor()].
 #' @return A factor.
-#'  See [base::factor()] for details.
+#'   See [base::factor()] for details.
 #' @examples
 #' ofactor(3:1)
 #' ofactor(9:12, exclude = 11)
