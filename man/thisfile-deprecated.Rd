@@ -20,21 +20,17 @@ thisfile_rscript()
 thisfile_knit()
 }
 \value{
-The path of the currently running script, NULL if it cannot be
-determined.
+The path of the currently running script, NULL if it cannot be determined.
 }
 \description{
-\R does not store nor export the path of the currently running
-script.  This is an attempt to circumvent this limitation by applying
-heuristics (such as call stack and argument inspection) that work in many
-cases.
+\R does not store nor export the path of the currently running script.
+This is an attempt to circumvent this limitation by applying heuristics
+(such as call stack and argument inspection) that work in many cases.
 }
 \details{
-This functions currently work only if the script was \code{source}d,
-processed with \code{knitr},
-or run with \code{Rscript} or using the \code{--file} parameter to the
-\code{R} executable.  For code run with \code{Rscript}, the exact value
-of the parameter passed to \code{Rscript} is returned.
+This functions currently work only if the script was \code{source}d, processed with \code{knitr},
+or run with \code{Rscript} or using the \code{--file} parameter to the \code{R} executable.
+For code run with \code{Rscript}, the exact value of the parameter passed to \code{Rscript} is returned.
 }
 \examples{
 \dontrun{

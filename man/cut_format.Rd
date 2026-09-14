@@ -34,20 +34,19 @@ A vector of two or more unique cut points}
 \item{...}{Passed to \code{cut()}}
 
 \item{format_fun}{\verb{[function(x): character]}\cr
-A vectorized function that performs the desired formatting.  Default:
-\code{\link[base:format]{base::format()}}}
+A vectorized function that performs the desired formatting.
+Default: \code{\link[base:format]{base::format()}}}
 
 \item{sep}{\verb{[character(1)]}\cr
-The separator between lower and upper end of the interval. Default:
-\code{", "}}
+The separator between lower and upper end of the interval.
+Default: \code{", "}}
 
 \item{paren}{\verb{[character(4)]}\cr
-Opening and closing parentheses in two variants. Default:
-\code{c("(", "[", ")", "]")}}
+Opening and closing parentheses in two variants.
+Default: \code{c("(", "[", ")", "]")}}
 }
 \description{
-This is an enhanced version of \code{\link[base:cut]{base::cut()}} that allows a custom
-formatting to be applied to the values.
+This is an enhanced version of \code{\link[base:cut]{base::cut()}} that allows a custom formatting to be applied to the values.
 }
 \examples{
 cut_format(runif(10), seq(0, 1, by = 0.25), format_fun = function(x) paste(x * 100, "\%"))

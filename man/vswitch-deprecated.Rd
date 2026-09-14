@@ -19,17 +19,14 @@ vswitch(EXPR, ...)
 \value{
 The value of one of the elements of \code{...},
 or \code{NA} whenever no element is selected.
-Contrary to \code{\link[base:switch]{base::switch()}} the result is
-always visible.
+Contrary to \code{\link[base:switch]{base::switch()}} the result is always visible.
 }
 \description{
-The function \code{vswitch} is a vectorized version of
-\code{\link[base:switch]{base::switch()}} optimized for performance.
+The function \code{vswitch} is a vectorized version of \code{\link[base:switch]{base::switch()}} optimized for performance.
 }
 \details{
-Only the \code{EXPR} argument is treated as a vector. In particular,
-if any of the alternatives (or the default alternative) is a vector, the
-result will be a list of vectors.
+Only the \code{EXPR} argument is treated as a vector.
+In particular, if any of the alternatives (or the default alternative) is a vector, the result will be a list of vectors.
 }
 \seealso{
 Other deprecated functions:

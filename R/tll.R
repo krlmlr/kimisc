@@ -1,7 +1,6 @@
 #' @title Transposes a list of lists
-#' @description The argument is assumed to be a list of \eqn{n} (named) lists
-#'   with length \eqn{m} each.  It is converted to a (named) list of \eqn{m}
-#'   elements with length \eqn{n} each.
+#' @description The argument is assumed to be a list of \eqn{n} (named) lists with length \eqn{m} each.
+#'   It is converted to a (named) list of \eqn{m} elements with length \eqn{n} each.
 #' @param l List of lists, possibly named.
 #' @return A list of lists corresponding to a transposition of the argument.
 #' @seealso [base::t()]
