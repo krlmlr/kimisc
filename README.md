@@ -15,6 +15,29 @@
 
 A collection of useful functions not found anywhere else.
 
+## Goals and non-goals
+
+kimisc aims to:
+
+- Collect small helpers that have nowhere else to live.
+  That is the whole organising principle: these functions share an author, not a subject.
+- Keep what is still its own, as the package description says:
+  pretty interval labels with `cut_format()`, generalized lagged differences with `gdiff()`,
+  containment tests such as `in.interval.lo()`, and an alternative interface to `assign()` in `export()`.
+- Send users on where another package has since covered the ground:
+  a deprecated function names its replacement when called, and `?kimisc-deprecated` lists them all.
+- Stay cheap to depend on and steady for code that already uses it:
+  memoise and plyr are the only imports, and the package is marked stable.
+
+It is explicitly not trying to:
+
+- Acquire a theme.
+  Functions land here because they fit nowhere else, and the package has never claimed more than that.
+- Re-implement what is now standard elsewhere.
+  `coalesce.na()`, `hms.to.seconds()`, `list_to_df()`, `nlist()`, `ofactor()`, `sample.rows()`, `thisfile()`, `tll()` and `vswitch()`
+  are deprecated in favour of dplyr, hms, tibble, forcats, whereami and purrr.
+- Keep every deprecated function callable: `vswitch()` is hard-deprecated and raises an error.
+
 ## Installation
 
 You can install the development version of kimisc from [GitHub](https://github.com/) with:
