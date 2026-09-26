@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.1.9022 (2026-09-26)
+
+## Documentation
+
+- Break lines at meaning boundaries (#86).
+
+- Point the coverage link at the default branch (#85).
+
+- Harmonize README and pkgdown front page rendering (#83).
+
+
 # kimisc 1.0.1.9021 (2026-09-13)
 
 ## Chore
