@@ -1,5 +1,18 @@
 # Changelog
 
+## kimisc 1.0.1.9022 (2026-09-26)
+
+### Documentation
+
+- Break lines at meaning boundaries
+  ([\#86](https://github.com/krlmlr/kimisc/issues/86)).
+
+- Point the coverage link at the default branch
+  ([\#85](https://github.com/krlmlr/kimisc/issues/85)).
+
+- Harmonize README and pkgdown front page rendering
+  ([\#83](https://github.com/krlmlr/kimisc/issues/83)).
+
 ## kimisc 1.0.1.9021 (2026-09-13)
 
 ### Chore
