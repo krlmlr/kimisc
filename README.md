@@ -1,25 +1,24 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md and index.md are generated from README.Rmd.
+     Edit that file and render it the usual way: rmarkdown::render(),
+     devtools::build_readme(), or the Knit button. The cynkratemplate
+     package must be installed; it supplies the output format. -->
 
 # kimisc
 
 <!-- badges: start -->
 
-[![Lifecycle:
-stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/krlmlr/kimisc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/krlmlr/kimisc/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/krlmlr/kimisc/graph/badge.svg)](https://app.codecov.io/gh/krlmlr/kimisc)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/kimisc)](https://CRAN.R-project.org/package=kimisc)
+[![Codecov test coverage](https://codecov.io/gh/krlmlr/kimisc/graph/badge.svg)](https://app.codecov.io/gh/krlmlr/kimisc)
+[![CRAN status](https://www.r-pkg.org/badges/version/kimisc)](https://CRAN.R-project.org/package=kimisc)
 <!-- badges: end -->
 
 A collection of useful functions not found anywhere else.
 
 ## Installation
 
-You can install the development version of kimisc from
-[GitHub](https://github.com/) with:
+You can install the development version of kimisc from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
