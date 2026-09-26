@@ -1,7 +1,6 @@
 #' @title Smart named list
-#' @description This function is a wrapper around [list()] that
-#'   assigns names to unnamed arguments based on the unevaluated expression used
-#'   in the call.
+#' @description This function is a wrapper around [list()]
+#'   that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 #' @param ... List items, possibly named
 #' @return A named list.
 #' @seealso [list()]
@@ -23,9 +22,8 @@ nlist <- function(...) {
 }
 
 #' @title Smart named vector
-#' @description This function is a wrapper around [c()] that
-#'   assigns names to unnamed arguments based on the unevaluated expression used
-#'   in the call.
+#' @description This function is a wrapper around [c()]
+#'   that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 #' @param ... Vector elements, possibly named
 #' @return A named vector.
 #' @seealso [c()], [nlist()]
@@ -47,12 +45,10 @@ nc <- function(...) {
 }
 
 # @title Set the Missing Names in an Object
-# @description This function is an enhanced version of [setNames()]
-#   in the sense that the elements that already have names are not renamed.
+# @description This function is an enhanced version of [setNames()] in the sense that the elements that already have names are not renamed.
 # @param object an object for which a names attribute will be meaningful
 # @param nm a character vector of names to assign to the object
-# @return An object of the same sort as `object` with the new names
-#   assigned to the unnamed elements.
+# @return An object of the same sort as `object` with the new names assigned to the unnamed elements.
 # @seealso \link{setNames}
 # @examples
 # setMissingNames(c(a=1, b=2, 3), letters[2:4])

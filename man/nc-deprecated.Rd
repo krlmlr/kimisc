@@ -14,9 +14,8 @@ nc(...)
 A named vector.
 }
 \description{
-This function is a wrapper around \code{\link[=c]{c()}} that
-assigns names to unnamed arguments based on the unevaluated expression used
-in the call.
+This function is a wrapper around \code{\link[=c]{c()}}
+that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 }
 \examples{
 a <- 1

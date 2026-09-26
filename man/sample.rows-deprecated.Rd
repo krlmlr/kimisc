@@ -14,15 +14,13 @@ sample.rows(x, size, replace = FALSE, prob = NULL)
 
 \item{replace}{Should sampling be with replacement?}
 
-\item{prob}{A vector of probability weights for obtaining the rows of the
-data frame being sampled.}
+\item{prob}{A vector of probability weights for obtaining the rows of the data frame being sampled.}
 }
 \value{
 A data frame of the same shape as \code{x}.
 }
 \description{
-This function takes a sample of the specified size
-from the rows of \code{x} using either with or without replacement.
+This function takes a sample of the specified size from the rows of \code{x} using either with or without replacement.
 }
 \details{
 This function internally calls \code{\link[=sample.int]{sample.int()}}.

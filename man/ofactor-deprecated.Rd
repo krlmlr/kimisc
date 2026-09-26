@@ -13,12 +13,12 @@ ofactor(x = character(), ...)
 \item{...}{Other arguments passed on to \code{\link[base:factor]{base::factor()}}.}
 }
 \value{
-A factor. See \code{\link[base:factor]{base::factor()}} for details.
+A factor.
+See \code{\link[base:factor]{base::factor()}} for details.
 }
 \description{
-The function \code{ofactor()} is a convenience wrapper for
-\code{\link[=factor]{factor()}} that orders the levels as they appear in the data if the
-\code{levels} argument is not specified.
+The function \code{ofactor()} is a convenience wrapper for \code{\link[=factor]{factor()}}
+that orders the levels as they appear in the data if the \code{levels} argument is not specified.
 }
 \examples{
 ofactor(3:1)

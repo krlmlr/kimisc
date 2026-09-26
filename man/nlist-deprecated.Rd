@@ -14,9 +14,8 @@ nlist(...)
 A named list.
 }
 \description{
-This function is a wrapper around \code{\link[=list]{list()}} that
-assigns names to unnamed arguments based on the unevaluated expression used
-in the call.
+This function is a wrapper around \code{\link[=list]{list()}}
+that assigns names to unnamed arguments based on the unevaluated expression used in the call.
 }
 \examples{
 a <- 1

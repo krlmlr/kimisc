@@ -9,15 +9,14 @@ export(..., target.env = .GlobalEnv)
 \arguments{
 \item{...}{variables to be exported.}
 
-\item{target.env}{The target environment.  Use the global environment by
-default.}
+\item{target.env}{The target environment.
+Use the global environment by default.}
 }
 \value{
 Invisible \code{NULL}.
 }
 \description{
-This function is a wrapper around \code{\link[=export.list]{export.list()}} that
-exports variables by their name to another environment.
+This function is a wrapper around \code{\link[=export.list]{export.list()}} that exports variables by their name to another environment.
 }
 \examples{
 local({

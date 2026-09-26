@@ -11,10 +11,9 @@ list_to_df(list_for_df)
 \item{list_for_df}{The object to be converted to a data frame}
 }
 \description{
-This function coerces its input to a list and returns a data frame with as many
-rows as there are list items in the input, and two columns
-(one for the names, one for the values). If the list is not named, the
-natural sequence will be used as item names.
+This function coerces its input to a list and returns a data frame with as many rows as there are list items in the input,
+and two columns (one for the names, one for the values).
+If the list is not named, the natural sequence will be used as item names.
 }
 \seealso{
 Other deprecated functions:

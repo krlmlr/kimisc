@@ -1,17 +1,14 @@
 #' Vectorized switch
 #'
-#' The function `vswitch` is a vectorized version of
-#'   [base::switch()] optimized for performance.
+#' The function `vswitch` is a vectorized version of [base::switch()] optimized for performance.
 #'
-#' Only the `EXPR` argument is treated as a vector. In particular,
-#' if any of the alternatives (or the default alternative) is a vector, the
-#' result will be a list of vectors.
+#' Only the `EXPR` argument is treated as a vector.
+#' In particular, if any of the alternatives (or the default alternative) is a vector, the result will be a list of vectors.
 #'
 #' @inheritParams base::switch
 #' @return The value of one of the elements of `...`,
 #'   or `NA` whenever no element is selected.
-#'   Contrary to [base::switch()] the result is
-#'   always visible.
+#'   Contrary to [base::switch()] the result is always visible.
 #'
 #' @export
 #' @family deprecated functions
