@@ -23,7 +23,7 @@ If x is a vector of length \code{n} and \code{differences = 1},
 then the computed result is equal to the successive differences \code{FUN(x[(1+lag):n], x[1:(n-lag)])}.
 
 If \code{difference} is larger than one this algorithm is applied recursively to \code{x}.
-Note that the returned value is a vector which is shorter than \code{x}.
+ Note that the returned value is a vector which is shorter than \code{x}.
 
 If \code{x} is a matrix then the difference operations are carried out on each column separately.
 }

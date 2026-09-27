@@ -10,7 +10,7 @@ export(..., target.env = .GlobalEnv)
 \item{...}{variables to be exported.}
 
 \item{target.env}{The target environment.
-Use the global environment by default.}
+ Use the global environment by default.}
 }
 \value{
 Invisible \code{NULL}.
