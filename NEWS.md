@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# kimisc 1.0.1.9027 (2026-11-27)
+
+## Chore
+
+- Tidy DESCRIPTION with usethis::use_tidy_description() (#99).
+
+## Continuous integration
+
+- Sync the workflows with cynkra/cynkratemplate (#98).
+
+
 # kimisc 1.0.1.9026 (2026-11-27)
 
 ## Continuous integration
