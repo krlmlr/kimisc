@@ -1,5 +1,12 @@
 # Changelog
 
+## kimisc 1.0.1.9026 (2026-11-27)
+
+### Continuous integration
+
+- Sync the workflows with cynkra/cynkratemplate
+  ([\#96](https://github.com/krlmlr/kimisc/issues/96)).
+
 ## kimisc 1.0.1.9025 (2026-10-10)
 
 ### Chore
