@@ -1,5 +1,23 @@
 # Changelog
 
+## kimisc 1.0.1.9025 (2026-10-10)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#94](https://github.com/krlmlr/kimisc/issues/94)).
+
+## kimisc 1.0.1.9024 (2026-09-27)
+
+### Continuous integration
+
+- Run coverage checks after pkgdown push.
+
+### Uncategorized
+
+- Feat(ci): Render `README.md` and `index.md` in CI
+  (cynkra/cynkratemplate#118).
+
 ## kimisc 1.0.1.9023 (2026-09-26)
 
 - Refactor(ci): Serve the revdep scripts with the actions instead of
